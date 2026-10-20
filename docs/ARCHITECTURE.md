@@ -12,4 +12,4 @@ Each feature should have its own data, UI, and tests. Dependency direction is in
 
 **Release flow:** test modular sources → build the self-contained HTML → validate JS/HTML + all major controls → verify exported backups → update manifest and docs → bundle one complete offline ZIP. Changes to browser storage require a compatibility plan.
 
-The standalone HTML and release ZIP are not yet published in this repo; see the checklist.
+The standalone HTML and 2.1.1 release ZIP are present in this repo. The map calibration and visual installer source files may be newer than that packaged ZIP; never assume source-only workbench updates are included in the 2.1.1 download. Ship a refreshed ZIP only after guide integration and browser acceptance.
