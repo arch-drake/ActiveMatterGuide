@@ -40,6 +40,17 @@ The project is free and always optional to support: [☕ Buy Me a Coffee](https:
 
 This free, offline companion utility aligns **your own current in-game screenshots** to 275 historic community marker samples. It records **fit points and independent held-out check points**, computes separate 2D alignment-error estimates, and exports local evidence JSON without uploading screenshots. It does not automatically produce game-exact terrain, actual game icon graphics, or building heights. **The October 20 source update is newer than the packaged 2.1.1 ZIP; the ZIP may contain the older workbench.** See [map evidence requirements](docs/MAP_FIDELITY_EVIDENCE.md).
 
+
+## Original concept art add-on — offline guide portraits
+
+The optional [Editorial Artwork Upgrade](tools/editorial_art_upgrade.html) now generates a **new standalone HTML guide** with an embedded 16-scene AI-generated editorial sprite. It adds atmospheric side portraits to the Monster Compendium, body sleeves, loot cards, weapon catalog and selected lore. This is **original illustrative concept art**, not an exact representation of any game monster, weapon or location. Multiple records currently share category-level images, not individually researched official depictions.
+
+1. Open your current guide and **Backup → Export complete backup** first.
+2. Download or open [the local-upgrade tool](tools/editorial_art_upgrade.html), choose the 2.1.1 HTML, and click **Build upgraded standalone guide**. The browser creates a new `*_with_editorial_art.html` locally; it does not upload your guide or change the original source file.
+3. Open the downloaded HTML and import your backup if file-path localStorage isolation hides saved progress. The images run offline and can be toggled from the Monster Compendium.
+
+**Accuracy gate:** This release adds pictures alongside encyclopedia entries, **not corrected geographic basemaps**. The live [community interactive atlas](https://activematter.guide/maps/) and [Active Matter Help map pages](https://activematterhelp.ru/wiki/maps/africa_headquarters) are external map references; their existence does not grant image or coordinate-dataset redistribution permission. Source-based map verification and building-height evidence remain outstanding. See [map reconciliation register](docs/MAP_MARKER_RECONCILIATION_STATUS.md) and [map-fidelity criteria](docs/MAP_FIDELITY_EVIDENCE.md).
+
 ## Share & contribute
 
 Found a wrong loot lead, a missing monster behavior, a broken control or a patch change? Open a GitHub **Issue** using the templates in `.github/ISSUE_TEMPLATE/`. Include the current game patch, mode/variant, map, and evidence when you can. See [CONTRIBUTING.md](CONTRIBUTING.md).
