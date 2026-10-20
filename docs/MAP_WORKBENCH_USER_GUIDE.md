@@ -47,3 +47,17 @@ Avoid using extraction portals, timed exits, enemy/anomaly spawns, or other movi
 Patch references: https://activematter.game/en/news/349 and https://activematter.game/en/news (0.4.0.163).
 
 **Release note:** GitHub's `tools/map_reconciliation.html` includes independent check points as of the 20 October source update. The previously packaged 2.1.1 ZIP may predate this update; use the latest GitHub source for the new validation controls.
+
+## New: dual-image physical-landmark workflow (20 October 2026 source revision)
+
+1. Export your map evidence JSON before switching game builds or crops.
+2. Select the map, target raid variant/build and provenance. Upload the original current in-game overhead screenshot as **target**.
+3. Upload a separate reference basemap under **Fixed physical landmarks**. This source can be an owner's screenshot or a source whose display/use rights are documented; it is loaded locally.
+4. Enter a physical landmark name. Mark a FIT point (uncheck Independent check) and click **Match fixed landmark**. Click the identical feature first in the reference image and then in the target screenshot. Add **at least four** spaced FIT landmarks, then switch to CHECK and record **two** geographically separated holdouts.
+5. Inspect training/holdout RMS and manually examine geometry. If only three points train, the fit may conceal severe errors.
+6. If the reference image is **not exactly the same coordinate crop/orientation as the historic community marker dataset**, leave the **same legacy crop** checkbox unchecked. Historic source marker pins are intentionally hidden during manual-coordinate calibration in that case.
+7. Export JSON and store capture version, source URL, rights and crop separately. No screenshot image bytes leave the browser via this tool.
+
+A correctly aligned reference screenshot does not validate extraction-point permanence, current loot, real building height or game-variant correctness. Gigastructure and Dalniy support manual landmark calibration even though they have no legacy per-raid candidate pin set; regional/floor-level coordinate systems must be documented explicitly.
+
+**Status:** geometry and import-validation checks pass; manual file-picker and Windows file:// workflow require interactive browser testing before this release can be certified.
