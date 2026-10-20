@@ -7,8 +7,8 @@ This **separate, offline** evidence workbench is an early step toward replacing 
 1. Extract the ZIP. Open `map_reconciliation.html` in desktop Chrome or Edge; it runs locally with no network.
 2. Choose the actual raid map and mode. Enter the current game build number.
 3. Upload **your own unedited full in-game map screenshot**. The image stays in this page; only its filename and dimensions are retained in metadata.
-4. Choose a recognizable static community-source landmark from the dropdown, click **Select screenshot position**, then click that landmark's position in the image. Repeat at least **four or five** well-spaced points. Three can produce a fit, but three alone cannot independently validate it.
-5. Review predicted overlay pins and the RMS misalignment. A low RMS doesn't prove authenticity; deliberately cross-check landmarks that were **not** used to calibrate.
+4. Choose a recognizable **stable physical landmark** from the dropdown, leave **Independent check point** unchecked, click **Select screenshot position**, then click the landmark in the screenshot. Repeat for at least **three well-separated, non-collinear FIT points**; four or more is preferable. Existing evidence imports remain supported.
+5. For at least **two additional landmarks**, check **Independent check point** before clicking the screenshot. These CHECK points are excluded from the fit. Compare **Training RMS** with **Check RMS**; a near-zero training error with a large check error suggests a mismatch, crop/orientation problem, displaced marker, or source error. Neither number independently proves an authentic in-game location.
 6. Optionally record building-height evidence from confirmed floor counts, licensed documentation, or multiple in-game screenshots. **Do not invent heights or convert floor counts into meter measurements.**
 7. Use **Export map evidence JSON**. Keep the screenshot and evidence together privately; only share screenshots you have rights to share.
 8. When reopening, use **Import evidence JSON**. Screenshot pixels are not stored and must be re-uploaded to display.
@@ -38,3 +38,12 @@ Public research leads include [developer patch notes](https://activematter.game/
 The workbench is now **published** at [tools/map_reconciliation.html](https://github.com/arch-drake/ActiveMatterGuide/blob/main/tools/map_reconciliation.html). Once GitHub Pages is enabled its direct interactive link will be https://arch-drake.github.io/ActiveMatterGuide/tools/map_reconciliation.html . It can also be downloaded and opened locally without Pages.
 
 The primary companion and full release ZIP are still required separately in the main repository. Uploading the entire large package ZIP as one item in the root does not extract it or enable an online guide.
+### Patch-sensitive control points
+
+Avoid using extraction portals, timed exits, enemy/anomaly spawns, or other moving map symbols as alignment controls. Prefer a fixed structure visible in both source and game screenshots. The historical community marker layer includes some marker types that are not immovable landmarks.
+
+**5 Oct 2026 — build 0.4.0.173:** stationary extraction points shifted in Headquarters, Airport and Downtown. **30 Sep 2026 — build 0.4.0.163:** Dalniy Island extraction changes were also recorded. Check a current raid rather than trusting those old coordinates. The independent validation check catches some mismatches but cannot turn an old or incorrectly matched image into verified game geography.
+
+Patch references: https://activematter.game/en/news/349 and https://activematter.game/en/news (0.4.0.163).
+
+**Release note:** GitHub's `tools/map_reconciliation.html` includes independent check points as of the 20 October source update. The previously packaged 2.1.1 ZIP may predate this update; use the latest GitHub source for the new validation controls.
