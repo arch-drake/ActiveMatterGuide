@@ -2,11 +2,11 @@
 
 ![Field Operations map interface](previews/map_v21_smoke.png)
 
-**Version:** 2.1.1 · **Updated:** October 20, 2026 · **Status:** free, unofficial community companion
+**Version:** 2.1.1 · **Updated:** October 20, 2026 · **Status:** free community download available; GitHub Pages setup pending
 
 > Independent fan-made reference tool. Not affiliated with or endorsed by the Active Matter developers. It does not read, alter, inject into, or automate the game.
 
-**Open immediately:** [Launch the guide](./active_matter_solo_pve_field_guide.html) by downloading and opening the HTML, or [download the complete ZIP](./downloads/Active_Matter_Field_Operations_2_1_Community_Edition.zip). Once GitHub Pages is enabled, the site landing page (`index.html`) also provides a browser launch option.
+**Open immediately:** [Launch the guide](./active_matter_solo_pve_field_guide.html) by downloading and opening the HTML, or [download the complete ZIP](./downloads/Active_Matter_Field_Operations_2_1_1_Community_Edition.zip). Once GitHub Pages is enabled, the site landing page (`index.html`) also provides a browser launch option.
 
 ## Support the guide
 
@@ -27,12 +27,18 @@ The project is free and always optional to support: [☕ Buy Me a Coffee](https:
 
 ## Quick start
 
-1. Download and extract the [complete ZIP](./downloads/Active_Matter_Field_Operations_2_1_Community_Edition.zip).
+1. Download and extract the [complete ZIP](./downloads/Active_Matter_Field_Operations_2_1_1_Community_Edition.zip).
 2. Open `active_matter_solo_pve_field_guide.html` in Chrome, Edge or another modern browser.
 3. Choose your mode and explore. Ctrl+K opens the guide search.
 4. Before updating or moving the HTML, **Backup → Export complete backup** and keep that JSON file safe. Browser `file://` storage can vary by path and browser.
 
 > **Maps are not guaranteed 1:1 game geography.** Artwork is original illustrative scenery; community-sourced coordinate markers have their own provenance. The isometric tilt is a 2D projection, not measured elevation. A same-crop current in-game screenshot plus verified permissions is required for game-exact rendering. See [map accuracy notes](docs/MAP_PROVENANCE_AND_ACCURACY.md).
+
+## Map Reconciliation Workbench — screenshots first
+
+**[Open the Map Reconciliation Workbench source](tools/map_reconciliation.html)** · [How to use it](docs/MAP_WORKBENCH_USER_GUIDE.md) · [QA report](docs/MAP_WORKBENCH_QA.md)
+
+This free, offline companion utility aligns **your own current in-game screenshots** to 275 historic community marker samples. It records source control points, computes 2D alignment-error estimates, and exports local evidence JSON without uploading screenshots. It does not automatically produce game-exact terrain, actual game icon graphics, or building heights. See [map evidence requirements](docs/MAP_FIDELITY_EVIDENCE.md).
 
 ## Share & contribute
 
@@ -51,4 +57,4 @@ Development follows a layered *lasagna architecture*. New UI/features/persistenc
 - Original tactical artwork is **not official game imagery**. Coordinate sample provenance and third-party map-data considerations: [map source notes](docs/MAP_PROVENANCE_AND_ACCURACY.md).
 - No general software license has been selected for the source repository yet. Public visibility does not automatically grant permission for reuse; see [RIGHTS_AND_ATTRIBUTION.md](RIGHTS_AND_ATTRIBUTION.md).
 
-[Release notes](docs/CHANGELOG_2.1.md) · [Full offline ZIP](downloads/Active_Matter_Field_Operations_2_1_Community_Edition.zip) · [Steam community discussion](https://steamcommunity.com/app/2887580/discussions/0/569300630414416421/)
+[Release notes](docs/CHANGELOG_2.1.md) · [Full offline ZIP](downloads/Active_Matter_Field_Operations_2_1_1_Community_Edition.zip) · [Steam community discussion](https://steamcommunity.com/app/2887580/discussions/0/569300630414416421/)
