@@ -26,3 +26,12 @@ Changes to the published **source workbench**, after the above headless-browser 
 - **Not retested here:** actual browser clicking, upload/download dialogs, GitHub Pages rendering or local file persistence after this edit. The prior browser report applies only to the earlier code. No real in-game screenshot was evaluated. An updated ZIP was **not** built by this source commit; downloaders of the 2.1.1 ZIP may still have the earlier workbench.
 
 Official patch source for extraction changes: https://activematter.game/en/news/349 (5 Oct 2026).
+
+## Supplemental deterministic check — 20 October 2026 (dual-image source revision)
+- GitHub source JavaScript compiled successfully after the dual-image physical-landmark addition.
+- New `tests/map_fidelity_workflow.test.cjs` checks the 14-map/275-marker register, required DOM control names, legacy-coordinate-crop overlay guard, affine alignment from four named FIT controls, independent two-point CHECK, detection of a displaced holdout, and import rejection for invalid/duplicate/spoofed coordinates.
+- The Node test's logic also ran in an isolated JavaScript environment with in-memory file fixtures: PASS. **Not equivalent to a real Node filesystem run or browser manual-upload test.**
+- Manual physical anchors have ID format `manual-<digits>-<digits>`, source and target coords in 0–100%, labels escaped in UI, and FIT/CHECK role in v1 evidence JSON. Existing historic marker imports stay supported.
+- The reference image's height limit was changed to scroll instead of object-fit letterboxing, so clicks map to the image rectangle.
+
+**Remaining:** interactive Chrome/Edge target/source upload, click accuracy at different aspect ratios, same-build real screenshots, evidence review, and correct legal approval for redistributed map art. No 1:1 basemaps were released by these changes.
