@@ -34,6 +34,10 @@ The project is free and always optional to support: [☕ Buy Me a Coffee](https:
 
 > **Maps are not guaranteed 1:1 game geography.** Artwork is original illustrative scenery; community-sourced coordinate markers have their own provenance. The isometric tilt is a 2D projection, not measured elevation. A same-crop current in-game screenshot plus verified permissions is required for game-exact rendering. See [map accuracy notes](docs/MAP_PROVENANCE_AND_ACCURACY.md).
 
+## Interactive map-fidelity board
+
+**[Open the 14-map visual QA board](tools/map_fidelity_dashboard.html)**. It displays the status of each illustrated map, legacy sample coverage, patch risks, a link into that map's local screenshot-alignment workspace, and your local per-marker review count when the browser shares storage. This board is an **evidence management interface**, not a new set of accurate geographical baselayers.
+
 ## High-fidelity map rebuild — underway
 
 **[Full 14-map production register](docs/MAP_PRODUCTION_REGISTER.md)** · [Master roadmap](docs/MAP_FIDELITY_MASTER_ROADMAP.md) · [Airport benchmark](docs/AIRPORT_BENCHMARK.md) · [Machine-readable fidelity register](map-evidence/map_fidelity_register.v1.json)
