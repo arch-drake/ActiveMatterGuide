@@ -1,0 +1,17 @@
+# Development / personal artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+*.log
+*.bak
+*.tmp
+*backup*.json
+*personal*.json
+*encounter-memory*.json
+*field-progress*.json
+!docs/PUBLISH_PACKAGE_AUDIT.json
