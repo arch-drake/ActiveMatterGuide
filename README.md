@@ -6,6 +6,12 @@
 
 Active Matter // Field Operations is an independent browser-based companion. It doesn't interact with the game process or your account, inject software, read game memory, or require subscriptions.
 
+## New? Start here
+
+**[Read the player instructions →](docs/PLAYER_GUIDE.md)** — installation, Solo/Team PvE, optional PvP, rotating/isometric maps, music, collectibles, progress backup and troubleshooting.
+
+**Quick start:** download the complete 2.1 ZIP once published, extract it, open `active_matter_solo_pve_field_guide.html` in Chrome or Edge, and select **? Start here**. No game mods or account access required.
+
 ## Planned 2.1 release
 
 - 14 interactive map references; flat and pseudo-isometric rotation, zoom and pan
