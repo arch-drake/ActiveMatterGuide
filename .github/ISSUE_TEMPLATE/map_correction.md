@@ -1,21 +1,38 @@
 ---
-name: Map or gameplay correction
-about: Suggest an evidence-backed map marker, quest or enemy change
-title: "[Map/data] "
-labels: documentation
+name: Map / marker correction
+about: Report a location mismatch with build, variant and source evidence
+title: "[MAP] "
+labels: []
+assignees: []
 ---
-**Current game patch/build:**
 
-**Map, raid mode and variant:**
+## Map / game version
+Map:
+Build / patch:
+Raid mode / variant:
+Capture date:
+Coordinate source and screenshot crop/orientation:
 
-**Marker/quest/mechanic in question:**
+## Proposed correction
+Existing guide marker/road/building:
+Expected in-game position or status:
+Does patch 0.4.0.173, 0.4.0.192 or a newer patch affect this?:
 
-**Current guide claim:**
+## Evidence (links / metadata only)
+Official source / reference URL:
+Screenshot author and permitted use/redistribution terms:
+Reference image dimensions and SHA256 (if available):
+Map evidence JSON (no personal backups/screenshots):
 
-**Suggested correction:**
+## Calibration
+Number and spread of fixed FIT landmarks:
+Number and spread of independent CHECK landmarks:
+Fit RMS (%), holdout RMS (%), native image dimensions:
+Outliers / disagreements:
+Marker confidence: unverified / candidate / gameplay-confirmed:
 
-**Evidence URL, screenshot permission and date:**
+## Elevation
+If requesting 3D height: exact structure and cited multi-angle measurement; otherwise "unknown".
 
-**Official or community evidence?**
-
-**Does this require licensed in-game imagery?**
+## Security and privacy
+Please do not submit personal progress backup, account credentials, unlicensed map image archives or other users' screenshots without permission.
