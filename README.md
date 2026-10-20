@@ -6,6 +6,10 @@
 
 Active Matter // Field Operations is an independent browser-based companion. It doesn't interact with the game process or your account, inject software, read game memory, or require subscriptions.
 
+## Support the free guide
+
+[☕ Buy Me a Coffee — support the project](https://buymeacoffee.com/elderdrake) (optional one-time contribution). The full guide remains free, with no paid features or subscriptions required.
+
 ## New? Start here
 
 **[Read the player instructions →](docs/PLAYER_GUIDE.md)** — installation, Solo/Team PvE, optional PvP, rotating/isometric maps, music, collectibles, progress backup and troubleshooting.
