@@ -1,13 +1,9 @@
-# Community announcement draft — DO NOT POST UNTIL UPLOAD IS VERIFIED
+# Public announcement (hold until file upload and Pages validation)
 
-**Active Matter // Field Operations — free community guide**
+Active Matter // Field Operations 2.1.1 is a free, unofficial offline-first browser guide with Solo/Team PvE, optional PvP planning, 14 illustrated tactical references, monster dossiers, source-qualified investigation stages, 11 original music tracks, and local backups.
 
-We're preparing a standalone, browser-based PvE/PvP companion with investigation steps, monster dossiers, source-aware maps, original music, local backups and a player tutorial. The guide does not access or modify the game process.
+**Important:** The current map backgrounds are original illustrations, not current in-game maps or surveyed elevations. We are collecting screenshots to improve real geography, heights and marker alignment; please send sources with game version, raid variant and reuse permission.
 
-**Download and live launch:** to be announced once the large release files are uploaded and tested. Follow this repository for updates.
+Optional support: https://buymeacoffee.com/elderdrake — no paywall or subscription required.
 
-**Map development:** current atlas backgrounds are original conceptual art, **not** in-game-exact geography or heightmaps. We're collecting screenshots and permissioned reference data to reconcile map footprints, extraction markers, icons and real building heights. If you'd like to help, please open an issue with game build, raid variant, screenshot provenance and known landmarks.
-
-☕ Optional project support: https://buymeacoffee.com/elderdrake. The guide itself remains free.
-
-Feedback, corrections, and issue reports are welcome.
+Do not share a download/launch URL until the complete HTML and ZIP are uploaded and tested on GitHub.

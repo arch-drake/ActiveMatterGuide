@@ -1,0 +1,7 @@
+{
+  "release_zip_sha256": "f06bef249f39a4cfe28d34e1df241972a364ab204a544b14c49f9209896202bf",
+  "created_from": "verified Field Operations 2.1 release",
+  "privacy_review": "text search found no email addresses, API tokens or passwords; no browser backup included",
+  "software_license": "not selected",
+  "public_pack_adjustment": "Corrected source/tests/qa_deep.py source path read; no shipped HTML/runtime feature changes"
+}

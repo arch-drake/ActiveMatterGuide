@@ -1,0 +1,219 @@
+{
+  "release": "2.1.1",
+  "date": "2026-10-20",
+  "maps": [
+    {
+      "map": "airport",
+      "sourceCoordinates": true,
+      "background": "original illustration, not verified in-game geometry",
+      "file": "assets/maps/airport_tactical_detail.webp"
+    },
+    {
+      "map": "cargo",
+      "sourceCoordinates": true,
+      "background": "original illustration, not verified in-game geometry",
+      "file": "assets/maps/cargo_tactical_detail.webp"
+    },
+    {
+      "map": "dam",
+      "sourceCoordinates": true,
+      "background": "original illustration, not verified in-game geometry",
+      "file": "assets/maps/dam_tactical_detail.webp"
+    },
+    {
+      "map": "dogorsk",
+      "sourceCoordinates": true,
+      "background": "original illustration, not verified in-game geometry",
+      "file": "assets/maps/dogorsk_tactical_detail.webp"
+    },
+    {
+      "map": "downtown",
+      "sourceCoordinates": true,
+      "background": "original illustration, not verified in-game geometry",
+      "file": "assets/maps/downtown_tactical_detail.webp"
+    },
+    {
+      "map": "factory",
+      "sourceCoordinates": true,
+      "background": "original illustration, not verified in-game geometry",
+      "file": "assets/maps/factory_tactical_detail.webp"
+    },
+    {
+      "map": "headquarters",
+      "sourceCoordinates": true,
+      "background": "original illustration, not verified in-game geometry",
+      "file": "assets/maps/headquarters_tactical_detail.webp"
+    },
+    {
+      "map": "military",
+      "sourceCoordinates": true,
+      "background": "original illustration, not verified in-game geometry",
+      "file": "assets/maps/military_tactical_detail.webp"
+    },
+    {
+      "map": "ozernoe",
+      "sourceCoordinates": true,
+      "background": "original illustration, not verified in-game geometry",
+      "file": "assets/maps/ozernoe_tactical_detail.webp"
+    },
+    {
+      "map": "park",
+      "sourceCoordinates": true,
+      "background": "original illustration, not verified in-game geometry",
+      "file": "assets/maps/park_tactical_detail.webp"
+    },
+    {
+      "map": "scrapyard",
+      "sourceCoordinates": true,
+      "background": "original illustration, not verified in-game geometry",
+      "file": "assets/maps/scrapyard_tactical_detail.webp"
+    },
+    {
+      "map": "shegolskoe",
+      "sourceCoordinates": true,
+      "background": "original illustration, not verified in-game geometry",
+      "file": "assets/maps/shegolskoe_tactical_detail.webp"
+    },
+    {
+      "map": "gigastructure",
+      "sourceCoordinates": false,
+      "background": "original illustration, not verified in-game geometry",
+      "file": "assets/maps/gigastructure_tactical_detail.webp"
+    },
+    {
+      "map": "dalniy",
+      "sourceCoordinates": false,
+      "background": "original illustration, not verified in-game geometry",
+      "file": "assets/maps/dalniy_tactical_detail.webp"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "fracture_signal",
+      "title": "Fracture Signal",
+      "durationSeconds": 48.1,
+      "file": "assets/music/fracture_signal.mp3",
+      "creation": "original procedural synth / no third party samples"
+    },
+    {
+      "id": "shelter_afterglow",
+      "title": "Shelter Afterglow",
+      "durationSeconds": 48.1,
+      "file": "assets/music/shelter_afterglow.mp3",
+      "creation": "original procedural synth / no third party samples"
+    },
+    {
+      "id": "perimeter_drift",
+      "title": "Perimeter Drift",
+      "durationSeconds": 50.1,
+      "file": "assets/music/perimeter_drift.mp3",
+      "creation": "original procedural synth / no third party samples"
+    },
+    {
+      "id": "anomaly_choir",
+      "title": "Anomaly Choir",
+      "durationSeconds": 52.1,
+      "file": "assets/music/anomaly_choir.mp3",
+      "creation": "original procedural synth / no third party samples"
+    },
+    {
+      "id": "midnight_extraction",
+      "title": "Midnight Extraction",
+      "durationSeconds": 52.1,
+      "file": "assets/music/midnight_extraction.mp3",
+      "creation": "original procedural synth / no third party samples"
+    },
+    {
+      "id": "signal_interference",
+      "title": "Signal Interference",
+      "durationSeconds": 48.1,
+      "file": "assets/music/signal_interference.mp3",
+      "creation": "original procedural synth / no third party samples"
+    },
+    {
+      "id": "dead_relay",
+      "title": "Dead Relay",
+      "file": "assets/music/dead_relay.mp3",
+      "creation": "original procedural synth / no third-party samples"
+    },
+    {
+      "id": "monolith_dream",
+      "title": "Monolith Dream",
+      "file": "assets/music/monolith_dream.mp3",
+      "creation": "original procedural synth / no third-party samples"
+    },
+    {
+      "id": "red_zone",
+      "title": "Red Zone",
+      "file": "assets/music/red_zone.mp3",
+      "creation": "original procedural synth / no third-party samples"
+    },
+    {
+      "id": "glass_reactor",
+      "title": "Glass Reactor",
+      "file": "assets/music/glass_reactor.mp3",
+      "creation": "original procedural synth / no third-party samples"
+    },
+    {
+      "id": "dawn_after_extraction",
+      "title": "Dawn After Extraction",
+      "file": "assets/music/dawn_after_extraction.mp3",
+      "creation": "original procedural synth / no third-party samples"
+    }
+  ],
+  "checksums": {
+    "README_START_HERE.md": "bddc48eaf5f554d0fec995317aa75e9141f8ce07a08a13b407cdf64952ab08a1",
+    "active_matter_solo_pve_field_guide.html": "ad49d0ad5b49ad40fdf64e0daca5b0df2d2111b5f31194c586a4f4fe8dfb3322",
+    "assets/maps/airport_tactical_detail.webp": "46cb4ecdea2f9e3f65f157c6a0d1b07b8ea4677ad8a44617c88abbd4b60f4f60",
+    "assets/maps/cargo_tactical_detail.webp": "b569ffc6ab44a86fd9f9739944009535380c6193abb0ce3e6a721b9a9bbe87b4",
+    "assets/maps/dalniy_tactical_detail.webp": "349a7e5ed30e7ea8887a440fef23179a801de5f5878a08071b3609dcb8f3c731",
+    "assets/maps/dam_tactical_detail.webp": "de8ee12a63f9fff2dd782778f7acb32e2e6d3b3d4b674da6cd24b52618490263",
+    "assets/maps/dogorsk_tactical_detail.webp": "ced74585f6e6bf5d8773f41532b5b8b30e07f5e61efb5a32116d8727961af9fd",
+    "assets/maps/downtown_tactical_detail.webp": "8e8be0635f36a89a1cce874a72def89cd288056f5078041005e9ac9ee71737fc",
+    "assets/maps/factory_tactical_detail.webp": "25127d6a1907d53895d7b7a8129dc54c7371da1a6c913fc40fe8b92ff7a3649d",
+    "assets/maps/gigastructure_tactical_detail.webp": "4d91b2e69506e3bf3be7cb66722f07139735b2b92863f62455ca8ece6476a604",
+    "assets/maps/headquarters_tactical_detail.webp": "7aa7197b7d33bc822011b411aae743e2255b82645cb2a29354848b6b28122d07",
+    "assets/maps/military_tactical_detail.webp": "8f13db2399f7d0cfcf6d2ab134a739a50eac4090f33b6436b3a88a90d16c49c8",
+    "assets/maps/ozernoe_tactical_detail.webp": "588045a0c35c45f61e288ccb65d731a4272eedc030e15e60ab08c7ee68935c62",
+    "assets/maps/park_tactical_detail.webp": "b72c209f84496d678a46c566030c9e204db29c574879a6b13dd0ae099b40284e",
+    "assets/maps/scrapyard_tactical_detail.webp": "a962f05752f30fd96b787ddfbdbc576e2d40eccfa45a0e8fead7a8fb47dd7552",
+    "assets/maps/shegolskoe_tactical_detail.webp": "ae32f5186268e1309c3576210c3a5d8b2ff0eea67ad7f72b353493fc8eedaab8",
+    "assets/music/anomaly_choir.mp3": "da7ae790acce09d5b697b0e2bb39b4367ad80cc4ad2039815c2c452a3643364b",
+    "assets/music/dawn_after_extraction.mp3": "bc6e797b29799255a679ba13a9799d41baf936cea863f92e858172bc9296d824",
+    "assets/music/dead_relay.mp3": "517e67824059d62bf791ff1cbd0cdaca306216272866365d113e9942ed3279e3",
+    "assets/music/fracture_signal.mp3": "dfb6dd0d8a99573c3bc6d3373aaec2003ef544909636421185b1875e48c74220",
+    "assets/music/glass_reactor.mp3": "f6fc548e2cdbf4b4898f0ad067092774ad86db51ce2547be8c56202ac7505e2f",
+    "assets/music/midnight_extraction.mp3": "2acf26b46756f3e0004f02a67ee4118aefb00dc01116835f3109afb34c9b1c7d",
+    "assets/music/monolith_dream.mp3": "d894d818bf9e8e16eb55e789444e490ab1de222d3a4738e1cbc294058995f3cf",
+    "assets/music/perimeter_drift.mp3": "997e84c301389caedaee18648cab4c9bb4df63a716bcc5ae2782545c9bdbe3e7",
+    "assets/music/red_zone.mp3": "1d81f6f07f9643c0910686504b4f1a0d7941cb3d312d49f7086e65ac28819e60",
+    "assets/music/shelter_afterglow.mp3": "2a055f68791e89686acb693b9c63e204e4b6ff99aed9c05dddd4922a1731aa83",
+    "assets/music/signal_interference.mp3": "bf38b96c1deef02d670692724bb97fb7cde32a4068818a7805fb7b062be861c4",
+    "docs/CHANGELOG_2.0.md": "e6477f106af0e03588af3d5d3ecfd4648eda7e71864e3ba362a5adf843bdc876",
+    "docs/CHANGELOG_2.1.md": "d3f91afaf5404c07fdd3e236449889131de9337b30ffd2df30b1be4f3cb928c0",
+    "docs/CONTINUE_IN_NEW_CHAT.md": "45d32ba89595801d85422637fb09350e513e3b608c07c3ea3437fcf7e4099f72",
+    "docs/MAP_PROVENANCE_AND_ACCURACY.md": "66dd9d8908259ddd7799bfb6831c9baf4d1b0422151e6a480f59b36a9214db0a",
+    "docs/ORIGINAL_AUDIO_PERMISSIONS.md": "500574c44aa7aa4390f04b47562860be58b598185a3cb88932e1be1045aadc31",
+    "docs/TEST_REPORT.md": "6a15a365ef8b05015383c019b950f277b91f211b4fb2bf3d8226f9c60c223e29",
+    "docs/TEST_REPORT_2.1.md": "e8836db77f688930bfd8385cd8a8abd4ab161977a4011811b6903cb148294d8e",
+    "previews/all_maps_contact_sheet.jpg": "f93163fdf79aafa07d422530e3cdd4c7587dd9cb23333b6c2e8d20a478f69fa4",
+    "previews/map_v21_smoke.png": "6e12dd572a3bfe7cf6bd9ddfb016da757d161d28c48cc8f2537d8bc4740b9150",
+    "previews/release_map_airport_preview.png": "9975f4457356d2e657ae85d8918dfe22478ea6e05f61b64590505ba20577f413",
+    "previews/release_map_cargo_preview.png": "e7346bba661093979513ea2500be52338cbd030c2f06cdf7a671355fe5fe7a07",
+    "previews/release_monsters_preview.png": "efe3d15126a6215f912f336d13840802a8ee1ae28f295cc09cf2786aaf308491",
+    "source/README_DEV.md": "03f43414f28d7c9263dff6434f5d57d239fbc6b83bc6f39dc46974aa43f7fdd0",
+    "source/build_v21.py": "bc479b8e44a43a59770154b6a18ebe5af61076eadaeb54a21f2a33d14242caec",
+    "source/generate_original_music.py": "150d7e8593dc84cae3fbffeb09e3eca47512a988f94348187f0eb8612a3bc8ab",
+    "source/modules/01_core.js": "64c0efc68085661c1bd6660aebfd2b992a550399d825de6a82fb77e9fba45930",
+    "source/modules/02_pvp.js": "8347be1d7c384a0b93ddc629058c08759aef2001c14cda148be6067ad9d7e65b",
+    "source/modules/03_music_collectibles.js": "f846a942d1006bf9c0fc15689e8bb4421a1b4ff70e1e0da27485c8739ef6dfaa",
+    "source/modules/04_homebase_tour.js": "693ab8735713a77b06a7ee5a6a2ea793c2cafc4d4bfe9a617c67a520db311aea",
+    "source/modules/05_accessibility_music.js": "750db818d79ff680b6560410b85497ca9611e3be2c4d62e140e02149ae7f193b",
+    "source/polish_v21.py": "27a7fe126b4c217623bd20e6288babc283d592c802f6ab60ecb06b25666f4f22",
+    "source/tests/qa_deep.py": "c3e3d8e24f3415a70686c9812598c3f15ffce0e354c3c17ff297e5127a73e2c2",
+    "source/tests/qa_smoke.py": "01b9c6870f0a4c80e1c83406a6304139985cfade82c3fe0096617fc70c66d384",
+    "README.md": "c79fa766e24117e5874952afcd2d7b311c3b6f3cde007227dfa70fba63336e65",
+    "index.html": "a03525f3178b2327871bc3a711811883582a96a83d6240df2849cf6e52465879"
+  },
+  "notes": "Community Edition; all maps include switchable flat/pseudo-isometric projection, not real game 3D geography. New separate PvP + Signal Archive progress. All original music embedded."
+}

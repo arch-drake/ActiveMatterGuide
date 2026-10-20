@@ -1,45 +1,54 @@
 # ACTIVE MATTER // FIELD OPERATIONS — Community Edition
 
-**Free, unofficial Active Matter field companion · PvE + optional PvP**
+![Field Operations map interface](previews/map_v21_smoke.png)
 
-> ⚠️ **Publication in progress:** the public repository has been initialized, but the large self-contained HTML and complete release ZIP still need to be uploaded before the interactive guide can launch here. Do not announce a working GitHub Pages release until the two downloads are present and tested.
+**Version:** 2.1.1 · **Updated:** October 20, 2026 · **Status:** free, unofficial community companion
 
-Active Matter // Field Operations is an independent browser-based companion. It doesn't interact with the game process or your account, inject software, read game memory, or require subscriptions.
+> Independent fan-made reference tool. Not affiliated with or endorsed by the Active Matter developers. It does not read, alter, inject into, or automate the game.
 
-## Support the free guide
+**Open immediately:** [Launch the guide](./active_matter_solo_pve_field_guide.html) by downloading and opening the HTML, or [download the complete ZIP](./downloads/Active_Matter_Field_Operations_2_1_Community_Edition.zip). Once GitHub Pages is enabled, the site landing page (`index.html`) also provides a browser launch option.
 
-[☕ Buy Me a Coffee — support the project](https://buymeacoffee.com/elderdrake) (optional one-time contribution). The full guide remains free, with no paid features or subscriptions required.
+## Support the guide
 
-## New? Start here
+The project is free and always optional to support: [☕ Buy Me a Coffee](https://buymeacoffee.com/elderdrake). No subscriptions or donation-gated features.
 
-**[Read the player instructions →](docs/PLAYER_GUIDE.md)** — installation, Solo/Team PvE, optional PvP, rotating/isometric maps, music, collectibles, progress backup and troubleshooting.
+## Instructions for players
 
-**Quick start:** download the complete 2.1 ZIP once published, extract it, open `active_matter_solo_pve_field_guide.html` in Chrome or Edge, and select **? Start here**. No game mods or account access required.
+**[Read the full player guide](docs/PLAYER_GUIDE.md)** for installation, PvE and PvP, rotating maps, collectibles, backup/restore, and troubleshooting.
 
-## 2.1.1 community package (release upload pending)
+## What it does
 
-- 14 interactive map references; flat and pseudo-isometric rotation, zoom and pan
-- Separate Solo/Team PvE and optional Open PvP planners and local progress
-- Investigation tracker and monster/anomaly dossier library
-- Collectible cassette notes and 11 original synthesized music tracks
-- Twelve interface themes, Homebase walkthrough and import/export of local progress
+- **14 interactive maps** with flat and pseudo-isometric viewing, rotation, zoom and manual map notes; 12 with limited community-derived coordinate markers.
+- **PvE and optional PvP:** Solo/Team PvE checklists, a separate Open Solo/Squad PvP field log, route planning and investigation progress.
+- **20 monster/anomaly dossiers**, 53 curated investigation chains with 217 documented criteria (coverage is **not** guaranteed exhaustive).
+- **Signal Archive:** personal music collectible field journal, cited community location leads and 11 original synthesizer tracks.
+- **12 themes**, guided tour, Homebase explainer, quick navigation and exportable browser-local backups.
+- **Fully offline gameplay companion:** no login, subscription, overlay, game-memory inspection or mod installation.
 
-**Accuracy:** the tactical backgrounds are *illustrations*, not official screenshots or game-exact maps. Some marker coordinates are attributed to community sources and can be patch-sensitive. Isometric viewing is a 2D projection, not actual measured terrain.
+## Quick start
 
-## Get the guide
+1. Download and extract the [complete ZIP](./downloads/Active_Matter_Field_Operations_2_1_Community_Edition.zip).
+2. Open `active_matter_solo_pve_field_guide.html` in Chrome, Edge or another modern browser.
+3. Choose your mode and explore. Ctrl+K opens the guide search.
+4. Before updating or moving the HTML, **Backup → Export complete backup** and keep that JSON file safe. Browser `file://` storage can vary by path and browser.
 
-Once the 2.1.1 public files are uploaded, use the [browser launcher](./index.html) or open `active_matter_solo_pve_field_guide.html` from the extracted release ZIP. Back up local progress when updating or moving browser file paths.
+> **Maps are not guaranteed 1:1 game geography.** Artwork is original illustrative scenery; community-sourced coordinate markers have their own provenance. The isometric tilt is a 2D projection, not measured elevation. A same-crop current in-game screenshot plus verified permissions is required for game-exact rendering. See [map accuracy notes](docs/MAP_PROVENANCE_AND_ACCURACY.md).
 
-## Contributing and correction reports
+## Share & contribute
 
-Use [Issues](../../issues) to report broken buttons, stale quests, misleading map pins or inaccurate lore. Please provide your game version, map, mode, and reference screenshots/links. Read [CONTRIBUTING.md](CONTRIBUTING.md) before posting. **Do not upload personal save/backups or third-party copyrighted map textures.**
+Found a wrong loot lead, a missing monster behavior, a broken control or a patch change? Open a GitHub **Issue** using the templates in `.github/ISSUE_TEMPLATE/`. Include the current game patch, mode/variant, map, and evidence when you can. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## Development
+**Please do not post personal browser backup files, authentication tokens, game account credentials or copyrighted in-game map textures in issues.**
 
-Source is maintained in layered modules (core → validation/storage → services → features → presentation) and bundled into a single offline HTML. See [development architecture](docs/ARCHITECTURE.md). A public release is not considered ready until the package, tests and changelog match.
+## Development and testing
 
-## Rights
+Development follows a layered *lasagna architecture*. New UI/features/persistence logic live in focused `source/modules/` files; a bundled single HTML is shipped for easy offline use. See [developer notes](source/README_DEV.md) and [2.1 QA report](docs/TEST_REPORT_2.1.md). The automated browser tests use in-memory browser storage, **not actual `file://` persistence**; testers should verify backups manually.
 
-Independent fan work. Active Matter names and related game assets belong to their respective rights holders. The original music and artwork are not official. **A general open-source license has not yet been selected.** Public visibility alone does not grant redistribution rights; see [RIGHTS_AND_ATTRIBUTION.md](RIGHTS_AND_ATTRIBUTION.md).
+## Credits and rights
 
-[Release upload checklist](docs/PUBLISH_CHECKLIST.md) · [Steam community thread](https://steamcommunity.com/app/2887580/discussions/0/569300630414416421/)
+- Active Matter is the intellectual property of its respective creators and publisher.
+- Music in this project was procedurally synthesized for this guide; see [audio permissions](docs/ORIGINAL_AUDIO_PERMISSIONS.md).
+- Original tactical artwork is **not official game imagery**. Coordinate sample provenance and third-party map-data considerations: [map source notes](docs/MAP_PROVENANCE_AND_ACCURACY.md).
+- No general software license has been selected for the source repository yet. Public visibility does not automatically grant permission for reuse; see [RIGHTS_AND_ATTRIBUTION.md](RIGHTS_AND_ATTRIBUTION.md).
+
+[Release notes](docs/CHANGELOG_2.1.md) · [Full offline ZIP](downloads/Active_Matter_Field_Operations_2_1_Community_Edition.zip) · [Steam community discussion](https://steamcommunity.com/app/2887580/discussions/0/569300630414416421/)

@@ -2,63 +2,64 @@
 
 **Free, unofficial fan guide.** Runs in a modern desktop browser; no game installation changes, accounts, mods, subscriptions, or game-memory access.
 
-> **Publication status:** if the launch/download buttons on the website are missing, the release files are still being uploaded. The project owner will announce when the public download is available.
+> **Public publication:** if launch/download buttons on the website are missing, the release files are still being uploaded. The project owner will announce when the public download is available.
 
 ## 1. Download and open
 
 **Offline (recommended):**
-1. Download `Active_Matter_Field_Operations_2_1_Community_Edition.zip` from the repository's `downloads/` folder (or a published GitHub Release).
-2. Extract the ZIP **first**, into an ordinary folder. Don't attempt to open the HTML inside the ZIP viewer.
-3. Open `active_matter_solo_pve_field_guide.html` with a recent **Chrome** or **Edge** browser.
-4. Choose **? Start here** for the six-step introduction. The guide contains its map artwork and eleven original audio tracks in the HTML, so normal guide use requires no connection.
 
-**Online (when GitHub Pages is enabled):** visit the [project website](https://arch-drake.github.io/ActiveMatterGuide/), then choose **Launch the field guide**. The local download is still best for privacy and offline use.
+1. Download `Active_Matter_Field_Operations_2_1_Community_Edition.zip` from the repository's `downloads/` folder or GitHub Releases once published.
+2. **Extract** the ZIP into an ordinary folder. Don't try to open the HTML inside a ZIP preview.
+3. Double-click `active_matter_solo_pve_field_guide.html` and open it in a recent **Chrome** or **Edge** browser.
+4. Click **? Start here** for the six-step introduction. Artwork and eleven original audio tracks are already embedded in the HTML, so normal guide use does not require internet access.
 
-## 2. Select your mode
+**Online:** when GitHub Pages is enabled, visit [the project website](https://arch-drake.github.io/ActiveMatterGuide/) and choose **Launch the field guide**.
 
-Use the **Solo PvE / Team PvE** controls for their respective field advice and progression. Choose **PvP** for the separate Open Raid planner: Solo Open or Squad Open, preparation checklist and after-action notes. This is a *planning aid*, not real-time player tracking. PvP notes do not overwrite PvE checklists.
+## 2. Choose PvE or PvP
 
-## 3. Navigate the maps
+Use Solo PvE and Team PvE controls for PvE recommendations and progress. The separate **PvP** section is an optional Open Solo/Squad planner with its own preparation checklist and private after-action notes. This is a planning/reference tool, not real-time opponent tracking or game automation. PvP notes do not overwrite your PvE checklists.
 
-- Open **Maps** and select a location and raid variant.
-- Switch between **Flat** and **Isometric** presentation; use **↶ / ↷** to rotate (15° steps), **+ / −** or the wheel to zoom, drag to pan, and the reset control to return to a usable angle.
-- Select a pin to see its description and evidence caveat; search and filter markers by category.
-- **My screenshot** can display a screenshot you provide. Align with at least three known landmarks before relying on positions. The guide does not automatically extract precise in-game coordinates.
-- The 14 included tactical backgrounds and relief are **illustrative**, **not exact in-game map screenshots**. The isometric transform isn't measured terrain, and community markers may be stale. Do not navigate by artistic roads, water or elevations.
+## 3. Maps and isometric controls
 
-## 4. Investigations, monsters and Homebase
+- Click **Maps**; select the map and raid variant.
+- Choose **Flat** or **Isometric** projection; use **↶ / ↷** to rotate in 15-degree steps, **+ / −** or the wheel to zoom, drag to pan, and reset to return to a known angle.
+- Select marker pins for evidence notes, and search/filter them by category.
+- **My screenshot** can display your own game screenshot, but requires manual alignment. Check three fixed landmarks before trusting a marker position.
+- The built-in tactical maps are **illustrative artwork, not game-exact geography**. Isometric projection is a 2D viewing effect, not measured elevation. Community markers and mechanics may be patch-sensitive.
 
-Use **Investigations** for documented stage checklists; **Monsters** for encounter notes and verified-vs-community claims; and **Homebase** for a beginner overview of connected systems. All completion marks are recorded manually and do **not** update the actual game.
+## 4. Investigations, monsters, Homebase
+
+Open **Investigations** for manually recorded objectives, **Monsters** for encounters and source-qualified enemy information, and **Homebase** for an introductory breakdown. The guide does not detect or complete tasks in the game itself.
 
 ## 5. Music, themes and collectibles
 
-- Use the lower-right music dock to play original instrumental loops, shuffle/favorite tracks and adjust volume. Music does not autoplay.
-- Choose among twelve visual themes and three display densities for readability.
-- The **Signals** tab has a personal cassette/music collection journal. Reported loot locations are **community leads, not guaranteed spawns**; music cassettes and cassette recorders are not necessarily the same item.
+- Use the lower-right music player to play the eleven original synth loops; control shuffle, favorites, volume and track selection. The player does not autoplay.
+- Change between twelve themes and three layout densities.
+- Open **Signals** for a personal collectible music/cassette journal. Community-reported cassette and recorder locations are **leads, not guaranteed music drops**. Recorders and music cassettes aren't necessarily the same kind of item.
 
-## 6. Save, back up and move your progress
+## 6. Protect your progress
 
-1. Open **Backup** and **export a complete guide JSON backup** regularly.
-2. Save it privately on your device; never post it publicly to GitHub.
-3. Before an update, browser change, rename or move, **export from the old guide first**.
-4. Open the new guide, use **Backup → Import/restore**, and check your checklists/notes before deleting old files.
+1. Go to **Backup** and export a complete JSON backup. Save it somewhere private.
+2. **Before updating, renaming/moving the HTML file, changing browsers or computers, export from the older guide first.**
+3. Open the updated guide and use **Backup → Import/restore**, then verify your progress and notes before deleting older copies.
+4. Never upload personal backups to GitHub issues or the public repository.
 
-Progress is stored in your **browser's local storage**, not in the downloadable HTML or on GitHub. Browser `file://` storage may vary by path and browser. Clearing site data or switching computers can lose unexported records.
+Progress is stored in your browser, not embedded in the downloadable HTML. Browser `file://` local storage can be path-dependent. Clearing browsing data or switching browsers can lose progress without a backup.
 
-## Quick troubleshooting
+## Troubleshooting
 
-| Problem | Check |
+| Problem | Solution |
 | --- | --- |
-| Launch button missing | The public release files haven't been uploaded yet. Check the repository or Releases page. |
-| HTML opens as text | Open the **extracted** `.html` file using Chrome or Edge. |
-| My progress disappeared | Check whether you moved paths or browsers; restore a previous JSON backup. |
-| The map doesn't look like the game | Use **My screenshot** with manual alignment; included geographic art is conceptual. |
-| Map markers look wrong | Compare the raid variant, map crop, patch date and source-quality label; report reproducible evidence. |
-| No sound | Click Play manually; check the dock's volume, browser permissions and device volume. |
-| Download/save blocked | Use a desktop Chrome/Edge profile that permits downloads and local storage, then export a backup. |
+| Launch button missing on website | Public release files may not have been uploaded yet; check repository and Releases. |
+| HTML opens as text | Open the **extracted** `.html` with Chrome or Edge, not inside ZIP preview. |
+| My progress is missing | Check browser and file path; restore your exported guide JSON. |
+| Map doesn't match the game | Included maps are conceptual. Use your own screenshot with alignment. |
+| Markers or exits appear wrong | Confirm map variant and game patch, then report evidence in Issues. |
+| Music is silent | Press Play, adjust player and device volume; audio never auto-starts. |
+| Backups won't save | Check browser download permission and disk space. |
 
-## Feedback and corrections
+## Report issues or inaccuracies
 
-Open a [GitHub Issue](https://github.com/arch-drake/ActiveMatterGuide/issues). Please include the guide version, browser, map, game patch, mode, what happened and safe screenshots. Don't upload account tokens, personal backups, unauthorized game assets or someone else's copyrighted music/map textures.
+Visit [GitHub Issues](https://github.com/arch-drake/ActiveMatterGuide/issues). Include guide version, OS/browser, game patch, map, raid mode, steps and evidence. **Never post API tokens, account credentials, private backups or unlicensed copyrighted map/game assets.**
 
-**Disclaimer:** independently built community companion, not affiliated with the game's publisher. Source and rights notes: [RIGHTS_AND_ATTRIBUTION.md](../RIGHTS_AND_ATTRIBUTION.md).
+See [source rights and attribution](../RIGHTS_AND_ATTRIBUTION.md). This guide is independent and not affiliated with the game publisher.
