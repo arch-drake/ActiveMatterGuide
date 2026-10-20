@@ -43,3 +43,9 @@ No trademarks or third-party soundtrack are claimed by this unofficial guide. Ga
 ## Support
 
 Optional one-time tips: https://buymeacoffee.com/elderdrake. The guide is completely free.
+
+## October 20 source updates after 2.1.1 release
+
+The [Map Reconciliation Workbench](tools/map_reconciliation.html) has been upgraded to compare a private reference map image and your in-game screenshot using named fixed physical landmarks. Historic candidate markers remain hidden during manually sourced calibration unless the source crop matches the historic dataset exactly. Marker-by-marker review results can be recorded in local evidence JSON. This newer workbench is **not guaranteed to be in the previously packaged release ZIP**.
+
+The optional [Visual Upgrade 2.1.2 installer](tools/visual_upgrade_2_1_2.html) adds original conceptual artwork alongside encyclopedic records and location cards. It is a separate local browser tool, not a patch to current map geography and not yet an audited replacement 2.1.1 ZIP. Export a full guide backup before trying it. The current map-fidelity production status is in [the master plan](docs/MAP_FIDELITY_MASTER_ROADMAP.md) and [register](docs/MAP_PRODUCTION_REGISTER.md).
