@@ -35,3 +35,15 @@
 | Dalniy Island | Regional conceptual view | Unknown | No verified local layer |
 
 Potential evidence: official patch notes https://activematter.game/en/news; source provenance https://github.com/rileyedward/portal-atlas/blob/main/docs/data-import.md. Do **not** redistribute copyrighted game/community maps without permission.
+
+## Live-build accuracy gate — October 2026
+
+Official notes document that several extraction positions changed after the historic marker sampling:
+
+- [Update 0.4.0.163](https://activematter.game/en/news): extraction points around Dalniy Island shifted (30 September).
+- [Update 0.4.0.173](https://activematter.game/en/news/349): stationary extraction points in Headquarters, Airport and Downtown moved near new cover (5 October).
+- [Update 0.4.0.192](https://activematter.game/en/news/356): Military Base: Unstable Zone monster-artifact marker timing changed (15 October); dynamic indicators should not be treated as fixed landmarks.
+
+**Rule:** Mark E/T extraction and dynamic anomaly markers as patch-sensitive by default. Never transform one historically sourced marker into a verified current marker solely because it participates in a low-error affine fit. Use FIT/CHECK role separation, independent screenshots of physical structures, and current mode/build-specific evidence. Building heights require multi-angle or licensed measured data. Do not replace the 14 illustrated backgrounds with guessed geometry.
+
+The standalone workbench source now supports independent check points and export metrics. It remains a preparation tool; neither the current 2.1.1 release ZIP nor these automated tests establish game-exact geography.
