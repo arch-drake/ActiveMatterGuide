@@ -24,7 +24,7 @@ footer{border-top:1px solid #42606c;margin-top:55px;padding-top:20px;color:var(-
 <p class="note" id="releaseStatus" role="status">Checking whether the release files are uploaded. If they're not yet available, check the repository for publication progress.</p>
 <div class="actions">
 <a class="button primary" id="launch" hidden href="./active_matter_solo_pve_field_guide.html">Launch the field guide →</a>
-<a class="button" id="download" hidden href="./downloads/Active_Matter_Field_Operations_2_1_Community_Edition.zip" download>Download complete offline ZIP ↓</a>
+<a class="button" id="download" hidden href="./downloads/Active_Matter_Field_Operations_2_1_1_Community_Edition.zip" download>Download complete offline ZIP ↓</a>
 <a class="button" href="https://github.com/arch-drake/ActiveMatterGuide/blob/main/docs/PLAYER_GUIDE.md">Read player instructions →</a>
 <a class="button" href="https://buymeacoffee.com/elderdrake" target="_blank" rel="noopener noreferrer">☕ Support this free project</a>
 <a class="button" href="https://github.com/arch-drake/ActiveMatterGuide">View source and issues ↗</a>
@@ -39,7 +39,7 @@ footer{border-top:1px solid #42606c;margin-top:55px;padding-top:20px;color:var(-
 </main>
 <script>
 (async()=>{
- const files=[['launch','active_matter_solo_pve_field_guide.html'],['download','downloads/Active_Matter_Field_Operations_2_1_Community_Edition.zip']];
+ const files=[['launch','active_matter_solo_pve_field_guide.html'],['download','downloads/Active_Matter_Field_Operations_2_1_1_Community_Edition.zip']];
  let ready=0;
  for(const [id,path] of files){try{const r=await fetch('./'+path,{method:'HEAD',cache:'no-store'});if(r.ok){document.getElementById(id).hidden=false;ready++}}catch(_){}}
  document.getElementById('releaseStatus').textContent=ready===2?'Release files are available. You can launch online or download for fully offline use.':ready===0?'Repository setup is underway. The complete guide and ZIP have not yet been uploaded.':'Partial upload detected. Please wait for both the guide and ZIP to be available before sharing the release.';

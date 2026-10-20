@@ -16,7 +16,7 @@ Active Matter // Field Operations is an independent browser-based companion. It 
 
 **Quick start:** download the complete 2.1 ZIP once published, extract it, open `active_matter_solo_pve_field_guide.html` in Chrome or Edge, and select **? Start here**. No game mods or account access required.
 
-## Planned 2.1 release
+## 2.1.1 community package (release upload pending)
 
 - 14 interactive map references; flat and pseudo-isometric rotation, zoom and pan
 - Separate Solo/Team PvE and optional Open PvP planners and local progress
@@ -28,7 +28,7 @@ Active Matter // Field Operations is an independent browser-based companion. It 
 
 ## Get the guide
 
-After the public files are uploaded, use the [browser launcher](./index.html) or open `active_matter_solo_pve_field_guide.html` from the extracted release ZIP. Back up local progress when updating or moving browser file paths.
+Once the 2.1.1 public files are uploaded, use the [browser launcher](./index.html) or open `active_matter_solo_pve_field_guide.html` from the extracted release ZIP. Back up local progress when updating or moving browser file paths.
 
 ## Contributing and correction reports
 
