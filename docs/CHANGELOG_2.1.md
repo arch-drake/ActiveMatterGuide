@@ -20,3 +20,13 @@
 - Browser smoke 11/11 pass; extended 13/13 pass (56 map render combinations, marker selection and isometric-note placement, PvP, signal notes, theme/density, favorites, backup, original state preservation). No page errors observed.
 - Browser testing used `page.set_content` plus simulated storage because real file:// and localhost navigation were administratively blocked; it does not prove actual persistence across PC browser restarts.
 - The map backgrounds are artistic, not game-exact. All in-game marker artworks, 3D elevations, and precisely aligned variants require game screenshots and rights review. No sourced game-image assets are redistributed.
+
+## 20 October 2026 — source follow-up (not a new full release)
+
+- Added complete 14-map fidelity roadmap, Airport benchmark, per-map production register and machine-readable 275-sample candidate status.
+- Added dual-image **physical landmark** calibration to the standalone map reconciliation tool (source + target in-game screenshots, FIT and CHECK points).
+- Added same-coordinate-crop guard to prevent automatic historic marker overlays against differently cropped input source images.
+- Added per-marker review status, evidence link, game build/variant and local export/import support. Original coordinates remain unchanged; user reviews are not independent certification.
+- Added offline optional [2.1.2 concept-art installer](../tools/visual_upgrade_2_1_2.html) with 32 atmosphere scenes. The complete 2.1.1 bundled guide has not been rebuilt as a new downloadable release ZIP here.
+- Expanded map-issue template, CONTRIBUTING instructions and deterministic regression checks. JS syntax plus geometry/import/review deterministic tests passed; real current-build screenshot and interactive browser acceptance are **not done**.
+- Original basemaps still illustrative. Current screenshot-authenticated game geography 0/14; independently authenticated candidate markers 0/275.
