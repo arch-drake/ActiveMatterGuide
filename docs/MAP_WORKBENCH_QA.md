@@ -35,3 +35,8 @@ Official patch source for extraction changes: https://activematter.game/en/news/
 - The reference image's height limit was changed to scroll instead of object-fit letterboxing, so clicks map to the image rectangle.
 
 **Remaining:** interactive Chrome/Edge target/source upload, click accuracy at different aspect ratios, same-build real screenshots, evidence review, and correct legal approval for redistributed map art. No 1:1 basemaps were released by these changes.
+
+## Map-fidelity board source review (20 Oct)
+- Added a self-contained map status board for all 14 entries, 275 historic samples total, concept vs source-sample distinction, search/priority/coverage filters and offline local per-map marker review counts.
+- Map links pass a validated `map` query parameter to the workbench; unknown values are ignored.
+- Dashboard JavaScript parsed successfully; its output and responsive layout have not been manually reviewed on Windows. No basemap geometry was imported.
