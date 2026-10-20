@@ -34,6 +34,12 @@ The project is free and always optional to support: [☕ Buy Me a Coffee](https:
 
 > **Maps are not guaranteed 1:1 game geography.** Artwork is original illustrative scenery; community-sourced coordinate markers have their own provenance. The isometric tilt is a 2D projection, not measured elevation. A same-crop current in-game screenshot plus verified permissions is required for game-exact rendering. See [map accuracy notes](docs/MAP_PROVENANCE_AND_ACCURACY.md).
 
+## High-fidelity map rebuild — underway
+
+**[Full 14-map production register](docs/MAP_PRODUCTION_REGISTER.md)** · [Master roadmap](docs/MAP_FIDELITY_MASTER_ROADMAP.md) · [Airport benchmark](docs/AIRPORT_BENCHMARK.md) · [Machine-readable fidelity register](map-evidence/map_fidelity_register.v1.json)
+
+As of October 20, **0/14 illustrated basemaps are certified against authentic same-build game overhead imagery**, and **0/275 legacy candidate marker coordinates are authenticated as current**. The production register provides a precise release gate rather than implying that plausible artwork equals real geography. The workbench now supports **two-image fixed-physical-landmark FIT/CHECK alignment**, alongside imported historic marker evidence. This is a production capability, not a statement that the actual map content has already been rebuilt.
+
 ## Map Reconciliation Workbench — screenshots first
 
 **[Open the updated Map Reconciliation Workbench source](tools/map_reconciliation.html)** · [How to use it](docs/MAP_WORKBENCH_USER_GUIDE.md) · [QA report](docs/MAP_WORKBENCH_QA.md)
