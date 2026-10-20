@@ -30,3 +30,5 @@
 - Added offline optional [2.1.2 concept-art installer](../tools/visual_upgrade_2_1_2.html) with 32 atmosphere scenes. The complete 2.1.1 bundled guide has not been rebuilt as a new downloadable release ZIP here.
 - Expanded map-issue template, CONTRIBUTING instructions and deterministic regression checks. JS syntax plus geometry/import/review deterministic tests passed; real current-build screenshot and interactive browser acceptance are **not done**.
 - Original basemaps still illustrative. Current screenshot-authenticated game geography 0/14; independently authenticated candidate markers 0/275.
+
+- Added polished offline [map fidelity status board](../tools/map_fidelity_dashboard.html) showing the 14 original thumbnail illustrations with clear "not certified" status and deep links to map-specific calibration tools; no fabricated geometry or game texture was added.
