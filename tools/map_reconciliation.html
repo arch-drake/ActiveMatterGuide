@@ -163,5 +163,8 @@ $('#referenceCanvas').addEventListener('click',ev=>{
  landmarkArmed=false;$('#referenceCanvas').classList.remove('clickmode');$('#canvas').classList.add('clickmode');
  $('#status').textContent='Source anchor set. Click the SAME physical point in the GAME screenshot.';
 });
+// Optional map deep link from the offline map-fidelity board; allow only a known map id.
+const requestedMap=new URLSearchParams(location.search).get('map');
+if(ALL_MAPS.includes(requestedMap))$('#map').value=requestedMap;
 updateMap();
 </script></body></html>
