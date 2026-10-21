@@ -31,11 +31,14 @@ footer{margin:20px auto;max-width:1400px;padding:18px 20px;border-top:1px solid 
 <label for="variantSelect">Raid variant</label><select id="variantSelect"></select>
 <div id="locationStatus" class="result" aria-live="polite"></div>
 <div class="actions"><a id="sourceLink" href="https://activematterhelp.ru/wiki/maps" target="_blank" rel="noopener noreferrer">Source page ↗</a> <a id="patchLink" href="https://activematter.game/en/news" target="_blank" rel="noopener noreferrer">Relevant patch ↗</a></div>
+<label for="targetBuild">Current screenshot game build</label><input id="targetBuild" type="text" placeholder="e.g. 0.4.0.199" maxlength="60">
+<label for="targetMode">Screenshot play mode</label><select id="targetMode"><option value="Isolated PvE">Isolated PvE</option><option value="Open PvPvE">Open PvPvE</option><option value="Unstable Zone">Unstable Zone</option><option value="Other">Other / special</option></select>
 <label for="imageFile">Original map screenshot / permitted image (PNG, WebP, JPEG)</label><input id="imageFile" type="file" accept="image/png,image/jpeg,image/webp">
 <p class="dim">For privacy, images stay in this tab. They are never exported with evidence. Keep original map screenshots in your own storage.</p>
 <label for="evidenceFile">Import matching workbench evidence JSON</label><input id="evidenceFile" type="file" accept="application/json,.json">
 <a href="map_reconciliation.html" id="workbenchLink">Open map alignment workbench ↗</a>
 <div class="result" id="evidenceState" aria-live="polite">No trusted calibration loaded. Marker overlays remain hidden.</div>
+<label class="check"><input id="confirmIdentity" type="checkbox"> My evidence comes from this identical screenshot and image crop; required only for older evidence without a SHA-256 digest.</label>
 <label class="check"><input id="allowOverlay" type="checkbox" disabled> Show historical candidate markers after checking the screenshot identity, crop, alignment, and raid mode. These pins are NOT official or live-verified.</label>
 <div class="note"><strong>Important:</strong> A map screenshot alone cannot establish building heights. Isometric mode in the main guide is still a 2D effect until real elevations are measured.</div>
 </section>
@@ -67,7 +70,7 @@ const MAX_IMAGE=35*1024*1024,MAX_EVIDENCE=4*1024*1024;
 let id='airport',imgFile=null,imgUrl=null,imgInfo=null,sha=null,evidence=null,scale=1,offsetX=0,offsetY=0,drag=null,drawn=[];
 function prettyCode(c){return ({E:'Permanent exit',T:'Timed exit',K:'Key / locked door',M:'Monster',A:'Anomaly',S:'Stash',Z:'Landmark',Q:'Objective',D:'Document',L:'Loot',C:'Container',F:'Physical landmark'}[c]||'Other ('+c+')')}
 function source(){return SOURCES.find(x=>x.id===id)}
-function resetProof(){evidence=null;$('allowOverlay').checked=false;$('allowOverlay').disabled=true;$('evidenceState').textContent='No matching calibration loaded. Marker overlay hidden.';drawPins()}
+function resetProof(){evidence=null;$('confirmIdentity').checked=false;$('allowOverlay').checked=false;$('allowOverlay').disabled=true;$('evidenceState').textContent='No matching calibration loaded. Marker overlay hidden.';drawPins()}
 function resetImage(){if(imgUrl)URL.revokeObjectURL(imgUrl);imgUrl=null;imgInfo=null;imgFile=null;sha=null;$('baseImage').removeAttribute('src');$('stage').classList.add('hidden');$('placeholder').classList.remove('hidden');scale=1;offsetX=offsetY=0;resetProof()}
 function changeMap(){id=$('mapSelect').value;const v=source();resetImage();$('imageFile').value='';$('evidenceFile').value='';$('variantSelect').replaceChildren();for(const x of v.variants){const o=document.createElement('option');o.value=x.url;o.textContent=x.name;$('variantSelect').append(o)}$('sourceLink').href=v.source;$('patchLink').href=v.patch||'https://activematter.game/en/news';$('workbenchLink').href='map_reconciliation.html?map='+encodeURIComponent(id);$('locationStatus').textContent=v.region+' · '+(v.kind==='regional_overview'?'Regional overview, NOT its own raid':v.variants.length+' documented variant(s)')+' · '+v.legacyCount+' historic source candidates. '+v.warning;fillTypes();listMarkers();showStatus()}
 function showStatus(){$('displayStatus').textContent=imgInfo?'Local '+imgInfo.width+' × '+imgInfo.height+' screenshot displayed'+($('allowOverlay').checked?' · historical candidate pins projected (not certified)':' · source marker pins hidden'):'No source image loaded. No geometry has been invented.'}
@@ -82,9 +85,14 @@ function assess(e){const reasons=[];
  const M=e?.calibration?.matrix;
  if(!Array.isArray(M)||M.length!==6||!M.every(Number.isFinite))reasons.push('Missing numerical six-coefficient affine transform in exported calibration.');
  if(pts.some(p=>p.manual===true)&&e?.sameLegacyCrop!==true)reasons.push('Manual landmark source differs from historic marker coordinate crop; do not transfer pins.');
+ if(String(e?.version||'').trim().toLowerCase()!==String($('targetBuild').value||'').trim().toLowerCase()||!$('targetBuild').value.trim())reasons.push('Game build must match the screenshot evidence.');
+ if(String(e?.mode||'').trim().toLowerCase()!==String($('targetMode').value||'').trim().toLowerCase())reasons.push('Play mode differs from calibrated screenshot evidence.');
+ const variant=$('variantSelect').selectedOptions[0]?.textContent?.trim()||'';
+ if(!e?.raidVariant||String(e.raidVariant).trim().toLowerCase()!==variant.toLowerCase())reasons.push('Raid variant missing or differs from calibrated screenshot.');
  if(!imgInfo||String(e?.screenshotFile||'')!==imgFile?.name||Number(e?.screenshotSize?.width)!==imgInfo.width||Number(e?.screenshotSize?.height)!==imgInfo.height)reasons.push('Reference image name or natural dimensions differ from the evidence screenshot.');
  if(e?.screenshotSha256&&sha&&e.screenshotSha256!==sha)reasons.push('Screenshot SHA-256 differs from calibrated reference.');
  if(e?.screenshotSha256&&!sha)reasons.push('Evidence requires screenshot hash, but browser could not compute it.');
+ if(!e?.screenshotSha256&&!$('confirmIdentity').checked)reasons.push('Legacy evidence has no SHA-256; explicitly verify identical image bytes/crop first.');
  if(Array.isArray(M)&&M.length===6&&checks.length>=2){const errs=checks.map(p=>Math.hypot(project(p,M).x-p.u,project(p,M).y-p.v));if(errs.some(x=>!Number.isFinite(x)))reasons.push('Invalid check-point residual.')}
  return {reasons,fit:fits.length,check:checks.length,hasHash:!!e?.screenshotSha256,needsManualHashCheck:!e?.screenshotSha256&&!!imgInfo};
 }
@@ -98,12 +106,15 @@ function fitImage(){if(!imgInfo)return;const v=$('viewport');const s=Math.min(v.
 function zoom(mult,x,y){if(!imgInfo)return;const vp=$('viewport').getBoundingClientRect(),cx=x??vp.width/2,cy=y??vp.height/2;const old=scale,next=Math.max(0.07,Math.min(old*mult,8));if(next===old)return;offsetX=cx-(cx-offsetX)*next/old;offsetY=cy-(cy-offsetY)*next/old;scale=next;frame()}
 function centerAt(x,y){if(!imgInfo)return;const v=$('viewport');offsetX=v.clientWidth/2-imgInfo.width*x/100*scale;offsetY=v.clientHeight/2-imgInfo.height*y/100*scale;frame()}
 async function readImage(f){resetImage();if(!f)return;if(!['image/png','image/jpeg','image/webp'].includes(f.type)||f.size>MAX_IMAGE){$('evidenceState').textContent='Choose a PNG/JPEG/WebP under 35 MB.';return}imgFile=f;const url=URL.createObjectURL(f);const img=$('baseImage');img.onload=async()=>{imgUrl=url;imgInfo={width:img.naturalWidth,height:img.naturalHeight};$('stage').classList.remove('hidden');$('placeholder').classList.add('hidden');fitImage();try{if(crypto?.subtle){const d=await crypto.subtle.digest('SHA-256',await f.arrayBuffer());sha=Array.from(new Uint8Array(d)).map(x=>x.toString(16).padStart(2,'0')).join('')}}catch(_){}evalProof();showStatus()};img.onerror=()=>{URL.revokeObjectURL(url);$('evidenceState').textContent='Image decode failed.'};img.src=url}
-async function readEvidence(f){if(!f)return;if(f.size>MAX_EVIDENCE){$('evidenceState').textContent='Evidence JSON too large (4 MB limit).';return}try{const x=JSON.parse(await f.text());const valid=assess({...x});if(!x||x.format!=='am-map-evidence-v1'||x.map!==id)throw Error('The evidence was exported for another map or has an invalid format');evidence=x;evalProof()}catch(e){resetProof();$('evidenceState').textContent='Evidence import rejected: '+e.message}}
+async function readEvidence(f){if(!f)return;if(f.size>MAX_EVIDENCE){$('evidenceState').textContent='Evidence JSON too large (4 MB limit).';return}try{const x=JSON.parse(await f.text());if(!x||x.format!=='am-map-evidence-v1'||x.map!==id)throw Error('The evidence was exported for another map or has an invalid format');evidence=x;evalProof()}catch(e){resetProof();$('evidenceState').textContent='Evidence import rejected: '+e.message}}
 for(const v of SOURCES){const op=document.createElement('option');op.value=v.id;op.textContent=v.name+' — '+v.region;$('mapSelect').append(op)}
 $('mapSelect').value=id;$('mapSelect').addEventListener('change',changeMap);
 $('variantSelect').addEventListener('change',()=>{const v=$('variantSelect').selectedOptions[0];$('sourceLink').href=v?.value||source().source;resetProof();$('evidenceState').textContent='Variant changed. Reimport mode-specific calibration evidence before showing pins.'});
 $('markerSearch').addEventListener('input',listMarkers);$('markerType').addEventListener('change',listMarkers);
 $('imageFile').addEventListener('change',e=>readImage(e.target.files?.[0]));
+$('targetBuild').addEventListener('input',evalProof);
+$('targetMode').addEventListener('change',evalProof);
+$('confirmIdentity').addEventListener('change',evalProof);
 $('evidenceFile').addEventListener('change',e=>readEvidence(e.target.files?.[0]));
 $('allowOverlay').addEventListener('change',()=>{drawPins();showStatus()});
 $('minus').onclick=()=>zoom(0.8);$('plus').onclick=()=>zoom(1.25);$('reset').onclick=fitImage;
