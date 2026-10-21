@@ -40,3 +40,10 @@
 - Added comprehensive [map-by-map research report](ONLINE_MAP_CORRELATION_2026_10_20.md), including official patch change crosswalk and independence caveats where fan atlases copy each other's marker datasets.
 - New deterministic source-integrity test checks 14 views, 13 actual playable regions, all 30 unique source reference URLs, unchanged 275 legacy samples, and military Unstable Zone behavior. Passed locally in isolated JS with in-memory file fixtures. GitHub Actions runner remains separately unresolved.
 - No authentic game baselayers or rehosted third-party map tiles bundled; no claim of 275 coordinate verification or correct isometric building heights.
+
+## Reference Atlas and provenance gate — 20 October source update
+
+- Added `tools/map_reference_atlas.html`: standalone screenshot-grounded cartographic viewer, 14 location selectors, 30 named raid-variant references, drag/zoom, searchable historic marker candidates, exact screenshot evidence compatibility gate and no remote image uploads.
+- Workbench now records `raidVariant` and screenshot `screenshotSha256` (SHA-256 when browser crypto permits). Import/export retains backward compatibility with older evidence; exact name+size without hash is not sufficient for automatic projection.
+- Old sample marker pins are hidden unless 4 FIT/2 independent CHECK, matching map, image, mode, patch and variant, and verified coordinate crop. The visitor must explicitly turn on provisional pins.
+- These tools do **not** replace 14 historic illustrative backgrounds with authenticated source geography. New viewer shows a real image only after the reader supplies one locally.
