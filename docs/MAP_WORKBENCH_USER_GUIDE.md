@@ -61,3 +61,15 @@ Patch references: https://activematter.game/en/news/349 and https://activematter
 A correctly aligned reference screenshot does not validate extraction-point permanence, current loot, real building height or game-variant correctness. Gigastructure and Dalniy support manual landmark calibration even though they have no legacy per-raid candidate pin set; regional/floor-level coordinate systems must be documented explicitly.
 
 **Status:** geometry and import-validation checks pass; manual file-picker and Windows file:// workflow require interactive browser testing before this release can be certified.
+
+## Verified screenshot viewer integration
+
+Use [Reference Atlas](../tools/map_reference_atlas.html) to display your local image, pan and zoom, search historic source markers and inspect source/variant links. The visual viewer now blocks projection of candidate pins unless imported map-specific workbench JSON contains **at least four FIT and two independently excluded CHECK controls**, a six-coefficient affine matrix, the exact screenshot filename and native dimensions, matching game build/play mode/raid variant, and compatible marker-coordinate crop. New workbench exports additionally record a local SHA-256 digest when supported; historical exports without hashes require explicit identity confirmation. **Do not assume calibration quality certifies extraction state**; all pins remain candidate positions and are not silently written back to the shipping guide.
+
+### Practical use order
+1. In Workbench: select raid and its exact variant, set build/mode, upload the target screenshot, import a source reference, and record at least four fixed physical FIT landmarks and two independent CHECK landmarks.
+2. Review independent-check residuals and source crop; set identical-legacy-crop confirmation **only** if measured from source metadata. Export JSON after screenshot hash finishes.
+3. In Reference Atlas: select the same map/variant and build/mode, upload the **exact same target screenshot**, then its matching evidence JSON. Resolve any identity or coordinate warning.
+4. Explicitly enable provisional marker overlay, inspect physical landmarks and patch-sensitive exits. Do not publish a corrected pin without current gameplay validation.
+
+Image pixels stay local. This is a companion to the existing single HTML guide, not a replacement for verified shipped basemaps.
