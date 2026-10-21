@@ -1,0 +1,413 @@
+{
+  "format": "am-online-map-source-correlation-v1",
+  "asOf": "2026-10-20",
+  "status": "source-reported facts only; not authenticated in-game",
+  "primaryIndex": "https://activematterhelp.ru/wiki/maps",
+  "sourceIndexScope": "13 map regions and 30 raid variants on the reference site; guide includes an extra Dalniy regional overview for 14 views.",
+  "independenceWarning": "Portal Atlas explicitly imports Active Matter Help data; it is NOT independent confirmation of the underlying coordinate positions. Wiki summaries may repeat one dataset.",
+  "historicalSampleNotice": "275 historic guide samples across 12 maps; they are a subset of source listings and may use different map crops, gameplay versions and modes.",
+  "links": {
+    "officialPatchArchive": "https://activematter.game/en/news",
+    "alternateAtlas": "https://activematter.guide/maps/",
+    "communityAtlas": "https://activematterhelp.ru/maps?map=dalniy",
+    "wikiRegionOverview": "https://active-matter.wiki/maps/dalniy-island/"
+  },
+  "maps": [
+    {
+      "id": "airport",
+      "name": "Airport",
+      "region": "Africa",
+      "kind": "raid",
+      "referenceUrl": "https://activematterhelp.ru/wiki/maps/africa_airport",
+      "alternateRegionContext": "https://active-matter.wiki/maps/airport/",
+      "referenceVariant": "Airport",
+      "sourceReportedPvPExtractionInventory": {
+        "permanentCandidates": 8,
+        "timedCandidates": 11,
+        "finalCandidates": 1,
+        "important": "These are source page evacuation-system totals for the displayed variant, not all simultaneously available exit markers nor all verified live positions. For group-specific HQ/Dogorsk, individual group access differs."
+      },
+      "warning": "Track the October 5 relocated stationary exits and Devourer spawns.",
+      "patchSource": "https://activematter.game/en/news/349",
+      "additionalVariants": [],
+      "normalizedGeoStatus": "UNALIGNED",
+      "originalUserSampleEdited": false,
+      "independentlyVerifiedMarkerCount": 0,
+      "rightsStatus": "external URL reference only; do not duplicate source tiles or source dataset without permission"
+    },
+    {
+      "id": "headquarters",
+      "name": "Headquarters",
+      "region": "Africa",
+      "kind": "raid",
+      "referenceUrl": "https://activematterhelp.ru/wiki/maps/africa_headquarters",
+      "alternateRegionContext": "https://active-matter.wiki/maps/",
+      "referenceVariant": "Headquarters",
+      "sourceReportedPvPExtractionInventory": {
+        "permanentCandidates": 23,
+        "timedCandidates": 15,
+        "finalCandidates": 1,
+        "important": "These are source page evacuation-system totals for the displayed variant, not all simultaneously available exit markers nor all verified live positions. For group-specific HQ/Dogorsk, individual group access differs."
+      },
+      "warning": "Spawn-group-specific permanent exits; October 5 relocation; counts do not mean all players access all 23.",
+      "patchSource": "https://activematter.game/en/news/349",
+      "additionalVariants": [
+        {
+          "name": "HQ: Code 2901",
+          "referenceUrl": null,
+          "verifiedLive": false
+        },
+        {
+          "name": "HQ: Unstable Zone",
+          "referenceUrl": null,
+          "verifiedLive": false
+        },
+        {
+          "name": "HQ: Support Protocol",
+          "referenceUrl": null,
+          "verifiedLive": false
+        },
+        {
+          "name": "HQ: Support Protocol + Distortion",
+          "referenceUrl": null,
+          "verifiedLive": false
+        }
+      ],
+      "normalizedGeoStatus": "UNALIGNED",
+      "originalUserSampleEdited": false,
+      "independentlyVerifiedMarkerCount": 0,
+      "rightsStatus": "external URL reference only; do not duplicate source tiles or source dataset without permission"
+    },
+    {
+      "id": "downtown",
+      "name": "Downtown",
+      "region": "Abandoned America",
+      "kind": "raid",
+      "referenceUrl": "https://activematterhelp.ru/wiki/maps/america_abandoned_city",
+      "alternateRegionContext": "https://active-matter.wiki/maps/",
+      "referenceVariant": "Downtown",
+      "sourceReportedPvPExtractionInventory": {
+        "permanentCandidates": 5,
+        "timedCandidates": 7,
+        "finalCandidates": 1,
+        "important": "These are source page evacuation-system totals for the displayed variant, not all simultaneously available exit markers nor all verified live positions. For group-specific HQ/Dogorsk, individual group access differs."
+      },
+      "warning": "October 5 relocation; variant-specific Downtown Collapse and Unstable Zone separate.",
+      "patchSource": "https://activematter.game/en/news/349",
+      "additionalVariants": [
+        {
+          "name": "America: Collapse",
+          "referenceUrl": "https://activematterhelp.ru/wiki/maps/america_abandoned_collapse",
+          "verifiedLive": false
+        },
+        {
+          "name": "Downtown: Unstable Zone",
+          "referenceUrl": null,
+          "verifiedLive": false
+        }
+      ],
+      "normalizedGeoStatus": "UNALIGNED",
+      "originalUserSampleEdited": false,
+      "independentlyVerifiedMarkerCount": 0,
+      "rightsStatus": "external URL reference only; do not duplicate source tiles or source dataset without permission"
+    },
+    {
+      "id": "dam",
+      "name": "Dam",
+      "region": "Dalniy Island",
+      "kind": "raid",
+      "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_dam",
+      "alternateRegionContext": "https://active-matter.wiki/maps/",
+      "referenceVariant": "Dam",
+      "sourceReportedPvPExtractionInventory": {
+        "permanentCandidates": 6,
+        "timedCandidates": 5,
+        "finalCandidates": 1,
+        "important": "These are source page evacuation-system totals for the displayed variant, not all simultaneously available exit markers nor all verified live positions. For group-specific HQ/Dogorsk, individual group access differs."
+      },
+      "warning": "October 5 water ladder and gravity-zone staircase fixes.",
+      "patchSource": "https://activematter.game/en/news/349",
+      "additionalVariants": [],
+      "normalizedGeoStatus": "UNALIGNED",
+      "originalUserSampleEdited": false,
+      "independentlyVerifiedMarkerCount": 0,
+      "rightsStatus": "external URL reference only; do not duplicate source tiles or source dataset without permission"
+    },
+    {
+      "id": "cargo",
+      "name": "Cargo Port",
+      "region": "Dalniy Island",
+      "kind": "raid",
+      "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_cargoport",
+      "alternateRegionContext": "https://active-matter.wiki/maps/",
+      "referenceVariant": "Cargo Port",
+      "sourceReportedPvPExtractionInventory": {
+        "permanentCandidates": 8,
+        "timedCandidates": 15,
+        "finalCandidates": 1,
+        "important": "These are source page evacuation-system totals for the displayed variant, not all simultaneously available exit markers nor all verified live positions. For group-specific HQ/Dogorsk, individual group access differs."
+      },
+      "warning": "October 15 barge portal geometry/safe teleport fix.",
+      "patchSource": "https://activematter.game/en/news/356",
+      "additionalVariants": [
+        {
+          "name": "Cargo Port: Deep Cover",
+          "referenceUrl": null,
+          "verifiedLive": false
+        },
+        {
+          "name": "Cargo Port: Darkness",
+          "referenceUrl": null,
+          "verifiedLive": false
+        }
+      ],
+      "normalizedGeoStatus": "UNALIGNED",
+      "originalUserSampleEdited": false,
+      "independentlyVerifiedMarkerCount": 0,
+      "rightsStatus": "external URL reference only; do not duplicate source tiles or source dataset without permission"
+    },
+    {
+      "id": "factory",
+      "name": "Factory",
+      "region": "Dalniy Island",
+      "kind": "raid",
+      "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_factory_adv",
+      "alternateRegionContext": "https://active-matter.wiki/maps/",
+      "referenceVariant": "Factory",
+      "sourceReportedPvPExtractionInventory": {
+        "permanentCandidates": 9,
+        "timedCandidates": 12,
+        "finalCandidates": 1,
+        "important": "These are source page evacuation-system totals for the displayed variant, not all simultaneously available exit markers nor all verified live positions. For group-specific HQ/Dogorsk, individual group access differs."
+      },
+      "warning": "October 15 destructible green fences; Factory Hive/Bloodbath separate.",
+      "patchSource": "https://activematter.game/en/news/356",
+      "additionalVariants": [
+        {
+          "name": "Factory: Bloodbath",
+          "referenceUrl": null,
+          "verifiedLive": false
+        },
+        {
+          "name": "Factory: Hive",
+          "referenceUrl": null,
+          "verifiedLive": false
+        }
+      ],
+      "normalizedGeoStatus": "UNALIGNED",
+      "originalUserSampleEdited": false,
+      "independentlyVerifiedMarkerCount": 0,
+      "rightsStatus": "external URL reference only; do not duplicate source tiles or source dataset without permission"
+    },
+    {
+      "id": "dogorsk",
+      "name": "Dogorsk",
+      "region": "Dalniy Island",
+      "kind": "raid",
+      "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_dogorsk",
+      "alternateRegionContext": "https://active-matter.wiki/maps/",
+      "referenceVariant": "Dogorsk",
+      "sourceReportedPvPExtractionInventory": {
+        "permanentCandidates": 11,
+        "timedCandidates": 6,
+        "finalCandidates": 1,
+        "important": "These are source page evacuation-system totals for the displayed variant, not all simultaneously available exit markers nor all verified live positions. For group-specific HQ/Dogorsk, individual group access differs."
+      },
+      "warning": "September 18 dynamic extractions, September 30 Escape vehicle delivery points, October 15 extraction scenery fix.",
+      "patchSource": "https://activematter.game/en/news/324",
+      "additionalVariants": [
+        {
+          "name": "Escape from Dogorsk",
+          "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_dogorsk_escape",
+          "verifiedLive": false
+        },
+        {
+          "name": "Dogorsk: Timeline Collision",
+          "referenceUrl": null,
+          "verifiedLive": false
+        }
+      ],
+      "normalizedGeoStatus": "UNALIGNED",
+      "originalUserSampleEdited": false,
+      "independentlyVerifiedMarkerCount": 0,
+      "rightsStatus": "external URL reference only; do not duplicate source tiles or source dataset without permission"
+    },
+    {
+      "id": "military",
+      "name": "Military Base",
+      "region": "Dalniy Island",
+      "kind": "raid",
+      "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_military_base_statues",
+      "alternateRegionContext": "https://active-matter.wiki/maps/",
+      "referenceVariant": "Military Base: Silent Witnesses",
+      "sourceReportedPvPExtractionInventory": {
+        "permanentCandidates": 7,
+        "timedCandidates": 10,
+        "finalCandidates": 1,
+        "important": "These are source page evacuation-system totals for the displayed variant, not all simultaneously available exit markers nor all verified live positions. For group-specific HQ/Dogorsk, individual group access differs."
+      },
+      "warning": "Default source is Silent Witnesses, NOT Unstable Zone. Unstable Zone has 40 possible final extraction locations, one selected, and patch changed artifact marker timing.",
+      "patchSource": "https://activematter.game/en/news/356",
+      "additionalVariants": [
+        {
+          "name": "Military Base: Unstable Zone",
+          "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_military_base",
+          "verifiedLive": false
+        }
+      ],
+      "normalizedGeoStatus": "UNALIGNED",
+      "originalUserSampleEdited": false,
+      "independentlyVerifiedMarkerCount": 0,
+      "rightsStatus": "external URL reference only; do not duplicate source tiles or source dataset without permission"
+    },
+    {
+      "id": "ozernoe",
+      "name": "Ozernoe",
+      "region": "Dalniy Island",
+      "kind": "raid",
+      "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_ozernoe_adv",
+      "alternateRegionContext": "https://active-matter.wiki/maps/",
+      "referenceVariant": "Ozernoe",
+      "sourceReportedPvPExtractionInventory": {
+        "permanentCandidates": 11,
+        "timedCandidates": 7,
+        "finalCandidates": 1,
+        "important": "These are source page evacuation-system totals for the displayed variant, not all simultaneously available exit markers nor all verified live positions. For group-specific HQ/Dogorsk, individual group access differs."
+      },
+      "warning": "September 30 ladder/gravity platform fixes; October 15 destructible fences.",
+      "patchSource": "https://activematter.game/en/news/341",
+      "additionalVariants": [
+        {
+          "name": "Ozernoe: Overgrowth",
+          "referenceUrl": null,
+          "verifiedLive": false
+        },
+        {
+          "name": "Ozernoe: Fire Storm",
+          "referenceUrl": null,
+          "verifiedLive": false
+        }
+      ],
+      "normalizedGeoStatus": "UNALIGNED",
+      "originalUserSampleEdited": false,
+      "independentlyVerifiedMarkerCount": 0,
+      "rightsStatus": "external URL reference only; do not duplicate source tiles or source dataset without permission"
+    },
+    {
+      "id": "park",
+      "name": "Park",
+      "region": "Dalniy Island",
+      "kind": "raid",
+      "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_park",
+      "alternateRegionContext": "https://active-matter.wiki/maps/",
+      "referenceVariant": "Park",
+      "sourceReportedPvPExtractionInventory": {
+        "permanentCandidates": 8,
+        "timedCandidates": 9,
+        "finalCandidates": 1,
+        "important": "These are source page evacuation-system totals for the displayed variant, not all simultaneously available exit markers nor all verified live positions. For group-specific HQ/Dogorsk, individual group access differs."
+      },
+      "warning": "Surface and underground routes require separate levels. September 30 stuck-location fix.",
+      "patchSource": "https://activematter.game/en/news/341",
+      "additionalVariants": [],
+      "normalizedGeoStatus": "UNALIGNED",
+      "originalUserSampleEdited": false,
+      "independentlyVerifiedMarkerCount": 0,
+      "rightsStatus": "external URL reference only; do not duplicate source tiles or source dataset without permission"
+    },
+    {
+      "id": "scrapyard",
+      "name": "Scrapyard",
+      "region": "Dalniy Island",
+      "kind": "raid",
+      "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_scrapyard",
+      "alternateRegionContext": "https://active-matter.wiki/maps/",
+      "referenceVariant": "Scrapyard: Midnight",
+      "sourceReportedPvPExtractionInventory": {
+        "permanentCandidates": 2,
+        "timedCandidates": 0,
+        "finalCandidates": 1,
+        "important": "These are source page evacuation-system totals for the displayed variant, not all simultaneously available exit markers nor all verified live positions. For group-specific HQ/Dogorsk, individual group access differs."
+      },
+      "warning": "Midnight raid, fixed 00:00 time; not a generic day/night selectable raid.",
+      "patchSource": "https://activematterhelp.ru/wiki/maps/dalniy_island_scrapyard",
+      "additionalVariants": [],
+      "normalizedGeoStatus": "UNALIGNED",
+      "originalUserSampleEdited": false,
+      "independentlyVerifiedMarkerCount": 0,
+      "rightsStatus": "external URL reference only; do not duplicate source tiles or source dataset without permission"
+    },
+    {
+      "id": "shegolskoe",
+      "name": "Shegolskoe",
+      "region": "Dalniy Island",
+      "kind": "raid",
+      "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_shegolskoe_adv",
+      "alternateRegionContext": "https://active-matter.wiki/maps/",
+      "referenceVariant": "Shegolskoe",
+      "sourceReportedPvPExtractionInventory": {
+        "permanentCandidates": 6,
+        "timedCandidates": 12,
+        "finalCandidates": 1,
+        "important": "These are source page evacuation-system totals for the displayed variant, not all simultaneously available exit markers nor all verified live positions. For group-specific HQ/Dogorsk, individual group access differs."
+      },
+      "warning": "Overgrowth and Distortion variants must retain their own markers and terrain visibility.",
+      "patchSource": "https://activematterhelp.ru/wiki/maps/dalniy_island_shegolskoe_adv",
+      "additionalVariants": [
+        {
+          "name": "Shegolskoe: Overgrowth",
+          "referenceUrl": null,
+          "verifiedLive": false
+        },
+        {
+          "name": "Shegolskoe: Distortion",
+          "referenceUrl": null,
+          "verifiedLive": false
+        }
+      ],
+      "normalizedGeoStatus": "UNALIGNED",
+      "originalUserSampleEdited": false,
+      "independentlyVerifiedMarkerCount": 0,
+      "rightsStatus": "external URL reference only; do not duplicate source tiles or source dataset without permission"
+    },
+    {
+      "id": "gigastructure",
+      "name": "Gigastructure",
+      "region": "Gigastructure",
+      "kind": "multilevel_raid",
+      "referenceUrl": "https://activematterhelp.ru/wiki/maps/gigastructure",
+      "alternateRegionContext": "https://active-matter.wiki/maps/",
+      "referenceVariant": "Gigastructure",
+      "sourceReportedPvPExtractionInventory": {
+        "permanentCandidates": 1,
+        "timedCandidates": 0,
+        "finalCandidates": null,
+        "important": "These are source page evacuation-system totals for the displayed variant, not all simultaneously available exit markers nor all verified live positions. For group-specific HQ/Dogorsk, individual group access differs."
+      },
+      "warning": "Standalone multi-level structure; elevator/purge logic; no adequate flat raid coordinates in current guide.",
+      "patchSource": "https://activematterhelp.ru/wiki/maps/gigastructure",
+      "additionalVariants": [],
+      "normalizedGeoStatus": "UNALIGNED",
+      "originalUserSampleEdited": false,
+      "independentlyVerifiedMarkerCount": 0,
+      "rightsStatus": "external URL reference only; do not duplicate source tiles or source dataset without permission"
+    },
+    {
+      "id": "dalniy",
+      "name": "Dalniy Island",
+      "region": "Dalniy Island",
+      "kind": "regional_overview",
+      "referenceUrl": "https://activematterhelp.ru/maps?map=dalniy",
+      "alternateRegionContext": "https://active-matter.wiki/maps/dalniy-island/",
+      "referenceVariant": "regional overview",
+      "sourceReportedPvPExtractionInventory": null,
+      "warning": "Regional overview only, NOT a 14th separately queued raid; 11 local named raids plus other worldwide regions.",
+      "patchSource": "https://activematterhelp.ru/wiki/maps",
+      "additionalVariants": [],
+      "normalizedGeoStatus": "UNALIGNED",
+      "originalUserSampleEdited": false,
+      "independentlyVerifiedMarkerCount": 0,
+      "rightsStatus": "external URL reference only; do not duplicate source tiles or source dataset without permission"
+    }
+  ]
+}
