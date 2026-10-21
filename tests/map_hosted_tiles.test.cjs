@@ -33,7 +33,7 @@ for(const m of raw.maps){
  assert(a.x>=0&&a.x<length&&a.y>=0&&a.y<length);
  assert(a.source.length>10);
 }
-assert.equal(raw.maps.filter(x=>x.sourceTile.tiles==='dalniy_tiles').length,10);
+assert.equal(raw.maps.filter(x=>x.sourceTile?.tiles==='dalniy_tiles').length,10);
 assert.equal(raw.maps.filter(x=>x.sourceTile?.tiles==='forsaken_africa_tiles').length,2);
 assert.equal(raw.maps.filter(x=>x.sourceTile?.tiles==='america_abandoned_tiles').length,1);
 console.log('PASS live-source tile manifests: 13 geo-raster map views, 14 entries, 3 region servers, opt-in controls and disabled uncalibrated pins');
