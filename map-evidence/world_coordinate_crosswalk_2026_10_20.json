@@ -1,0 +1,439 @@
+{
+  "format": "am-world-coordinate-source-crosswalk-v1",
+  "date": "2026-10-20",
+  "status": "SOURCE-CORRELATED, NEVER GAME-VERIFIED",
+  "summary": {
+    "mapsWithTransform": 12,
+    "legacyCandidates": 275,
+    "sourceCoordinateMatches": 201,
+    "notSourceMatched": 74
+  },
+  "source": "https://github.com/rileyedward/portal-atlas/tree/main/database/data/activematterhelp/maps",
+  "sourceProvenance": "Portal Atlas imported Active Matter Help data (common source, not independent corroboration)",
+  "sourceReadme": "https://github.com/rileyedward/portal-atlas/blob/main/docs/data-import.md",
+  "matchingMethod": "Historical sample percent x/y matched to imported marker x/y with Euclidean difference <=0.011 percent; duplicate variant records allowed only when same horizontal game coordinates within 0.3 m. Deterministic 3-of-4 training, every fourth matched sample held out. Fitted map percent x→game worldX and map percent y→game worldZ.",
+  "safety": "Never interpret world Y coordinate as building height. Map-source percent crops are not tied to exact screenshot pixels without separate calibration. Match is within one third-party data import, not independent game verification. Patch changes can move exits.",
+  "maps": [
+    {
+      "id": "airport",
+      "sourceDatasetPath": "database/data/activematterhelp/maps/airport.json",
+      "sourceBlobSha": "759f799f8b2b7d0dd108475680c7ed44d722af0a",
+      "oldGuideSampleCount": 22,
+      "datasetRecordCount": 164,
+      "sourceMatchedCount": 22,
+      "sourceUnmatchedCount": 0,
+      "fitSampleCount": 16,
+      "independentCheckCount": 6,
+      "coordinates": {
+        "worldX": {
+          "percentAxis": "x",
+          "slopeMetersPerPercent": 7.253693274,
+          "interceptMeters": 389.180037
+        },
+        "worldZ": {
+          "percentAxis": "y",
+          "slopeMetersPerPercent": -7.360315179,
+          "interceptMeters": -896.806137
+        }
+      },
+      "trainRmsHorizontalMeters": 0.02839,
+      "holdoutRmsHorizontalMeters": 0.02999,
+      "srcCoordinateConvention": "engine gameCoords [X, elevation Y, Z] with 2D map X% ↔ engine X and map Y% ↔ engine Z; source site normalizes per-map world bounds",
+      "inference": "DERIVED FROM THIRD-PARTY IMPORTED SOURCE; confirms dataset internal calibration only, not actual current game cartography",
+      "unmatchedSourceMarkerIds": []
+    },
+    {
+      "id": "cargo",
+      "sourceDatasetPath": "database/data/activematterhelp/maps/cargo-port.json",
+      "sourceBlobSha": "5d2bd5bc9bef031d00d231dac78de7679824c2b3",
+      "oldGuideSampleCount": 29,
+      "datasetRecordCount": 875,
+      "sourceMatchedCount": 19,
+      "sourceUnmatchedCount": 10,
+      "fitSampleCount": 14,
+      "independentCheckCount": 5,
+      "coordinates": {
+        "worldX": {
+          "percentAxis": "x",
+          "slopeMetersPerPercent": 14.751932801,
+          "interceptMeters": 234.699838
+        },
+        "worldZ": {
+          "percentAxis": "y",
+          "slopeMetersPerPercent": -12.211292206,
+          "interceptMeters": 2338.56592
+        }
+      },
+      "trainRmsHorizontalMeters": 0.06078,
+      "holdoutRmsHorizontalMeters": 0.06646,
+      "srcCoordinateConvention": "engine gameCoords [X, elevation Y, Z] with 2D map X% ↔ engine X and map Y% ↔ engine Z; source site normalizes per-map world bounds",
+      "inference": "DERIVED FROM THIRD-PARTY IMPORTED SOURCE; confirms dataset internal calibration only, not actual current game cartography",
+      "unmatchedSourceMarkerIds": [
+        "geo-cargo-19",
+        "geo-cargo-20",
+        "geo-cargo-21",
+        "geo-cargo-22",
+        "geo-cargo-23",
+        "geo-cargo-24",
+        "geo-cargo-25",
+        "geo-cargo-26",
+        "geo-cargo-27",
+        "geo-cargo-28"
+      ]
+    },
+    {
+      "id": "factory",
+      "sourceDatasetPath": "database/data/activematterhelp/maps/factory.json",
+      "sourceBlobSha": "742d016a6a3257937e6f41577287bda1bf42c5a7",
+      "oldGuideSampleCount": 27,
+      "datasetRecordCount": 490,
+      "sourceMatchedCount": 17,
+      "sourceUnmatchedCount": 10,
+      "fitSampleCount": 12,
+      "independentCheckCount": 5,
+      "coordinates": {
+        "worldX": {
+          "percentAxis": "x",
+          "slopeMetersPerPercent": 9.085190176,
+          "interceptMeters": 1172.366401
+        },
+        "worldZ": {
+          "percentAxis": "y",
+          "slopeMetersPerPercent": -6.642806694,
+          "interceptMeters": -1087.120203
+        }
+      },
+      "trainRmsHorizontalMeters": 0.03242,
+      "holdoutRmsHorizontalMeters": 0.0399,
+      "srcCoordinateConvention": "engine gameCoords [X, elevation Y, Z] with 2D map X% ↔ engine X and map Y% ↔ engine Z; source site normalizes per-map world bounds",
+      "inference": "DERIVED FROM THIRD-PARTY IMPORTED SOURCE; confirms dataset internal calibration only, not actual current game cartography",
+      "unmatchedSourceMarkerIds": [
+        "geo-factory-17",
+        "geo-factory-18",
+        "geo-factory-19",
+        "geo-factory-20",
+        "geo-factory-21",
+        "geo-factory-22",
+        "geo-factory-23",
+        "geo-factory-24",
+        "geo-factory-25",
+        "geo-factory-26"
+      ]
+    },
+    {
+      "id": "ozernoe",
+      "sourceDatasetPath": "database/data/activematterhelp/maps/ozernoe.json",
+      "sourceBlobSha": "644c7596f172c00a6e3defcd4ca51a1fe1a823d1",
+      "oldGuideSampleCount": 20,
+      "datasetRecordCount": 380,
+      "sourceMatchedCount": 14,
+      "sourceUnmatchedCount": 6,
+      "fitSampleCount": 10,
+      "independentCheckCount": 4,
+      "coordinates": {
+        "worldX": {
+          "percentAxis": "x",
+          "slopeMetersPerPercent": 7.835745014,
+          "interceptMeters": -272.979063
+        },
+        "worldZ": {
+          "percentAxis": "y",
+          "slopeMetersPerPercent": -7.445287509,
+          "interceptMeters": -329.091922
+        }
+      },
+      "trainRmsHorizontalMeters": 0.02668,
+      "holdoutRmsHorizontalMeters": 0.03019,
+      "srcCoordinateConvention": "engine gameCoords [X, elevation Y, Z] with 2D map X% ↔ engine X and map Y% ↔ engine Z; source site normalizes per-map world bounds",
+      "inference": "DERIVED FROM THIRD-PARTY IMPORTED SOURCE; confirms dataset internal calibration only, not actual current game cartography",
+      "unmatchedSourceMarkerIds": [
+        "geo-ozernoe-14",
+        "geo-ozernoe-15",
+        "geo-ozernoe-16",
+        "geo-ozernoe-17",
+        "geo-ozernoe-18",
+        "geo-ozernoe-19"
+      ]
+    },
+    {
+      "id": "dogorsk",
+      "sourceDatasetPath": "database/data/activematterhelp/maps/dogorsk.json",
+      "sourceBlobSha": "57fb51e68ab81b2536f84b28b01a3d2dda3d6705",
+      "oldGuideSampleCount": 25,
+      "datasetRecordCount": 535,
+      "sourceMatchedCount": 17,
+      "sourceUnmatchedCount": 8,
+      "fitSampleCount": 12,
+      "independentCheckCount": 5,
+      "coordinates": {
+        "worldX": {
+          "percentAxis": "x",
+          "slopeMetersPerPercent": 11.911160827,
+          "interceptMeters": -955.246957
+        },
+        "worldZ": {
+          "percentAxis": "y",
+          "slopeMetersPerPercent": -10.710404039,
+          "interceptMeters": -531.832616
+        }
+      },
+      "trainRmsHorizontalMeters": 0.04181,
+      "holdoutRmsHorizontalMeters": 0.06346,
+      "srcCoordinateConvention": "engine gameCoords [X, elevation Y, Z] with 2D map X% ↔ engine X and map Y% ↔ engine Z; source site normalizes per-map world bounds",
+      "inference": "DERIVED FROM THIRD-PARTY IMPORTED SOURCE; confirms dataset internal calibration only, not actual current game cartography",
+      "unmatchedSourceMarkerIds": [
+        "geo-dogorsk-17",
+        "geo-dogorsk-18",
+        "geo-dogorsk-19",
+        "geo-dogorsk-20",
+        "geo-dogorsk-21",
+        "geo-dogorsk-22",
+        "geo-dogorsk-23",
+        "geo-dogorsk-24"
+      ]
+    },
+    {
+      "id": "shegolskoe",
+      "sourceDatasetPath": "database/data/activematterhelp/maps/shegolskoe.json",
+      "sourceBlobSha": "7bc561c1fd3af2a2775a306c70c9f1dac376abec",
+      "oldGuideSampleCount": 26,
+      "datasetRecordCount": 344,
+      "sourceMatchedCount": 18,
+      "sourceUnmatchedCount": 8,
+      "fitSampleCount": 13,
+      "independentCheckCount": 5,
+      "coordinates": {
+        "worldX": {
+          "percentAxis": "x",
+          "slopeMetersPerPercent": 7.327033104,
+          "interceptMeters": 347.893311
+        },
+        "worldZ": {
+          "percentAxis": "y",
+          "slopeMetersPerPercent": -7.424002801,
+          "interceptMeters": -716.284502
+        }
+      },
+      "trainRmsHorizontalMeters": 0.02709,
+      "holdoutRmsHorizontalMeters": 0.02829,
+      "srcCoordinateConvention": "engine gameCoords [X, elevation Y, Z] with 2D map X% ↔ engine X and map Y% ↔ engine Z; source site normalizes per-map world bounds",
+      "inference": "DERIVED FROM THIRD-PARTY IMPORTED SOURCE; confirms dataset internal calibration only, not actual current game cartography",
+      "unmatchedSourceMarkerIds": [
+        "geo-shegolskoe-18",
+        "geo-shegolskoe-19",
+        "geo-shegolskoe-20",
+        "geo-shegolskoe-21",
+        "geo-shegolskoe-22",
+        "geo-shegolskoe-23",
+        "geo-shegolskoe-24",
+        "geo-shegolskoe-25"
+      ]
+    },
+    {
+      "id": "dam",
+      "sourceDatasetPath": "database/data/activematterhelp/maps/dam.json",
+      "sourceBlobSha": "c44630f56767346f058a950d62b14d6736a5aba1",
+      "oldGuideSampleCount": 21,
+      "datasetRecordCount": 146,
+      "sourceMatchedCount": 18,
+      "sourceUnmatchedCount": 3,
+      "fitSampleCount": 13,
+      "independentCheckCount": 5,
+      "coordinates": {
+        "worldX": {
+          "percentAxis": "x",
+          "slopeMetersPerPercent": 8.107296928,
+          "interceptMeters": 594.566657
+        },
+        "worldZ": {
+          "percentAxis": "y",
+          "slopeMetersPerPercent": -7.42479862,
+          "interceptMeters": 1173.033364
+        }
+      },
+      "trainRmsHorizontalMeters": 0.0247,
+      "holdoutRmsHorizontalMeters": 0.04308,
+      "srcCoordinateConvention": "engine gameCoords [X, elevation Y, Z] with 2D map X% ↔ engine X and map Y% ↔ engine Z; source site normalizes per-map world bounds",
+      "inference": "DERIVED FROM THIRD-PARTY IMPORTED SOURCE; confirms dataset internal calibration only, not actual current game cartography",
+      "unmatchedSourceMarkerIds": [
+        "geo-dam-18",
+        "geo-dam-19",
+        "geo-dam-20"
+      ]
+    },
+    {
+      "id": "downtown",
+      "sourceDatasetPath": "database/data/activematterhelp/maps/downtown.json",
+      "sourceBlobSha": "ec3f961f80a0f33f1bc71cbf52662e98407ab591",
+      "oldGuideSampleCount": 29,
+      "datasetRecordCount": 395,
+      "sourceMatchedCount": 20,
+      "sourceUnmatchedCount": 9,
+      "fitSampleCount": 15,
+      "independentCheckCount": 5,
+      "coordinates": {
+        "worldX": {
+          "percentAxis": "x",
+          "slopeMetersPerPercent": 6.469678312,
+          "interceptMeters": -764.627187
+        },
+        "worldZ": {
+          "percentAxis": "y",
+          "slopeMetersPerPercent": -4.510651365,
+          "interceptMeters": 498.270256
+        }
+      },
+      "trainRmsHorizontalMeters": 0.01492,
+      "holdoutRmsHorizontalMeters": 0.03524,
+      "srcCoordinateConvention": "engine gameCoords [X, elevation Y, Z] with 2D map X% ↔ engine X and map Y% ↔ engine Z; source site normalizes per-map world bounds",
+      "inference": "DERIVED FROM THIRD-PARTY IMPORTED SOURCE; confirms dataset internal calibration only, not actual current game cartography",
+      "unmatchedSourceMarkerIds": [
+        "geo-downtown-20",
+        "geo-downtown-21",
+        "geo-downtown-22",
+        "geo-downtown-23",
+        "geo-downtown-24",
+        "geo-downtown-25",
+        "geo-downtown-26",
+        "geo-downtown-27",
+        "geo-downtown-28"
+      ]
+    },
+    {
+      "id": "headquarters",
+      "sourceDatasetPath": "database/data/activematterhelp/maps/headquarters.json",
+      "sourceBlobSha": "dd6f5491c2b346b56feb63b38de59d13a7a77f0f",
+      "oldGuideSampleCount": 21,
+      "datasetRecordCount": 1634,
+      "sourceMatchedCount": 11,
+      "sourceUnmatchedCount": 10,
+      "fitSampleCount": 8,
+      "independentCheckCount": 3,
+      "coordinates": {
+        "worldX": {
+          "percentAxis": "x",
+          "slopeMetersPerPercent": 13.493650095,
+          "interceptMeters": -144.308163
+        },
+        "worldZ": {
+          "percentAxis": "y",
+          "slopeMetersPerPercent": -13.681510986,
+          "interceptMeters": -387.317878
+        }
+      },
+      "trainRmsHorizontalMeters": 0.03874,
+      "holdoutRmsHorizontalMeters": 0.04391,
+      "srcCoordinateConvention": "engine gameCoords [X, elevation Y, Z] with 2D map X% ↔ engine X and map Y% ↔ engine Z; source site normalizes per-map world bounds",
+      "inference": "DERIVED FROM THIRD-PARTY IMPORTED SOURCE; confirms dataset internal calibration only, not actual current game cartography",
+      "unmatchedSourceMarkerIds": [
+        "geo-headquarters-11",
+        "geo-headquarters-12",
+        "geo-headquarters-13",
+        "geo-headquarters-14",
+        "geo-headquarters-15",
+        "geo-headquarters-16",
+        "geo-headquarters-17",
+        "geo-headquarters-18",
+        "geo-headquarters-19",
+        "geo-headquarters-20"
+      ]
+    },
+    {
+      "id": "military",
+      "sourceDatasetPath": "database/data/activematterhelp/maps/military-base.json",
+      "sourceBlobSha": "d15cc67ddb6aea5f2ad1cf71393d512984a95d2a",
+      "oldGuideSampleCount": 20,
+      "datasetRecordCount": 409,
+      "sourceMatchedCount": 15,
+      "sourceUnmatchedCount": 5,
+      "fitSampleCount": 11,
+      "independentCheckCount": 4,
+      "coordinates": {
+        "worldX": {
+          "percentAxis": "x",
+          "slopeMetersPerPercent": 7.815287565,
+          "interceptMeters": 300.438978
+        },
+        "worldZ": {
+          "percentAxis": "y",
+          "slopeMetersPerPercent": -7.814573447,
+          "interceptMeters": 436.79773
+        }
+      },
+      "trainRmsHorizontalMeters": 0.03348,
+      "holdoutRmsHorizontalMeters": 0.03541,
+      "srcCoordinateConvention": "engine gameCoords [X, elevation Y, Z] with 2D map X% ↔ engine X and map Y% ↔ engine Z; source site normalizes per-map world bounds",
+      "inference": "DERIVED FROM THIRD-PARTY IMPORTED SOURCE; confirms dataset internal calibration only, not actual current game cartography",
+      "unmatchedSourceMarkerIds": [
+        "geo-military-15",
+        "geo-military-16",
+        "geo-military-17",
+        "geo-military-18",
+        "geo-military-19"
+      ]
+    },
+    {
+      "id": "park",
+      "sourceDatasetPath": "database/data/activematterhelp/maps/park.json",
+      "sourceBlobSha": "92a2e080900db2f3b8734b1198a372d793d29332",
+      "oldGuideSampleCount": 22,
+      "datasetRecordCount": 541,
+      "sourceMatchedCount": 19,
+      "sourceUnmatchedCount": 3,
+      "fitSampleCount": 14,
+      "independentCheckCount": 5,
+      "coordinates": {
+        "worldX": {
+          "percentAxis": "x",
+          "slopeMetersPerPercent": 13.187867958,
+          "interceptMeters": -498.109419
+        },
+        "worldZ": {
+          "percentAxis": "y",
+          "slopeMetersPerPercent": -8.791806903,
+          "interceptMeters": -896.731255
+        }
+      },
+      "trainRmsHorizontalMeters": 0.0475,
+      "holdoutRmsHorizontalMeters": 0.05284,
+      "srcCoordinateConvention": "engine gameCoords [X, elevation Y, Z] with 2D map X% ↔ engine X and map Y% ↔ engine Z; source site normalizes per-map world bounds",
+      "inference": "DERIVED FROM THIRD-PARTY IMPORTED SOURCE; confirms dataset internal calibration only, not actual current game cartography",
+      "unmatchedSourceMarkerIds": [
+        "geo-park-19",
+        "geo-park-20",
+        "geo-park-21"
+      ]
+    },
+    {
+      "id": "scrapyard",
+      "sourceDatasetPath": "database/data/activematterhelp/maps/scrapyard.json",
+      "sourceBlobSha": "617b39073283cc7240ee3463e28b887fe34b738e",
+      "oldGuideSampleCount": 13,
+      "datasetRecordCount": 39,
+      "sourceMatchedCount": 11,
+      "sourceUnmatchedCount": 2,
+      "fitSampleCount": 8,
+      "independentCheckCount": 3,
+      "coordinates": {
+        "worldX": {
+          "percentAxis": "x",
+          "slopeMetersPerPercent": 5.861301303,
+          "interceptMeters": 720.699988
+        },
+        "worldZ": {
+          "percentAxis": "y",
+          "slopeMetersPerPercent": -4.982433205,
+          "interceptMeters": -78.043073
+        }
+      },
+      "trainRmsHorizontalMeters": 0.02784,
+      "holdoutRmsHorizontalMeters": 0.02083,
+      "srcCoordinateConvention": "engine gameCoords [X, elevation Y, Z] with 2D map X% ↔ engine X and map Y% ↔ engine Z; source site normalizes per-map world bounds",
+      "inference": "DERIVED FROM THIRD-PARTY IMPORTED SOURCE; confirms dataset internal calibration only, not actual current game cartography",
+      "unmatchedSourceMarkerIds": [
+        "geo-scrapyard-11",
+        "geo-scrapyard-12"
+      ]
+    }
+  ]
+}
