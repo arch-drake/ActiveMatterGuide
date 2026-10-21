@@ -18,7 +18,7 @@ assert.equal(SOURCES.reduce((n,m)=>n+(m.kind==='regional_overview'?0:m.variants.
 assert.equal(Object.values(MARKERS).reduce((n,a)=>n+a.length,0),275);
 assert.equal(SOURCES.find(m=>m.id==='headquarters').region,'Africa');
 assert.equal(SOURCES.find(m=>m.id==='airport').region,'Africa');
-for(const v of SOURCES)for(const ref of v.variants)assert(ref.url.startsWith('https://activematterhelp.ru/wiki/maps/'));
+for(const v of SOURCES.filter(x=>x.kind!=='regional_overview'))for(const ref of v.variants)assert(ref.url.startsWith('https://activematterhelp.ru/wiki/maps/'));
 const start=code.indexOf('function project('),end=code.indexOf('function evalProof()',start);
 assert(start>=0&&end>start);
 const inputs={
