@@ -56,22 +56,22 @@
       "additionalVariants": [
         {
           "name": "HQ: Code 2901",
-          "referenceUrl": null,
+          "referenceUrl": "https://activematterhelp.ru/wiki/maps/africa_headquarters_mothman",
           "verifiedLive": false
         },
         {
           "name": "HQ: Unstable Zone",
-          "referenceUrl": null,
+          "referenceUrl": "https://activematterhelp.ru/wiki/maps/africa_headquarters_br",
           "verifiedLive": false
         },
         {
           "name": "HQ: Support Protocol",
-          "referenceUrl": null,
+          "referenceUrl": "https://activematterhelp.ru/wiki/maps/africa_headquarters_purge",
           "verifiedLive": false
         },
         {
           "name": "HQ: Support Protocol + Distortion",
-          "referenceUrl": null,
+          "referenceUrl": "https://activematterhelp.ru/wiki/maps/africa_headquarters_purge_distortion",
           "verifiedLive": false
         }
       ],
@@ -104,7 +104,7 @@
         },
         {
           "name": "Downtown: Unstable Zone",
-          "referenceUrl": null,
+          "referenceUrl": "https://activematterhelp.ru/wiki/maps/america_abandoned_city_br",
           "verifiedLive": false
         }
       ],
@@ -162,12 +162,12 @@
       "additionalVariants": [
         {
           "name": "Cargo Port: Deep Cover",
-          "referenceUrl": null,
+          "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_cargoport_deep_cover",
           "verifiedLive": false
         },
         {
           "name": "Cargo Port: Darkness",
-          "referenceUrl": null,
+          "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_cargoport_dark",
           "verifiedLive": false
         }
       ],
@@ -195,12 +195,12 @@
       "additionalVariants": [
         {
           "name": "Factory: Bloodbath",
-          "referenceUrl": null,
+          "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_factory_bloodbath",
           "verifiedLive": false
         },
         {
           "name": "Factory: Hive",
-          "referenceUrl": null,
+          "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_factory_hive",
           "verifiedLive": false
         }
       ],
@@ -233,7 +233,7 @@
         },
         {
           "name": "Dogorsk: Timeline Collision",
-          "referenceUrl": null,
+          "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_dogorsk_timeline_collision",
           "verifiedLive": false
         }
       ],
@@ -295,12 +295,12 @@
       "additionalVariants": [
         {
           "name": "Ozernoe: Overgrowth",
-          "referenceUrl": null,
+          "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_ozernoe_overgrowth",
           "verifiedLive": false
         },
         {
           "name": "Ozernoe: Fire Storm",
-          "referenceUrl": null,
+          "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_ozernoe_fire",
           "verifiedLive": false
         }
       ],
@@ -372,12 +372,12 @@
       "additionalVariants": [
         {
           "name": "Shegolskoe: Overgrowth",
-          "referenceUrl": null,
+          "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_shegolskoe_overgrowth",
           "verifiedLive": false
         },
         {
           "name": "Shegolskoe: Distortion",
-          "referenceUrl": null,
+          "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_shegolskoe_distortion",
           "verifiedLive": false
         }
       ],
@@ -439,5 +439,7 @@
         "quality": "region composition; other guide's list wrongly categorizes HQ and Giga as island raids; follow geographic source context"
       }
     }
-  ]
+  ],
+  "variantReferencesComplete": true,
+  "allVariantReferencesDate": "2026-10-20"
 }
