@@ -43,3 +43,6 @@ The offline visual addon contains category-level cinematic concept scenes for en
 Create a map correction issue with source build + raid variant and link to exported evidence JSON. Do not attach browser backup or authentication credentials. Update this table and audit manifest only when supporting proof is recorded. See [contributing](../CONTRIBUTING.md) and [fidelity standards](MAP_FIDELITY_EVIDENCE.md).
 
 References: https://activematter.game/en/news/349 · https://activematter.game/en/news/356
+
+## Real map-source tiles discovered on October 20
+A tile-based actual-looking overhead Forsaken Africa basemap is visible at [Active Matter Help's Airport page](https://activematterhelp.ru/wiki/maps/africa_airport). This is **a verified location of third-party hosted raster source material**, not verification that the images are licensed for redistributing in our guide or that the coordinate samples align. See [tile discovery and coordinate blockers](AUTHENTIC_MAP_TILE_SOURCE_DISCOVERY.md). Airport and HQ should be first to obtain exact source extents; other region tile sets can be investigated after.
