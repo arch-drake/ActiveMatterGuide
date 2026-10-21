@@ -11,13 +11,15 @@
 
 </details>
 
-**Legacy companion:** 2.1.1 · **Source Atlas alpha candidate:** v2.2.0-alpha.1 · **Updated:** October 20, 2026 · **GitHub Pages is not yet enabled.**
+**Legacy companion:** 2.1.1 · **Published maps-only alpha snapshot:** v2.2.0-alpha.1 · **Updated:** October 20, 2026 · **GitHub Pages is not yet enabled. No formal GitHub Release yet.**
 
 > Independent fan-made reference tool. Not affiliated with or endorsed by the Active Matter developers. It does not read, alter, inject into, or automate the game.
 
+**[Download the Source Atlas v2.2.0-alpha.1 — maps-only ZIP](https://github.com/arch-drake/ActiveMatterGuide/blob/alpha/v2.2.0-alpha.1/downloads/ActiveMatter-SourceAtlas-v2.2.0-alpha.1-MAPS-ONLY.zip)** (GitHub file page: use the download icon). Extract and open its **index.html**. This preview contains the four map/evidence tools, not the older full PvE/PvP companion. The [entire alpha branch ZIP](https://github.com/arch-drake/ActiveMatterGuide/archive/refs/heads/alpha/v2.2.0-alpha.1.zip) includes the old companion and all repository source as well. **There is no formal GitHub Release yet:** the automated publication workflow failed before executing its first step (runner provisioning). Pages is also disabled.
+
 **Download and launch (working without GitHub Pages):** [Download the complete current repository ZIP](https://github.com/arch-drake/ActiveMatterGuide/archive/refs/heads/main.zip), extract it, and open **index.html** in Chrome or Edge. The first homepage action opens **Explore Source Atlas**. Source tiles require internet and your explicit opt-in. For the older offline companion, use [the separate 2.1.1 ZIP](./downloads/Active_Matter_Field_Operations_2_1_1_Community_Edition.zip).
 
-**Important GitHub link behavior:** GitHub's file-view pages for [Source Atlas HTML](./tools/all_maps_live_reference.html) and [field guide HTML](./active_matter_solo_pve_field_guide.html) show/download source files; they are **not a hosted, interactive launch page**. The GitHub Pages URL is **not active yet**, so use the ZIP method above. The [alpha candidate branch download](https://github.com/arch-drake/ActiveMatterGuide/archive/refs/heads/alpha/v2.2.0-alpha.1.zip) is a testing snapshot if that branch is present; a formal GitHub prerelease is only published once its Actions workflow completes successfully.
+**Important GitHub link behavior:** GitHub's file-view pages for [Source Atlas HTML](./tools/all_maps_live_reference.html) and [field guide HTML](./active_matter_solo_pve_field_guide.html) show/download source files; they are **not a hosted, interactive launch page**. The GitHub Pages URL is **not active yet**, so use the ZIP method above. The [alpha candidate branch download](https://github.com/arch-drake/ActiveMatterGuide/archive/refs/heads/alpha/v2.2.0-alpha.1.zip) is published as source. The standalone maps-only alpha ZIP is present in that branch. A *formal* GitHub prerelease is still blocked by the Actions runner failure and must not be claimed as published.
 
 ## Support the guide
 

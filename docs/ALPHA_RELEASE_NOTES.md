@@ -2,6 +2,8 @@
 
 **Unofficial community-testing alpha.** This is not an official game map or a certified release.
 
+**Publication reality (October 20):** A standalone [maps-only alpha ZIP](https://github.com/arch-drake/ActiveMatterGuide/blob/alpha/v2.2.0-alpha.1/downloads/ActiveMatter-SourceAtlas-v2.2.0-alpha.1-MAPS-ONLY.zip) is available directly in the public alpha branch and the [full alpha branch source archive](https://github.com/arch-drake/ActiveMatterGuide/archive/refs/heads/alpha/v2.2.0-alpha.1.zip) is available. The separate GitHub Actions **formal prerelease** attempt failed before any runner steps; the [GitHub Releases listing](https://github.com/arch-drake/ActiveMatterGuide/releases) still has no published release. This note doubles as the planned formal release notes once runner access is restored. The maps-only ZIP intentionally omits the 2.1.1 companion and includes a link to obtain it separately.
+
 ## Included
 - 13 real-source community-hosted overhead raster *reference windows*: Airport, Headquarters, Downtown, Dam, Cargo Port, Factory, Dogorsk, Military Base, Ozernoe, Park, Scrapyard, Shegolskoe, Dalniy Island regional overview.
 - Gigastructure under **Special / In progress**, using your own floor screenshot; no fictional finished flat map.
