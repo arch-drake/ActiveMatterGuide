@@ -5,6 +5,12 @@ Map identifier `airport` · **22 sampled candidate markers** · no approved auth
 ## Confirmed context (NOT coordinates)
 Airport is a Central Africa raid featuring hangars, service roads and a passenger aircraft caught in a gravity anomaly. Do not confuse it with northern Dalniy Island's Soviet airfield. Community guide: https://active-matter.wiki/maps/airport/. Official patch 0.4.0.173 **moved stationary exits nearer buildings and added cover**, and adjusted Airport Devourer spawn locations: https://activematter.game/en/news/349.
 
+## Authentic overhead map reference found (20 October)
+- [Airport Active Matter Help entry](https://activematterhelp.ru/wiki/maps/africa_airport) publicly embeds a genuine-looking tile-based overhead basemap as a raster pyramid; [regional map explorer](https://activematterhelp.ru/maps?map=forsaken_africa) also has the broader Forsaken Africa reference.
+- Example source tile: https://activematterhelp.ru/map-tiles/forsaken_africa_tiles/3/4/5.webp . Adjacent tiles share roofs, roads, vegetation and terrain at identical scale; source tile bounds/zoom/projection and the Airport raid crop **have not been calibrated**. They must not be treated as 22-pin coordinate correspondence yet.
+- The wiki reports **8 permanent, 11 timed and 1 final exit** in its Airport reference, whereas the guide's historic **22 sampled markers are all types combined**. This signals undercoverage, not a contradiction about total exit count. PvE/Open distinction needs independent checking before publishing.
+- See [detailed source audit](AUTHENTIC_MAP_TILE_SOURCE_DISCOVERY.md). External image rights and rehosting permission remain to be reviewed.
+
 ## Input capture specification
 | Field | Required value / safeguard |
 |---|---|
