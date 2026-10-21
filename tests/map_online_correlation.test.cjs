@@ -27,7 +27,7 @@ assert.equal(byId.airport.region,'Africa');
 assert.equal(byId.gigastructure.kind,'multilevel_raid');
 assert.equal(byId.dalniy.kind,'regional_overview');
 assert.equal(byId.dalniy.additionalVariants.length,0);
-assert.equal(byId.military.additionalVariants.find(v=>v.name.includes('Unstable Zone')).specialRules.source.endsWith('military_base'));
+assert(byId.military.additionalVariants.find(v=>v.name.includes('Unstable Zone')).specialRules.source.endsWith('military_base'));
 assert(byId.military.additionalVariants.find(v=>v.name.includes('Unstable Zone')).specialRules.extraction.includes('40 possible'));
 assert(byId.scrapyard.sourceReportedExitCounts.timedCandidates===0);
 assert(byId.airport.crossSourceCorroboration.sources.some(u=>u.includes('activematter.game')));
