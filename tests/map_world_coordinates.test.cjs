@@ -43,4 +43,20 @@ for(const m of x.maps){
  assert(Math.abs(backX-pct.x)<1e-9);
  assert(Math.abs(backY-pct.y)<1e-9);
 }
+
+const details=JSON.parse(fs.readFileSync(path.join(root,'map-evidence','legacy_marker_world_estimates_v1.json'),'utf8'));
+assert.equal(details.totals.records,275);assert.equal(details.totals.sourceDirectMatches,201);assert.equal(details.totals.affineOnlyEstimates,74);
+assert.equal(details.totals.independentlyGameVerified,0);
+assert.equal(details.records.length,275);
+assert.equal(new Set(details.records.map(r=>r.legacyMarkerId)).size,275);
+for(const p of details.records){
+ const m=x.maps.find(r=>r.id===p.mapId);assert(m,'Unknown map '+p.mapId);
+ const estimatedX=Math.round((m.coordinates.worldX.slopeMetersPerPercent*p.originalMapXPercent+m.coordinates.worldX.interceptMeters)*100)/100;
+ const estimatedZ=Math.round((m.coordinates.worldZ.slopeMetersPerPercent*p.originalMapYPercent+m.coordinates.worldZ.interceptMeters)*100)/100;
+ assert(Math.abs(estimatedX-p.inferredGameWorldX)<.011);
+ assert(Math.abs(estimatedZ-p.inferredGameWorldZ)<.011);
+ assert.equal(p.correlationType,m.unmatchedSourceMarkerIds.includes(p.legacyMarkerId)?'TRANSFORM_ONLY_NO_DIRECT_SOURCE_RECORD':'MATCHED_SHARED_SOURCE_RECORD');
+}
+assert(html.includes('id="exportWorldCsv"'),'Reference Atlas CSV export button missing');
+assert(html.includes('function exportWorldCsv()'),'Source estimate export function missing');
 console.log('PASS world coordinate crosswalk: 201 direct source matches, 74 without direct match, 12 independently held-out maps, exact inverse round-trips');
