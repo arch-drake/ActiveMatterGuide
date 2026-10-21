@@ -34,7 +34,7 @@ for(const m of app.SOURCES){
  assert.equal($('markerResults').children.length,(app.MARKERS[m.id]||[]).length);
  assert.equal($('variantSelect').children.length,m.variants.length);
  assert.equal($('allowOverlay').checked,false);
- assert.equal($('worldResult').textContent.includes('source'),m.kind!=='regional_overview');
+ assert.equal($('worldResult').textContent.includes('Internal source transform'),app.worldOf(m.id,{x:20,y:40})!==null);
 }
 $('mapSelect').value='airport';$('mapSelect').listeners.change();
 $('markerSearch').value='extraction';$('markerSearch').listeners.input();
