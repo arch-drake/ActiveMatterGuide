@@ -46,4 +46,18 @@ assert(c&&Number.isFinite(c.x)&&Number.isFinite(c.z));
 const back=app.percentOf('airport',c.x,c.z);
 assert(Math.abs(back.x-69.35)<1e-6&&Math.abs(back.y-61.4)<1e-6);
 assert.equal(app.worldOf('dalniy',{x:20,y:40}),null);
+// Live tile source opt-in: all 13 geo views, Gigastructure source-only.
+$('mapSelect').value='airport';$('mapSelect').listeners.change();
+assert.equal($('tileLayer').children.length,0,'No external requests before click');
+$('useOnlineTiles').listeners.click();
+assert.equal($('tileLayer').children.length,16,'Airport expects a 4x4 external tile mosaic');
+assert.equal($('allowOverlay').disabled,true);
+assert.equal($('allowOverlay').checked,false);
+for(const m of app.SOURCES){
+ $('mapSelect').value=m.id;$('mapSelect').listeners.change();
+ assert.equal($('tileLayer').children.length,m.id==='gigastructure'?0:16,'Unexpected tile count for '+m.id);
+ assert.equal($('allowOverlay').checked,false,'Legacy pins cannot activate on online tiles');
+}
+$('stopOnlineTiles').listeners.click();
+assert.equal($('tileLayer').children.length,0,'Stop online must clear tile elements');
 console.log('PASS simulated DOM: 14 map selectors, 30 variant option entries, all historic search lists, hidden uncalibrated pins and world converter');
