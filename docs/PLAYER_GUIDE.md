@@ -6,24 +6,29 @@
 
 ## 1. Download and open
 
-**Offline (recommended):**
+**Offline PvE/PvP field companion (includes older illustrated maps):**
 
 1. Download `Active_Matter_Field_Operations_2_1_Community_Edition.zip` from the repository's `downloads/` folder or GitHub Releases once published.
 2. **Extract** the ZIP into an ordinary folder. Don't try to open the HTML inside a ZIP preview.
 3. Double-click `active_matter_solo_pve_field_guide.html` and open it in a recent **Chrome** or **Edge** browser.
 4. Click **? Start here** for the six-step introduction. Artwork and eleven original audio tracks are already embedded in the HTML, so normal guide use does not require internet access.
 
-**Online:** when GitHub Pages is enabled, visit [the project website](https://arch-drake.github.io/ActiveMatterGuide/) and choose **Launch the field guide**.
+**Online Source Atlas (primary map experience):** when GitHub Pages is enabled, visit [the project website](https://arch-drake.github.io/ActiveMatterGuide/) and choose **Explore Source Atlas**. Alternatively, open [the source atlas](../tools/all_maps_live_reference.html) directly. The offline companion remains available for investigations, monsters, music and planning.
 
 ## 2. Choose PvE or PvP
 
 Use Solo PvE and Team PvE controls for PvE recommendations and progress. The separate **PvP** section is an optional Open Solo/Squad planner with its own preparation checklist and private after-action notes. This is a planning/reference tool, not real-time opponent tracking or game automation. PvP notes do not overwrite your PvE checklists.
 
-## 3. Maps and isometric controls
+## 3. Source Atlas first; legacy maps for historical reference
+
+Open the [Source Atlas](../tools/all_maps_live_reference.html) for 13 source-derived top-down raster reference areas: Airport, Headquarters, Downtown, Dam, Cargo Port, Factory, Dogorsk, Military Base, Ozernoe, Park, Scrapyard, Shegolskoe and Dalniy regional overview. Click **Load overhead map** to opt in to third-party tile requests; the windows are **not exact surveyed raid crops**. No legacy marker overlays are drawn on top. Gigastructure is under **Special / In progress**, with player-supplied floor images only.
+
+The following controls apply to the bundled **older illustrated maps** and should not be taken as geographic or marker verification:
+
 
 - Click **Maps**; select the map and raid variant.
 - Choose **Flat** or **Isometric** projection; use **↶ / ↷** to rotate in 15-degree steps, **+ / −** or the wheel to zoom, drag to pan, and reset to return to a known angle.
-- Select marker pins for evidence notes, and search/filter them by category.
+- Offline-guide marker pins remain **provisional historic source-relative candidates** and may not align with the picture. Their extraction/timed exit, anomaly, moving-event and spawn-group semantics vary by game version and mode. Do not treat them as current-game verified.
 - **My screenshot** can display your own game screenshot, but requires manual alignment. Check three fixed landmarks before trusting a marker position.
 - The built-in tactical maps are **illustrative artwork, not game-exact geography**. Isometric projection is a 2D viewing effect, not measured elevation. Community markers and mechanics may be patch-sensitive.
 

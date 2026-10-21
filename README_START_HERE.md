@@ -8,7 +8,7 @@ Release: **20 October 2026**. Unofficial, free-of-subscription, standalone offli
 
 1. Extract this ZIP. Open `active_matter_solo_pve_field_guide.html` directly in a modern Chrome or Edge browser. The single HTML embeds all required artwork and 11 original music tracks; separate assets are retained for reference and export.
 2. Click **? Start here** for the six-step guided tour.
-3. Choose **Maps** for 14 switchable atlases. **Isometric: ON** tilts the map using a 2D visual transform; use the ↶/↷ buttons to rotate by 15°, +/- to zoom, drag to pan, and ⟲ to reset the rotation. Switch to Flat if you prefer a north-up coordinate grid. All map source coordinates are unchanged.
+3. For actual source-grounded overhead references, open the **[primary Source Atlas](tools/all_maps_live_reference.html)**: 13 community raster reference areas (including Dalniy Island regional), plus a separate Gigastructure floor-only importer. Source tiles require opt-in and internet. The offline guide's **Maps** tab still contains 14 *illustrated legacy* panels, pseudo-isometric tilt, zoom and source-relative historic marker leads. These are **not** verified raid boundaries, surveyed elevations or authenticated current extraction pins.
 4. Choose **PvP** for optional Solo Open Raid / Squad Open Raid planning and private after-action notes. The original Solo/Team PvE mode stays separate.
 5. Choose **Homebase** for a beginner-friendly overview; **Signals** for cassette/recorder community leads and your personal collection journal.
 6. Select from **12 themes** (including Field Notebook) and **3 layout densities**. The music dock has 11 original synth tracks, favorites, favorites-only shuffle/next, volume, and MP3 saving. No autoplay.

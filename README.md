@@ -1,8 +1,8 @@
 # ACTIVE MATTER // FIELD OPERATIONS — Community Edition
 
-![Active Matter Field Operations 2026 feature overview — 14 map views, 30 raid variant references, monster dossiers, investigation tools and illustrative map UI](previews/field_operations_2026_overview.svg)
+![Active Matter Field Operations editorial mockup — 13 source-raster areas, one floor-only workspace, raid variants, dossiers and evidence tools](previews/field_operations_2026_overview.svg)
 
-*Updated 2026 project feature overview (illustration, not a game screenshot). Live online map tiles and 2.1.2 editorial art are optional additions; the downloadable offline field guide is still version 2.1.1.*
+*Original editorial mockup, not a game screenshot. The primary map workflow now opens the source-hosted raster atlas. Live tiles load only on user opt-in; the offline 2.1.1 HTML/ZIP still contains illustrative legacy maps.*
 
 <details>
 <summary>See an actual guide screenshot: Monster &amp; Anomaly Compendium</summary>
@@ -15,7 +15,7 @@
 
 > Independent fan-made reference tool. Not affiliated with or endorsed by the Active Matter developers. It does not read, alter, inject into, or automate the game.
 
-**Open immediately:** [Launch the guide](./active_matter_solo_pve_field_guide.html) by downloading and opening the HTML, or [download the complete ZIP](./downloads/Active_Matter_Field_Operations_2_1_1_Community_Edition.zip). Once GitHub Pages is enabled, the site landing page (`index.html`) also provides a browser launch option.
+**Open maps first:** [Primary Source Atlas](./tools/all_maps_live_reference.html) · [Offline field companion (legacy illustrated maps)](./active_matter_solo_pve_field_guide.html) · [2.1.1 offline ZIP](./downloads/Active_Matter_Field_Operations_2_1_1_Community_Edition.zip). The homepage's main map action now opens the Source Atlas rather than the older geometric map panels.
 
 ## Support the guide
 
@@ -27,12 +27,22 @@ The project is free and always optional to support: [☕ Buy Me a Coffee](https:
 
 ## What it does
 
-- **14 interactive maps** with flat and pseudo-isometric viewing, rotation, zoom and manual map notes; 12 with limited community-derived coordinate markers.
+- **Primary map viewer:** 13 game-derived community-hosted raster reference windows (including Dalniy Island regional), explicitly opt-in tile downloads, zoom/pan, raid-variant source links and **no unaligned marker overlays**. Gigastructure is a separate floor-only upload workspace. The older offline companion still has 14 *illustrative* panels and legacy marker candidates.
 - **PvE and optional PvP:** Solo/Team PvE checklists, a separate Open Solo/Squad PvP field log, route planning and investigation progress.
 - **20 monster/anomaly dossiers**, 53 curated investigation chains with 217 documented criteria (coverage is **not** guaranteed exhaustive).
 - **Signal Archive:** personal music collectible field journal, cited community location leads and 11 original synthesizer tracks.
 - **12 themes**, guided tour, Homebase explainer, quick navigation and exportable browser-local backups.
 - **Fully offline gameplay companion:** no login, subscription, overlay, game-memory inspection or mod installation.
+
+## Primary map presentation and accuracy — 20 October 2026
+
+The **[Source Raster Atlas](tools/all_maps_live_reference.html)** is the public default map path. Its 13 front-facing reference areas are **Airport, Headquarters, Downtown, Dam, Cargo Port, Factory, Dogorsk, Military Base, Ozernoe, Park, Scrapyard, Shegolskoe and Dalniy Island regional overview**. Overhead rasters are requested from the community host *only after the user clicks* **Load overhead map**; third-party map images are not copied into this repository. Some areas share a regional source image, so the 4×4 tile windows are **not certified exact per-raid boundaries**.
+
+**Gigastructure is not a normal supported flat map.** It is listed under **Special / In progress** for separately labeled local floor-reference images; no unverified floor plan, surveyed elevation or building height is invented. **All 275 historic source-relative marker positions are still candidates.** The primary atlas **draws no marker overlay at all** on its live raster or user image, because coordinates have not been independently reconciled. Extracts, timed extractions, dynamic events, anomalies, Unstable Zone points and spawn-group restrictions must be separately checked for the current game build and raid variant.
+
+For research only, the [Screenshot Evidence Atlas](tools/map_reference_atlas.html) and [Map Reconciliation Workbench](tools/map_reconciliation.html) retain manually gated calibration/evidence workflows. These require matching build, mode, raid variant, screenshot identity, source crop and held-out landmark validation before historic candidate pins can be previewed. Such opt-in overlays remain **provisional**, not authoritative live positions.
+
+**Distribution boundary:** the packaged `active_matter_solo_pve_field_guide.html` and existing downloadable 2.1.1 ZIP have **not** been silently repackaged. They still include the old illustrative basemaps and historic candidate markers as part of the offline tracking companion. Use the newer Atlas for map viewing and treat legacy pins as research leads, not verified coordinates.
 
 ## Quick start
 
@@ -55,11 +65,11 @@ Critical accuracy differences: Headquarters and Airport are both **Africa**, Mil
 
 Of 275 older source-coordinate entries, **201 could be linked to the imported game-world coordinate representation** from the same third-party source. Fitting a separate percent→world X/Z transform per map and withholding independent source entries produced a maximum per-map internal check RMS of 0.067 m. This is **dataset agreement, NOT independently validated live-game location accuracy**; it does not supply 3D building height or game-exact raster backgrounds. The reference atlas includes a world X/Z lookup and a provisional crosshair only after screenshot-specific calibration.
 
-## Ready-to-use 14-map visual atlas — tested standalone browser tool
+## Primary Source Atlas — 13 raster areas + Gigastructure floor references
 
 [**Open All Maps Live Reference Atlas**](tools/all_maps_live_reference.html) · [Download latest repository ZIP](https://github.com/arch-drake/ActiveMatterGuide/archive/refs/heads/main.zip)
 
-The browser-tested single-HTML viewer covers **all 14 guide views and 30 named modes**. For 13 map views, one click loads 16 community-hosted game-derived raster tiles (4×4, 2048×2048), with zoom, pan, original source links, and map-specific patch warnings. Gigastructure retains a dedicated local floor-image importer rather than claiming a fake overhead map. The user-requested standalone ZIP is also saved in the Active Matter Guide project Library. It contains no copied game textures; Internet is required for live tiles.
+The single-HTML viewer makes **13 geographic source references** front-facing and separates **Gigastructure into Special / In progress**. For each referenced geographic area, one opt-in click requests 16 community-hosted game-derived raster tiles (4×4, 2048×2048), with zoom, pan, raid-variant sources and patch warnings. The new primary atlas does **not** project any historical pin coordinates onto these tile windows. Gigastructure uses only a local, floor-labeled screenshot importer; it does not claim a verified overhead floor map. The user-requested standalone ZIP is also saved in the Active Matter Guide project Library. It contains no copied game textures; Internet is required for live tiles.
 
 **Browser QA:** 14 selectors / 30 raid variants / 13 live tile modes and Gigastructure fallback passed in Chromium with network tile requests intercepted and replaced by *clearly labelled test images*. This validates UI wiring, not real-world tile delivery, game-geographic alignment, or copyrights. Tests made **zero third-party requests before user opt-in**; no browser script errors occurred.
 

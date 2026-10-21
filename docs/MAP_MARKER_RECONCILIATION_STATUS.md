@@ -1,5 +1,11 @@
 # Map marker reconciliation register — 20 October 2026
 
+## Front-end visibility rule (source-first overhaul)
+
+**Primary map viewer:** [Source Atlas](../tools/all_maps_live_reference.html) shows 13 source-hosted geographic reference windows; unaligned legacy points (including supposedly static markers) are **never plotted** on rasters or user-supplied screenshots. The primary viewer has **no marker display toggle**, intentionally. The list of 275 historic candidates is available **only in separate evidence tools**. Screenshot-specific overlays in [Reference Atlas](../tools/map_reference_atlas.html) require matching screenshot hash/identity, crop, patch, raid mode, variant, four FIT and two independent CHECK landmarks plus explicit user consent; these remain *provisional*, not current-game certification. Game-world X/Z crosswalk agreement alone does not satisfy the image-coordinate gate.
+
+**Patch/variant rules:** all extractions (including timed), anomalies, dynamic or mobile events, spawn-group restrictions and Unstable Zone exits require source date/build/variant context. Any marker lacking reconciliation stays absent from the primary raster. **Gigastructure** has no approved flat view or floor-to-world transform; manual floor screenshots must not receive cross-floor markers.
+
 ## Audit scope and interpretation
 
 The guide's historic community-relative marker samples form a **candidate layer**. Percent coordinates cannot be called verified or game-exact until aligned with an authentic **same-build, same-mode, same-orientation** in-game screenshot. Counts below describe the workbench's embedded sample, not independently confirmed locations. **Source image rights/redistribution permissions must be checked separately.**
