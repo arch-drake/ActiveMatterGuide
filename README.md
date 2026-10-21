@@ -40,6 +40,12 @@ The project is free and always optional to support: [☕ Buy Me a Coffee](https:
 
 Critical accuracy differences: Headquarters and Airport are both **Africa**, Military Base: Unstable Zone opens only one of 40 potential exits, and Dalniy regional overview is not an extra raid. The 275 historic guide markers have not been overwritten.
 
+## New coordinate crosswalk: 201 legacy samples reconciled to game-world X/Z
+
+[Source-derived coordinate QA and 12-map table](docs/GAME_WORLD_COORDINATE_CROSSWALK.md) · [Downloadable JSON](map-evidence/world_coordinate_crosswalk_2026_10_20.json) · [Reference Atlas converter](tools/map_reference_atlas.html).
+
+Of 275 older source-coordinate entries, **201 could be linked to the imported game-world coordinate representation** from the same third-party source. Fitting a separate percent→world X/Z transform per map and withholding independent source entries produced a maximum per-map internal check RMS of 0.067 m. This is **dataset agreement, NOT independently validated live-game location accuracy**; it does not supply 3D building height or game-exact raster backgrounds. The reference atlas includes a world X/Z lookup and a provisional crosshair only after screenshot-specific calibration.
+
 ## Screenshot-based tactical Reference Atlas (new)
 
 [**Open the Reference Atlas**](tools/map_reference_atlas.html) — real-overhead-image viewer for all **14 guide views / 30 documented variants / 275 historic source candidate points**. Drag/zoom your own current game screenshot (file stays in the browser), inspect community sample markers by name, and import your own [Map Reconciliation Workbench](tools/map_reconciliation.html) evidence to project pins **only after** checking build, play mode, named raid variant, physical-landmark FIT/CHECK controls, screenshot identity and crop. Historic sources with a different map crop cannot be used directly. Public reference URLs are linked for comparison; third-party image tiles are not repackaged. **This tool does not make the existing 14 illustrated guide backgrounds game-exact.**
