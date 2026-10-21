@@ -30,6 +30,12 @@ jobs:
         run: node tests/map_reconciliation_checks.test.cjs
       - name: Validate 14-map source register, landmark fit/holdout, import and review safety
         run: node tests/map_fidelity_workflow.test.cjs
+      - name: Verify 14-map reference atlas geometry and screenshot evidence gates
+        run: node tests/map_reference_atlas.test.cjs
+      - name: Verify 30 variant source references and documentation
+        run: node tests/map_online_correlation.test.cjs
+      - name: Verify derived world coordinate crosswalk
+        run: node tests/map_world_coordinates.test.cjs
       - name: Assert that the release status remains source-truthful
         run: |
           node -e "const fs=require('fs');const x=JSON.parse(fs.readFileSync('map-evidence/map_fidelity_register.v1.json')); if(x.maps.length!==14||x.maps.some(m=>m.geometryVerified||m.basemapStatus!=='illustration'))process.exit(1);console.log('Source register remains honest: 14 unverified maps')"
