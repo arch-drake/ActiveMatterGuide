@@ -32,3 +32,11 @@
 - Original basemaps still illustrative. Current screenshot-authenticated game geography 0/14; independently authenticated candidate markers 0/275.
 
 - Added polished offline [map fidelity status board](../tools/map_fidelity_dashboard.html) showing the 14 original thumbnail illustrations with clear "not certified" status and deep links to map-specific calibration tools; no fabricated geometry or game texture was added.
+
+## Online source-correlation follow-up — 20 October 2026
+
+- Reviewed all 13 reference raid-map regions and all 30 named raid-variant pages; saved 30 unique, page-verified URLs in `map-evidence/online_source_correlation_2026_10_20.json`.
+- Upgraded [14-map dashboard](../tools/map_fidelity_dashboard.html) with geographic classification, source-reported extraction-system candidate totals, patch warnings and expandable links for each variant.
+- Added comprehensive [map-by-map research report](ONLINE_MAP_CORRELATION_2026_10_20.md), including official patch change crosswalk and independence caveats where fan atlases copy each other's marker datasets.
+- New deterministic source-integrity test checks 14 views, 13 actual playable regions, all 30 unique source reference URLs, unchanged 275 legacy samples, and military Unstable Zone behavior. Passed locally in isolated JS with in-memory file fixtures. GitHub Actions runner remains separately unresolved.
+- No authentic game baselayers or rehosted third-party map tiles bundled; no claim of 275 coordinate verification or correct isometric building heights.
