@@ -11,11 +11,13 @@
 
 </details>
 
-**Version:** 2.1.1 · **Updated:** October 20, 2026 · **Status:** free community download available; GitHub Pages setup pending
+**Legacy companion:** 2.1.1 · **Source Atlas alpha candidate:** v2.2.0-alpha.1 · **Updated:** October 20, 2026 · **GitHub Pages is not yet enabled.**
 
 > Independent fan-made reference tool. Not affiliated with or endorsed by the Active Matter developers. It does not read, alter, inject into, or automate the game.
 
-**Open maps first:** [Primary Source Atlas](./tools/all_maps_live_reference.html) · [Offline field companion (legacy illustrated maps)](./active_matter_solo_pve_field_guide.html) · [2.1.1 offline ZIP](./downloads/Active_Matter_Field_Operations_2_1_1_Community_Edition.zip). The homepage's main map action now opens the Source Atlas rather than the older geometric map panels.
+**Download and launch (working without GitHub Pages):** [Download the complete current repository ZIP](https://github.com/arch-drake/ActiveMatterGuide/archive/refs/heads/main.zip), extract it, and open **index.html** in Chrome or Edge. The first homepage action opens **Explore Source Atlas**. Source tiles require internet and your explicit opt-in. For the older offline companion, use [the separate 2.1.1 ZIP](./downloads/Active_Matter_Field_Operations_2_1_1_Community_Edition.zip).
+
+**Important GitHub link behavior:** GitHub's file-view pages for [Source Atlas HTML](./tools/all_maps_live_reference.html) and [field guide HTML](./active_matter_solo_pve_field_guide.html) show/download source files; they are **not a hosted, interactive launch page**. The GitHub Pages URL is **not active yet**, so use the ZIP method above. The [alpha candidate branch download](https://github.com/arch-drake/ActiveMatterGuide/archive/refs/heads/alpha/v2.2.0-alpha.1.zip) is a testing snapshot if that branch is present; a formal GitHub prerelease is only published once its Actions workflow completes successfully.
 
 ## Support the guide
 
@@ -46,9 +48,9 @@ For research only, the [Screenshot Evidence Atlas](tools/map_reference_atlas.htm
 
 ## Quick start
 
-1. Download and extract the [complete ZIP](./downloads/Active_Matter_Field_Operations_2_1_1_Community_Edition.zip).
-2. Open `active_matter_solo_pve_field_guide.html` in Chrome, Edge or another modern browser.
-3. Choose your mode and explore. Ctrl+K opens the guide search.
+1. Download and extract the [complete source repository ZIP](https://github.com/arch-drake/ActiveMatterGuide/archive/refs/heads/main.zip) to get the **current Source Atlas**. For legacy-only use, the [2.1.1 companion ZIP](./downloads/Active_Matter_Field_Operations_2_1_1_Community_Edition.zip) is still available.
+2. Open **index.html**, then **Explore Source Atlas** to view the 13 primary raster references (tiles load only when you click). Or open **active_matter_solo_pve_field_guide.html** to use the separate older offline guide.
+3. The legacy guide offers Solo/Team and PvP modes and Ctrl+K search.
 4. Before updating or moving the HTML, **Backup → Export complete backup** and keep that JSON file safe. Browser `file://` storage can vary by path and browser.
 
 > **Maps are not guaranteed 1:1 game geography.** Artwork is original illustrative scenery; community-sourced coordinate markers have their own provenance. The isometric tilt is a 2D projection, not measured elevation. A same-crop current in-game screenshot plus verified permissions is required for game-exact rendering. See [map accuracy notes](docs/MAP_PROVENANCE_AND_ACCURACY.md).

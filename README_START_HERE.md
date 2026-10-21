@@ -2,7 +2,7 @@
 
 Release: **20 October 2026**. Unofficial, free-of-subscription, standalone offline fan guide. No mods, memory reading, or automatic game interaction.
 
-**New players:** see `docs/PLAYER_GUIDE.md` for installation, maps, PvE/PvP, music, backup and troubleshooting.
+**New players:** read [docs/PLAYER_GUIDE.md](docs/PLAYER_GUIDE.md). GitHub Pages is currently disabled; download the [complete repo ZIP](https://github.com/arch-drake/ActiveMatterGuide/archive/refs/heads/main.zip), extract it, and open index.html for the Source Atlas. HTML views on github.com show source, not a running app.
 
 ## Quick start
 

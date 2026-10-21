@@ -1,4 +1,6 @@
 # Map overhaul source updates — publication and sign-off status
+
+**October 20 link audit:** all existing root HTML and 2.1.1 ZIP assets are in GitHub; GitHub Pages is **disabled**, and the GitHub Releases collection initially contains **no releases**. Player instructions were updated to prefer an extractable repository archive, not a nonfunctional Pages or GitHub HTML source-view link. See [Owner publication steps](../OWNER_PUBLICATION_STEPS.md) and [Alpha notes](ALPHA_RELEASE_NOTES.md). Formal alpha publication requires a completed workflow run and an actual GitHub prerelease entry.
 Checked: **20 October 2026** · Source branch: `main`
 
 ## Already present

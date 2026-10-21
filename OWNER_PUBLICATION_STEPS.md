@@ -1,20 +1,20 @@
-# Project-owner checklist: make the public guide work
+# Owner publication steps — verified October 20, 2026
 
-Your public repository is `https://github.com/arch-drake/ActiveMatterGuide`.
+Repository: https://github.com/arch-drake/ActiveMatterGuide
 
-**Important:** The README and player instructions have been pushed, but until you upload the large files to GitHub, the GitHub Pages guide will show as pending.
+**Audit findings:** The root standalone HTML, existing 2.1.1 ZIP, docs and atlas files are already committed. **Do not upload duplicate old copies.** At audit time GitHub Pages is disabled and GitHub Releases has no published entries. Repository HTML links on GitHub are source previews; they are not web-app launches.
 
-1. Extract this full ZIP. The complete 2.1 release is already in `downloads/` and the self-contained HTML is at the root.
-2. Using [GitHub's upload page](https://github.com/arch-drake/ActiveMatterGuide/upload/main) or (preferably) GitHub Desktop, upload the prepared project files and directories while **preserving the directory tree**. Do not upload personal browser backups. Avoid overwriting the latest GitHub `README.md`, `index.html`, or `docs/PLAYER_GUIDE.md` unless you want to keep the matching local versions.
-3. Required public files: `active_matter_solo_pve_field_guide.html` (root) and `downloads/Active_Matter_Field_Operations_2_1_1_Community_Edition.zip`. Other `source/`, `assets/`, `previews/`, `docs/`, `manifest.json` files are recommended for the complete source release.
-4. GitHub: **Settings → Pages → Deploy from a branch → main → / (root) → Save**. Then check `https://arch-drake.github.io/ActiveMatterGuide/`.
-5. Make sure both the **Launch** and **Download** links work. Independently download and extract the ZIP. Verify backup and restore before public announcement.
-6. Optionally draft a **GitHub Release** with tag `v2.1.0` and attach the standalone ZIP as a release asset.
+## Make the maps playable as a website
 
-The owner must choose a software license deliberately; the public repo currently has no general license. Third-party game graphics and community map data may have distinct rights.
+1. Visit [Settings → Pages](https://github.com/arch-drake/ActiveMatterGuide/settings/pages) while signed in as repository owner.
+2. Choose **Deploy from a branch**, branch **main**, folder **/(root)** and **Save**.
+3. After GitHub confirms publication, visit https://arch-drake.github.io/ActiveMatterGuide/ and test **Explore Source Atlas**, a reference area, local upload, external opt-in tiles, mobile viewport and download button.
+4. If Pages is not yet enabled, the [repository archive](https://github.com/arch-drake/ActiveMatterGuide/archive/refs/heads/main.zip) already allows local use: extract and open index.html. Never ask players to click a GitHub HTML file-view link expecting it to execute as a page.
 
-## Funding and map evidence
+## Alpha prerelease
 
-Your published GitHub README/landing/FUNDING.yml already include Buy Me a Coffee. The HTML in this package includes it too. Upload the **updated 2.1.1 files** below rather than the older 2.1 copies.
+The proposed tag is **v2.2.0-alpha.1**. The branch **alpha/v2.2.0-alpha.1** is the candidate source; see [alpha notes](docs/ALPHA_RELEASE_NOTES.md). A dedicated workflow, .github/workflows/publish-alpha.yml, builds an extractable alpha ZIP and uses GitHub Actions to create a prerelease if the runner and token permissions allow. **A source branch is not proof a GitHub Release has been published.** Confirm an actual entry and attached ZIP under [Releases](https://github.com/arch-drake/ActiveMatterGuide/releases) before announcing formal publication.
 
-See docs/MAP_FIDELITY_EVIDENCE.md; do not advertise illustrated geometry as in-game accurate.
+If Actions cannot run, go to [Draft a release](https://github.com/arch-drake/ActiveMatterGuide/releases/new) as the owner, choose tag v2.2.0-alpha.1 from the alpha branch, set **This is a pre-release**, and attach the locally built dist ZIP and .sha256 produced by running python3 source/build_alpha_release.py in a checked-out repository. Do not claim release success until it exists.
+
+Map notes: 13 source raster references, Dalniy regional overview, Gigastructure special floor mode; no verified legacy pins or surveyed heights. The separate offline 2.1.1 guide still includes old illustrated maps. The project's general license remains unselected; do not assume external community tile redistribution rights.

@@ -1,27 +1,9 @@
-# Release upload: files still required
+# Historical 2.1.1 upload task — completed
 
-**Status:** public repository foundation, README, Sponsor button, landing page and map evidence plan are published. The complete guide HTML and release ZIP are **not** currently in the GitHub repository.
+**Superseded instructions.** The root active_matter_solo_pve_field_guide.html and the full downloads/Active_Matter_Field_Operations_2_1_1_Community_Edition.zip both exist on the public main branch. The old request to upload them again is obsolete.
 
-## Do this once
+Current recommended player link: [Download current repository ZIP](https://github.com/arch-drake/ActiveMatterGuide/archive/refs/heads/main.zip) and extract the archive before opening index.html. This includes the separate source-first map atlas.
 
-Download and extract the prepared 2.1.1 publication ZIP from your ChatGPT conversation.
+The old 2.1.1 downloadable ZIP remains a standalone offline companion with illustrative map panels and candidate markers. It is not the atlas alpha. For publishing the source-first alpha, use the dedicated [release instructions](ALPHA_RELEASE_NOTES.md) and [owner checklist](../OWNER_PUBLICATION_STEPS.md).
 
-Use [Upload files](https://github.com/arch-drake/ActiveMatterGuide/upload/main) and upload, keeping folders:
-
-1. `active_matter_solo_pve_field_guide.html` — at the repository **root**.
-2. `downloads/Active_Matter_Field_Operations_2_1_1_Community_Edition.zip` — in the **downloads/** folder.
-
-For easiest folder placement, use GitHub Desktop and copy these files into the local clone, then commit/push.
-
-Optional full source publication: also upload `assets/`, `source/`, `previews/`, `README_START_HERE.md`, `manifest.json`, and remaining `docs/`. Do **not** overwrite GitHub's most recent `README.md` or `index.html` with older copies.
-
-## Verify before announcing
-
-- Open repository root and confirm HTML / download ZIP exist.
-- Independently download and extract the ZIP.
-- Enable Pages in Settings → Pages → Deploy from main / root.
-- Visit https://arch-drake.github.io/ActiveMatterGuide/ and confirm **Launch** and **Download** work.
-- Verify a manual checkbox and JSON backup/restore; test a fresh browser.
-- Do not claim game-exact maps or real building heights until source screenshots and coordinate alignment support it.
-
-The guide is free and optional support is https://buymeacoffee.com/elderdrake.
+**Pages hosting remains a separate Settings action**; committed HTML files do not automatically become live browser pages. See [Settings → Pages](https://github.com/arch-drake/ActiveMatterGuide/settings/pages).

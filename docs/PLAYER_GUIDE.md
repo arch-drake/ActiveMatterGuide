@@ -2,18 +2,18 @@
 
 **Free, unofficial fan guide.** Runs in a modern desktop browser; no game installation changes, accounts, mods, subscriptions, or game-memory access.
 
-> **Public publication:** if launch/download buttons on the website are missing, the release files are still being uploaded. The project owner will announce when the public download is available.
+> **GitHub Pages is not enabled as of the October 20 repository audit.** GitHub's HTML file links are source previews, not interactive live pages. Download the [complete current repository ZIP](https://github.com/arch-drake/ActiveMatterGuide/archive/refs/heads/main.zip), extract it, and open index.html locally to use the atlas. Do not assume the Pages URL works yet.
 
 ## 1. Download and open
 
 **Offline PvE/PvP field companion (includes older illustrated maps):**
 
-1. Download `Active_Matter_Field_Operations_2_1_Community_Edition.zip` from the repository's `downloads/` folder or GitHub Releases once published.
+1. Download the actual [Active_Matter_Field_Operations_2_1_1_Community_Edition.zip](../downloads/Active_Matter_Field_Operations_2_1_1_Community_Edition.zip) for the old standalone guide, or download the [full repository ZIP](https://github.com/arch-drake/ActiveMatterGuide/archive/refs/heads/main.zip) to get the improved atlas and evidence tools.
 2. **Extract** the ZIP into an ordinary folder. Don't try to open the HTML inside a ZIP preview.
 3. Double-click `active_matter_solo_pve_field_guide.html` and open it in a recent **Chrome** or **Edge** browser.
 4. Click **? Start here** for the six-step introduction. Artwork and eleven original audio tracks are already embedded in the HTML, so normal guide use does not require internet access.
 
-**Online Source Atlas (primary map experience):** when GitHub Pages is enabled, visit [the project website](https://arch-drake.github.io/ActiveMatterGuide/) and choose **Explore Source Atlas**. Alternatively, open [the source atlas](../tools/all_maps_live_reference.html) directly. The offline companion remains available for investigations, monsters, music and planning.
+**Primary Source Atlas:** In an extracted repository ZIP, open **index.html** and choose **Explore Source Atlas**. It opens [tools/all_maps_live_reference.html](../tools/all_maps_live_reference.html) locally. The atlas itself is a self-contained HTML viewer, but live third-party raster images require consent and internet. Once [GitHub Pages](https://github.com/arch-drake/ActiveMatterGuide/settings/pages) is enabled and deployed, online launch links can be tested and announced. The old offline companion remains available for investigations, monsters, music and planning.
 
 ## 2. Choose PvE or PvP
 
@@ -55,7 +55,7 @@ Progress is stored in your browser, not embedded in the downloadable HTML. Brows
 
 | Problem | Solution |
 | --- | --- |
-| Launch button missing on website | Public release files may not have been uploaded yet; check repository and Releases. |
+| Online Pages link does not work | GitHub Pages is currently disabled. Download the full repo ZIP, extract and open index.html locally; the owner must enable Pages under Settings. |
 | HTML opens as text | Open the **extracted** `.html` with Chrome or Edge, not inside ZIP preview. |
 | My progress is missing | Check browser and file path; restore your exported guide JSON. |
 | Map doesn't match the game | Included maps are conceptual. Use your own screenshot with alignment. |
