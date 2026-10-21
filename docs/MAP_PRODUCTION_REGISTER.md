@@ -54,3 +54,9 @@ A tile-based actual-looking overhead Forsaken Africa basemap is visible at [Acti
 ## Coordinate-georeferencing advance
 
 A [source-derived world-coordinate crosswalk](GAME_WORLD_COORDINATE_CROSSWALK.md) now covers all 12 guide maps that have historic marker samples. **201 of the 275 source markers were directly crossmatched** to the third-party site's game-world X/Z data; the remaining 74 were not. Per-map horizontal affine checks were done with withheld imported source records. This is an aid to georeferencing current map screenshots, **not** an approved replacement for a verified game basemap or proof of current exit positions. No height layers were inferred from source `Y` elevations.
+
+## Additional first-party Steam developer evidence — Park underground
+
+The Steam discussion [“Park” (23–24 August 2026)](https://steamcommunity.com/app/2887580/discussions/0/591813437999457670/) contains a reply from developer-tagged **[CM] MajorMcDonalds** confirming that maps exist **inside the underground laboratory and near its entrance**, and advising players to use a flashlight/headlamp/NVG to find them. This supports an additional **Park / underground** floor-plan capture requirement, not the invention of an overhead bunker layout. The caveat is that this was an August response; check the current game build before using it as final artwork.
+
+Player-executable evidence request: capture a clear image of those actual in-game underground floor maps plus the in-game map screen, ideally with door/ladder alignment landmarks, floor identifier and current patch number. The existing one-plane Park visual is **not** enough to faithfully render lower laboratory routing.
