@@ -68,3 +68,9 @@
 - A separate standalone downloadable ZIP is kept in the project's file Library for players who do not want to clone GitHub.
 - Chromium smoke run used intercepted, clearly marked **fake QA tiles**; all selector/mosaic/floor fallback paths passed, the page made no web requests before opt-in, and no script errors were captured. Actual cross-origin image delivery depends on the community site's availability/hotlink policy and is not verified by this test.
 - The old artwork/marker layers are not claimed game-exact. The live raster sources are borrowed remote *views*, not certified raid crops or server-current extraction maps.
+
+## GitHub preview refresh — 20 October 2026
+
+- Replaced old README/landing-page hero `map_v21_smoke.png` with `previews/field_operations_2026_overview.svg`: a **clearly labelled feature illustration**, representing the current 14-view atlas, 30 raid variants, patch-aware sources, monster dossiers, Solo/Team progress and local-first architecture.
+- Retained an expandable actual current guide screenshot for the Monster Compendium, and kept the previous preview files for historical QA.
+- This updates the visible repository README and `index.html`. GitHub's separate repository **Social preview** under Settings may require the owner to upload a raster image manually; the corresponding PNG is available in the conversation but was not set via repository settings.
