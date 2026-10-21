@@ -1,0 +1,47 @@
+name: Publish Source Atlas alpha
+on:
+  push:
+    branches:
+      - 'alpha/v2.2.0-alpha.1'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: active-matter-alpha-v2-2-0
+  cancel-in-progress: false
+jobs:
+  publish-alpha:
+    if: github.repository == 'arch-drake/ActiveMatterGuide'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify source atlas and link safety
+        run: |
+          node tests/map_primary_experience.test.cjs
+          node tests/map_hosted_tiles.test.cjs
+          node tests/map_reference_atlas.test.cjs
+          node tests/release_links.test.cjs
+      - name: Package alpha
+        run: python3 source/build_alpha_release.py
+      - name: Publish GitHub prerelease
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: v2.2.0-alpha.1
+        run: |
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "Already published; will not overwrite existing release."
+            exit 0
+          fi
+          gh release create "$TAG" \
+            "dist/ActiveMatter-SourceAtlas-$TAG.zip" \
+            "dist/ActiveMatter-SourceAtlas-$TAG.sha256" \
+            --target "$GITHUB_SHA" \
+            --title "Source Atlas 2.2.0 Alpha 1" \
+            --notes-file docs/ALPHA_RELEASE_NOTES.md \
+            --prerelease \
+            --latest=false
+          gh release view "$TAG" --json url,name,isPrerelease
