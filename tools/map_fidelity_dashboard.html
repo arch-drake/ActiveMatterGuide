@@ -54,7 +54,7 @@ function render(){
   if(ref.exits){const e=ref.exits;body.append(div('stats','Reference source reports ('+ref.sourceVariant+'): '+e.permanentCandidates+' permanent, '+e.timedCandidates+' timed'+(e.finalCandidates===null?'':', '+e.finalCandidates+' final')+'. This is NOT live verified.'))}
   if(ref.warning)body.append(div('patch',ref.warning));
  }
- const actions=div('links');actions.append(link('map_reference_atlas.html?map='+encodeURIComponent(m.id),m.id==='gigastructure'?'Floor-reference Atlas':'Live top-down tiles',true),link('map_reconciliation.html?map='+encodeURIComponent(m.id),'Calibrate',false),link(ref?.url||'https://activematterhelp.ru/wiki/maps','Reference page',false));
+ const actions=div('links');actions.append(link('all_maps_live_reference.html','Visual game-map atlas',true),link('map_reference_atlas.html?map='+encodeURIComponent(m.id),'Evidence viewer',false),link('map_reconciliation.html?map='+encodeURIComponent(m.id),'Calibrate',false),link(ref?.url||'https://activematterhelp.ru/wiki/maps','Reference page',false));
  if(ref?.patchUrl&&ref.patchUrl!==ref.url)actions.append(link(ref.patchUrl,'Patch / context',false));
  if(SOURCE_GUIDES[m.id])actions.append(link(SOURCE_GUIDES[m.id],'Long-form guide',false));
  body.append(actions);
