@@ -65,3 +65,6 @@ Lasagna layers: evidence schema → validation → geometry calibration → mark
 
 ## Nonnegotiable honesty
 **0/275 legacy markers authenticated against current in-game screenshots in this repo's audit.** Existing 14 picture basemaps are original illustrations, not current game geography. Work on these gates can proceed immediately; claiming all maps exact cannot.
+
+## New reference discovery
+The 20 October [tile source audit](AUTHENTIC_MAP_TILE_SOURCE_DISCOVERY.md) identifies real-game-derived overhead tiles served by Active Matter Help for the Forsaken Africa / Airport-HQ region. Tile coordinate extents, map crops and the applicable redistribution policy are outstanding. These are promising physical-geometry references but are not a ready-to-ship aligned game map. Source links now appear on the dashboard.
