@@ -62,6 +62,8 @@ footer{margin:20px auto;max-width:1400px;padding:18px 20px;border-top:1px solid 
 <div class="actions"><button id="worldLookup" class="btn" type="button">Locate X/Z</button><button id="worldClear" type="button">Clear</button></div>
 <p id="worldResult" class="result" aria-live="polite">Choose a map with a source-derived horizontal transform.</p></section>
 <div id="markerResults" class="marker-results"></div>
+<div class="actions"><button id="exportWorldCsv" class="secondary" type="button">Export source X/Z estimates · CSV</button></div>
+<p class="dim">CSV entries are source-derived research candidates, never certified extraction or loot positions.</p>
 </section></main>
 <footer>Independent fan reference, unaffiliated with Matter Team or the game publisher. Community coordinates remain provisional, game content belongs to its respective owners. Do not republish third-party map tiles without proper authorization.</footer>
 <script>
@@ -92,6 +94,14 @@ function resetImage(){if(imgUrl)URL.revokeObjectURL(imgUrl);imgUrl=null;imgInfo=
 function changeMap(){id=$('mapSelect').value;const v=source();$('worldX').value='';$('worldZ').value='';$('worldResult').textContent=WORLD_BY_MAP[id]?'Internal source transform available; '+WORLD_BY_MAP[id].match+' / '+WORLD_BY_MAP[id].total+' legacy marker matches.':'No 2D source-to-world calibration for this overview.';resetImage();$('imageFile').value='';$('evidenceFile').value='';$('variantSelect').replaceChildren();for(const x of v.variants){const o=document.createElement('option');o.value=x.url;o.textContent=x.name;$('variantSelect').append(o)}$('sourceLink').href=v.source;$('patchLink').href=v.patch||'https://activematter.game/en/news';$('workbenchLink').href='map_reconciliation.html?map='+encodeURIComponent(id);$('locationStatus').textContent=v.region+' · '+(v.kind==='regional_overview'?'Regional overview, NOT its own raid':v.variants.length+' documented variant(s)')+' · '+v.legacyCount+' historic source candidates. '+v.warning;fillTypes();listMarkers();showStatus()}
 function showStatus(){$('displayStatus').textContent=imgInfo?'Local '+imgInfo.width+' × '+imgInfo.height+' screenshot displayed'+($('allowOverlay').checked?' · historical candidate pins projected (not certified)':' · source marker pins hidden'):'No source image loaded. No geometry has been invented.'}
 function fillTypes(){const codes=[...new Set((MARKERS[id]||[]).map(x=>x.code))].sort();const filter=$('markerType');filter.replaceChildren();const all=document.createElement('option');all.value='';all.textContent='All categories';filter.append(all);for(const c of codes){const op=document.createElement('option');op.value=c;op.textContent=prettyCode(c);filter.append(op)}}
+function csvEscape(value){let s=String(value??'');if(/^[=+@\\-\\t\\r]/.test(s))s="'"+s;return '"'+s.replaceAll('"','""')+'"'}
+function exportWorldCsv(){
+ const m=WORLD_BY_MAP[id];if(!m){$('worldResult').textContent='This overview has no per-raid source game-coordinate transform.';return}
+ const header=['mapId','markerId','code','name','legacyXPercent','legacyYPercent','sourceWorldXEstimate','sourceWorldZEstimate','sourceMatchType','patchSensitive','verification'];
+ const lines=[header.map(csvEscape).join(',')];
+ for(const p of MARKERS[id]||[]){const w=worldOf(id,p);const direct=!m.unmatched.includes(p.id);lines.push([id,p.id,p.code,p.name,p.x,p.y,w?.x.toFixed(2)||'',w?.z.toFixed(2)||'',direct?'SHARED_SOURCE_MATCH':'AFFINE_ONLY',['E','T','M','A'].includes(p.code)?'YES':'NO','NOT_GAME_VERIFIED'].map(csvEscape).join(','))}
+ const blob=new Blob([lines.join('\\r\\n')+'\\r\\n'],{type:'text/csv;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='active-matter-'+id+'-source-world-estimates.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1500);
+}
 function listMarkers(){const q=$('markerSearch').value.trim().toLowerCase(),type=$('markerType').value,items=(MARKERS[id]||[]).filter(m=>(!type||m.code===type)&&(!q||m.name.toLowerCase().includes(q)||m.code.toLowerCase().includes(q)));const host=$('markerResults');host.replaceChildren();$('markerCount').textContent=items.length+' shown · '+(MARKERS[id]||[]).length+' historic source samples for this map (not all current game POIs).';for(const m of items){const b=document.createElement('button');b.type='button';b.className='entry';b.dataset.warning=String(MOVABLE.has(m.code));const title=document.createElement('strong');title.textContent=m.name;const meta=document.createElement('span');meta.textContent=prettyCode(m.code)+' · legacy '+m.x.toFixed(2)+'%, '+m.y.toFixed(2)+'%';b.append(title,meta);b.onclick=()=>selectMarker(m);host.append(b)}if(items.length===0)host.textContent='No matching candidates in the historic sample.'}
 function selectMarker(m){const r=evidence?.reviews?.[m.id],status=r?.status||'unreviewed';const world=worldOf(id,m),direct=WORLD_BY_MAP[id]&&!WORLD_BY_MAP[id].unmatched.includes(m.id);$('markerInfo').textContent=m.name+'\nType: '+prettyCode(m.code)+(MOVABLE.has(m.code)?' · position can move by build/variant':'')+'\nLegacy source point: '+m.x.toFixed(2)+'%, '+m.y.toFixed(2)+'%'+'\nSource-derived game X/Z: '+(world?world.x.toFixed(2)+', '+world.z.toFixed(2)+' ( '+(direct?'direct dataset-coordinate match':'inferred from fitted bounds')+' )':'no coordinate crosswalk')+'\nUser review: '+status+'\nSource coordinates are NOT the target screenshot coordinates.';if($('allowOverlay').checked&&evidence?.calibration){const pos=project(m,evidence.calibration.matrix);centerAt(pos.x,pos.y)}}
 function project(m,M){return {x:M[0]*m.x+M[1]*m.y+M[2],y:M[3]*m.x+M[4]*m.y+M[5]}}
@@ -134,6 +144,7 @@ $('targetMode').addEventListener('change',evalProof);
 $('confirmIdentity').addEventListener('change',evalProof);
 $('evidenceFile').addEventListener('change',e=>readEvidence(e.target.files?.[0]));
 $('allowOverlay').addEventListener('change',()=>{drawPins();showStatus()});
+$('exportWorldCsv').addEventListener('click',exportWorldCsv);
 $('worldLookup').addEventListener('click',lookupWorld);
 $('worldClear').addEventListener('click',()=>{$('worldX').value='';$('worldZ').value='';clearCrosshair();$('worldResult').textContent='No world coordinate selected.'});
 $('minus').onclick=()=>zoom(0.8);$('plus').onclick=()=>zoom(1.25);$('reset').onclick=fitImage;
