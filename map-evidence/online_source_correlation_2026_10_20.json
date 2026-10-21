@@ -33,6 +33,14 @@
         "timedCandidates": 11,
         "finalCandidates": 1,
         "important": "These are source page evacuation-system totals for the displayed variant, not all simultaneously available exit markers nor all verified live positions. For group-specific HQ/Dogorsk, individual group access differs."
+      },
+      "crossSourceCorroboration": {
+        "claim": "Separate Africa airport with plane suspended in gravitational anomaly",
+        "sources": [
+          "https://activematter.game/en/news/291",
+          "https://active-matter.wiki/maps/airport/"
+        ],
+        "quality": "official + independent guide descriptions agree on high-level identity; DOES NOT certify coordinates"
       }
     },
     {
@@ -109,6 +117,14 @@
         "timedCandidates": 7,
         "finalCandidates": 1,
         "important": "These are source page evacuation-system totals for the displayed variant, not all simultaneously available exit markers nor all verified live positions. For group-specific HQ/Dogorsk, individual group access differs."
+      },
+      "crossSourceCorroboration": {
+        "claim": "Downtown, Unstable Zone and Collapse raid variants",
+        "sources": [
+          "https://activematter.game/en/news/291",
+          "https://activematterhelp.ru/wiki/maps"
+        ],
+        "quality": "official game patch and fan variant list agree; America: Collapse historical alias may be superseded"
       }
     },
     {
@@ -246,7 +262,13 @@
         {
           "name": "Military Base: Unstable Zone",
           "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_military_base",
-          "verifiedLive": false
+          "verifiedLive": false,
+          "specialRules": {
+            "extraction": "One server-chosen final exit from 40 possible locations; active destination revealed after third zone shrink.",
+            "source": "https://activematterhelp.ru/wiki/maps/dalniy_island_military_base",
+            "officialPatch": "https://activematter.game/en/news/356",
+            "status": "source reported; not current-build authenticated"
+          }
         }
       ],
       "normalizedGeoStatus": "UNALIGNED",
@@ -407,7 +429,15 @@
       "originalUserSampleEdited": false,
       "independentlyVerifiedMarkerCount": 0,
       "rightsStatus": "external URL reference only; do not duplicate source tiles or source dataset without permission",
-      "sourceReportedExitCounts": null
+      "sourceReportedExitCounts": null,
+      "crossSourceCorroboration": {
+        "claim": "Dalniy Island regional level with nine listed local raid-map regions; not a separate tenth local raid",
+        "sources": [
+          "https://activematterhelp.ru/wiki/maps",
+          "https://active-matter.wiki/maps/dalniy-island/"
+        ],
+        "quality": "region composition; other guide's list wrongly categorizes HQ and Giga as island raids; follow geographic source context"
+      }
     }
   ]
 }
