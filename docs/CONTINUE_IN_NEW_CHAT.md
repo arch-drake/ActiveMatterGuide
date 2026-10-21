@@ -43,3 +43,9 @@ All new changes after that release are **source-only**; do not imply newer tools
 Review source truth: `docs/PUBLISH_CHECKLIST.md`, `docs/MAP_WORKBENCH_QA.md`, and `docs/MAP_PRODUCTION_REGISTER.md`.
 
 **Never stop because the task is broad; continue source-supported, low-risk work autonomously. Never claim game-exact map geometry without authentic current reference evidence.**
+
+## 20 October 2026 additional online map-source correlation
+
+Use `docs/ONLINE_MAP_CORRELATION_2026_10_20.md` and `map-evidence/online_source_correlation_2026_10_20.json`: 14 guide views, 13 playable map regions, 30 variant-specific reference URLs, 275 unchanged legacy candidate samples. All 30 variant links were verified as existing pages; this does not validate the described physical coordinates or grant rehosting rights. The dashboard `tools/map_fidelity_dashboard.html` now exposes all 30. Separate Africa Airport + HQ from Dalniy; Dalniy overview is not an extra raid. Military Base Unstable has one server-selected final exit out of 40 possible candidates.
+
+Next: permissioned source map rasters, per-map crop and orientation metadata, Airport benchmark calibration (4 FIT + 2 CHECK), 22 Airport legacy samples reviewed individually, follow with HQ/Downtown and other maps; do not invent building heights. Verify CI runner and browser interactions before shipping an updated release ZIP.
