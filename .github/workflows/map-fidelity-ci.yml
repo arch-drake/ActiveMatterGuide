@@ -1,19 +1,9 @@
 name: Map fidelity validation
+# The platform has repeatedly failed before scheduling a runner (empty job steps/logs).
+# Temporarily manual-only to avoid spamming uninformative failed checks.
+# Restore push/pull_request triggers after runner provisioning is verified.
 on:
-  push:
-    paths:
-      - 'tools/map_reconciliation.html'
-      - 'tools/map_fidelity_dashboard.html'
-      - 'map-evidence/**'
-      - 'tests/map_*.test.cjs'
-      - '.github/workflows/map-fidelity-ci.yml'
-  pull_request:
-    paths:
-      - 'tools/map_reconciliation.html'
-      - 'tools/map_fidelity_dashboard.html'
-      - 'map-evidence/**'
-      - 'tests/map_*.test.cjs'
-      - '.github/workflows/map-fidelity-ci.yml'
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:
