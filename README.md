@@ -34,6 +34,12 @@ The project is free and always optional to support: [☕ Buy Me a Coffee](https:
 
 > **Maps are not guaranteed 1:1 game geography.** Artwork is original illustrative scenery; community-sourced coordinate markers have their own provenance. The isometric tilt is a 2D projection, not measured elevation. A same-crop current in-game screenshot plus verified permissions is required for game-exact rendering. See [map accuracy notes](docs/MAP_PROVENANCE_AND_ACCURACY.md).
 
+## Latest online map correlation — 20 October 2026
+
+**[Read the full 14-map / 30-variant source audit](docs/ONLINE_MAP_CORRELATION_2026_10_20.md)** · [Machine-readable source citations and version constraints](map-evidence/online_source_correlation_2026_10_20.json). The all-map dashboard now exposes **all 30 individually checked source reference URLs** with area classifications, game-patch caveats and reference-reported extraction-system counts. These counts describe the reference site's candidate system and **are not certified current extract positions**.
+
+Critical accuracy differences: Headquarters and Airport are both **Africa**, Military Base: Unstable Zone opens only one of 40 potential exits, and Dalniy regional overview is not an extra raid. The 275 historic guide markers have not been overwritten.
+
 ## Interactive map-fidelity board
 
 **[Open the 14-map visual QA board](tools/map_fidelity_dashboard.html)**. It displays the status of each illustrated map, legacy sample coverage, patch risks, a link into that map's local screenshot-alignment workspace, and your local per-marker review count when the browser shares storage. This board is an **evidence management interface**, not a new set of accurate geographical baselayers.
