@@ -46,6 +46,14 @@ Critical accuracy differences: Headquarters and Airport are both **Africa**, Mil
 
 Of 275 older source-coordinate entries, **201 could be linked to the imported game-world coordinate representation** from the same third-party source. Fitting a separate percent→world X/Z transform per map and withholding independent source entries produced a maximum per-map internal check RMS of 0.067 m. This is **dataset agreement, NOT independently validated live-game location accuracy**; it does not supply 3D building height or game-exact raster backgrounds. The reference atlas includes a world X/Z lookup and a provisional crosshair only after screenshot-specific calibration.
 
+## Ready-to-use 14-map visual atlas — tested standalone browser tool
+
+[**Open All Maps Live Reference Atlas**](tools/all_maps_live_reference.html) · [Download latest repository ZIP](https://github.com/arch-drake/ActiveMatterGuide/archive/refs/heads/main.zip)
+
+The browser-tested single-HTML viewer covers **all 14 guide views and 30 named modes**. For 13 map views, one click loads 16 community-hosted game-derived raster tiles (4×4, 2048×2048), with zoom, pan, original source links, and map-specific patch warnings. Gigastructure retains a dedicated local floor-image importer rather than claiming a fake overhead map. The user-requested standalone ZIP is also saved in the Active Matter Guide project Library. It contains no copied game textures; Internet is required for live tiles.
+
+**Browser QA:** 14 selectors / 30 raid variants / 13 live tile modes and Gigastructure fallback passed in Chromium with network tile requests intercepted and replaced by *clearly labelled test images*. This validates UI wiring, not real-world tile delivery, game-geographic alignment, or copyrights. Tests made **zero third-party requests before user opt-in**; no browser script errors occurred.
+
 ## Real top-down raster imagery for all available world regions — opt-in online viewer
 
 The [Reference Atlas](tools/map_reference_atlas.html) now offers a **Load game-derived online map tiles** button for **13 of the 14 guide views** (nine local Dalniy raids, Africa's Airport/Headquarters, Downtown and the Dalniy regional overview). It loads genuine game-geometry imagery **directly from the community tile host**, without copying it into our distributable package. Preview anchors were recovered from actual raid wiki images rather than invented. The zoom/pan viewer uses a four-by-four 512-pixel tile mosaic at the source preview's indexed zoom level. Internet is required and tiles are requested only after the user clicks.
