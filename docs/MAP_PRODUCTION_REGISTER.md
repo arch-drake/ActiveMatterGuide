@@ -46,3 +46,7 @@ References: https://activematter.game/en/news/349 · https://activematter.game/e
 
 ## Real map-source tiles discovered on October 20
 A tile-based actual-looking overhead Forsaken Africa basemap is visible at [Active Matter Help's Airport page](https://activematterhelp.ru/wiki/maps/africa_airport). This is **a verified location of third-party hosted raster source material**, not verification that the images are licensed for redistributing in our guide or that the coordinate samples align. See [tile discovery and coordinate blockers](AUTHENTIC_MAP_TILE_SOURCE_DISCOVERY.md). Airport and HQ should be first to obtain exact source extents; other region tile sets can be investigated after.
+
+## Online cross-correlation (20 October 2026)
+
+[All map/variant source links and patch audit](ONLINE_MAP_CORRELATION_2026_10_20.md) now covers the 13 reference game-map regions and 30 named raid variants. The 14th guide view is the Dalniy Island **regional** overview. Airport and Headquarters should be assigned to the **Africa** geographic region; they must not inherit the Dalniy coordinate grid. Source-reported extraction-system totals are variant-specific and cannot be treated as all simultaneously available exits. Military Base: Unstable Zone randomly uses one of 40 possible final extraction positions. Unchanged legacy coordinate samples: 275.
