@@ -50,3 +50,7 @@ A tile-based actual-looking overhead Forsaken Africa basemap is visible at [Acti
 ## Online cross-correlation (20 October 2026)
 
 [All map/variant source links and patch audit](ONLINE_MAP_CORRELATION_2026_10_20.md) now covers the 13 reference game-map regions and 30 named raid variants. The 14th guide view is the Dalniy Island **regional** overview. Airport and Headquarters should be assigned to the **Africa** geographic region; they must not inherit the Dalniy coordinate grid. Source-reported extraction-system totals are variant-specific and cannot be treated as all simultaneously available exits. Military Base: Unstable Zone randomly uses one of 40 possible final extraction positions. Unchanged legacy coordinate samples: 275.
+
+## Coordinate-georeferencing advance
+
+A [source-derived world-coordinate crosswalk](GAME_WORLD_COORDINATE_CROSSWALK.md) now covers all 12 guide maps that have historic marker samples. **201 of the 275 source markers were directly crossmatched** to the third-party site's game-world X/Z data; the remaining 74 were not. Per-map horizontal affine checks were done with withheld imported source records. This is an aid to georeferencing current map screenshots, **not** an approved replacement for a verified game basemap or proof of current exit positions. No height layers were inferred from source `Y` elevations.
