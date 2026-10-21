@@ -55,3 +55,10 @@
 - Added [full provenance/limitations](GAME_WORLD_COORDINATE_CROSSWALK.md), [transform JSON](../map-evidence/world_coordinate_crosswalk_2026_10_20.json) and [deterministic round-trip tests](../tests/map_world_coordinates.test.cjs).
 - Reference Atlas now includes calculated game X/Z per source candidate and a coordinate lookup; with qualifying calibration it places only a provisional crosshair. Source game Y elevation is never asserted as building height.
 - Current-game verified maps and marker coordinates remain 0/14 and 0/275. Source-correlated ≠ independently game-verified.
+
+## Online source imagery pass for all 14 guide views — 20 October 2026
+- Located and verified source wiki overhead tile anchors for **nine Dalniy raid areas**, **Airport**, **Headquarters**, **Downtown** and a **Dalniy regional** window, using three actual map tile hosts and zoom levels 3/4.
+- The independent [Reference Atlas](../tools/map_reference_atlas.html) now offers a 4×4 stitched **live external raster tile viewer**, map switch, zoom and pan, offline/local capture fallback, error notices and per-map original source links. Tiles are **not duplicated or redistributed**.
+- Real game-derived overhead tiles provide original rooftops, roads, coastline/terrain instead of invented geometry; *raid-specific crop, vertical building heights, playable routes and current marker placement remain unauthenticated*.
+- Gigastructure's authentic multi-floor map tiles could not be verified; the existing original schematic remains editorial and users can import their own floor image. **Thirteen tile-enabled views, one unresolved multi-level region.**
+- The online visual layer **never shows 275 legacy pins** without source-to-tile alignment; their offline calibration workflow remains separate.
