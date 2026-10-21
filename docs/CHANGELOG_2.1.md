@@ -62,3 +62,9 @@
 - Real game-derived overhead tiles provide original rooftops, roads, coastline/terrain instead of invented geometry; *raid-specific crop, vertical building heights, playable routes and current marker placement remain unauthenticated*.
 - Gigastructure's authentic multi-floor map tiles could not be verified; the existing original schematic remains editorial and users can import their own floor image. **Thirteen tile-enabled views, one unresolved multi-level region.**
 - The online visual layer **never shows 275 legacy pins** without source-to-tile alignment; their offline calibration workflow remains separate.
+
+## Browser-tested 14-map standalone atlas
+- Added `tools/all_maps_live_reference.html`: single HTML for 14 location selectors, 30 source variant references, 13 on-demand 4×4 overhead-raster map mosaics, pan/zoom, online source attribution and image upload for maps/floors (especially Gigastructure).
+- A separate standalone downloadable ZIP is kept in the project's file Library for players who do not want to clone GitHub.
+- Chromium smoke run used intercepted, clearly marked **fake QA tiles**; all selector/mosaic/floor fallback paths passed, the page made no web requests before opt-in, and no script errors were captured. Actual cross-origin image delivery depends on the community site's availability/hotlink policy and is not verified by this test.
+- The old artwork/marker layers are not claimed game-exact. The live raster sources are borrowed remote *views*, not certified raid crops or server-current extraction maps.
