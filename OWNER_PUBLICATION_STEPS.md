@@ -2,9 +2,11 @@
 
 Repository: https://github.com/arch-drake/ActiveMatterGuide
 
+**Vercel is deployed:** The owner's Vercel dashboard reports production **Ready** from `main` with domain [https://activematterguide.vercel.app/](https://activematterguide.vercel.app/). Direct public HTTP access could not be independently checked from this assistant environment. Launch the site via Vercel **Visit** and verify the [13-area Source Atlas](https://activematterguide.vercel.app/tools/all_maps_live_reference.html) and floor-only Gigastructure, including opt-in tile requests. Do **not** enable GitHub Pages simply to use the Vercel website; GitHub Pages is an optional second hosting channel.
+
 **Audit findings:** The root standalone HTML, existing 2.1.1 ZIP, docs and atlas files are already committed. **Do not upload duplicate old copies.** At audit time GitHub Pages is disabled and GitHub Releases has no published entries. Repository HTML links on GitHub are source previews; they are not web-app launches.
 
-## Make the maps playable as a website
+## Optional alternative: enable GitHub Pages (not required for Vercel)
 
 1. Visit [Settings → Pages](https://github.com/arch-drake/ActiveMatterGuide/settings/pages) while signed in as repository owner.
 2. Choose **Deploy from a branch**, branch **main**, folder **/(root)** and **Save**.

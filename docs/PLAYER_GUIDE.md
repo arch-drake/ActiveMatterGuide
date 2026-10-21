@@ -2,7 +2,7 @@
 
 **Free, unofficial fan guide.** Runs in a modern desktop browser; no game installation changes, accounts, mods, subscriptions, or game-memory access.
 
-> **GitHub Pages is not enabled as of the October 20 repository audit.** GitHub's HTML file links are source previews, not interactive live pages. Download the [complete current repository ZIP](https://github.com/arch-drake/ActiveMatterGuide/archive/refs/heads/main.zip), extract it, and open index.html locally to use the atlas. Do not assume the Pages URL works yet.
+> **Online website:** Vercel's production dashboard reports **Ready** for [Active Matter Field Operations](https://activematterguide.vercel.app/). [Open the Source Atlas directly](https://activematterguide.vercel.app/tools/all_maps_live_reference.html) or download the complete [current repository ZIP](https://github.com/arch-drake/ActiveMatterGuide/archive/refs/heads/main.zip) for offline local use (source raster tiles still need internet). The assistant has not independently completed public route testing. **GitHub Pages remains disabled**, and GitHub HTML file views are source previews rather than runnable pages.
 
 ## 1. Download and open
 
@@ -13,7 +13,7 @@
 3. Double-click `active_matter_solo_pve_field_guide.html` and open it in a recent **Chrome** or **Edge** browser.
 4. Click **? Start here** for the six-step introduction. Artwork and eleven original audio tracks are already embedded in the HTML, so normal guide use does not require internet access.
 
-**Primary Source Atlas:** In an extracted repository ZIP, open **index.html** and choose **Explore Source Atlas**. It opens [tools/all_maps_live_reference.html](../tools/all_maps_live_reference.html) locally. The atlas itself is a self-contained HTML viewer, but live third-party raster images require consent and internet. Once [GitHub Pages](https://github.com/arch-drake/ActiveMatterGuide/settings/pages) is enabled and deployed, online launch links can be tested and announced. The old offline companion remains available for investigations, monsters, music and planning.
+**Primary Source Atlas:** Open [the public Vercel map viewer](https://activematterguide.vercel.app/tools/all_maps_live_reference.html), or, in an extracted repository ZIP, open **index.html** and choose **Explore Source Atlas**. The atlas is a standalone HTML viewer, but third-party raster images require consent and internet. Vercel reports production **Ready**; independent live-page smoke testing and external tile verification remain outstanding. The old offline companion remains available for investigations, monsters, music and planning.
 
 ## 2. Choose PvE or PvP
 
@@ -55,7 +55,7 @@ Progress is stored in your browser, not embedded in the downloadable HTML. Brows
 
 | Problem | Solution |
 | --- | --- |
-| Online Pages link does not work | GitHub Pages is currently disabled. Download the full repo ZIP, extract and open index.html locally; the owner must enable Pages under Settings. |
+| Online link does not load | Try the [Vercel production URL](https://activematterguide.vercel.app/); GitHub Pages is disabled. If the Vercel site also fails, download and extract the full repo ZIP and open index.html locally, then report the error. |
 | HTML opens as text | Open the **extracted** `.html` with Chrome or Edge, not inside ZIP preview. |
 | My progress is missing | Check browser and file path; restore your exported guide JSON. |
 | Map doesn't match the game | Included maps are conceptual. Use your own screenshot with alignment. |

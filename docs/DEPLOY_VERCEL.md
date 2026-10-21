@@ -2,6 +2,10 @@
 
 This repo is a static HTML/CSS/JS website. It needs **no framework, dependencies or build step**. The top-level `index.html` is the launcher, and `tools/all_maps_live_reference.html` is the source-raster map viewer. `vercel.json` pins framework preset to **Other** and publishes the repository root, preserving existing relative links.
 
+## Current hosting status
+
+On the owner's Vercel dashboard, **activematterguide** shows a production deployment from `main` with status **Ready** and assigned domain [activematterguide.vercel.app](https://activematterguide.vercel.app/). This is confirmation of a successful Vercel deployment, not an independent HTTP/browser smoke-test of every route. Verify the [primary Atlas](https://activematterguide.vercel.app/tools/all_maps_live_reference.html), Gigastructure floor mode, local screenshot imports, external raster tile consent and the older offline companion in a real browser. GitHub Pages remains a separate inactive product.
+
 ## Import the EXISTING repo (do not fork or clone it)
 
 1. Open [Vercel New Project](https://vercel.com/new), log in and choose **Import Git Repository**.

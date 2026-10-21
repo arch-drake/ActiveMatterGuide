@@ -11,9 +11,13 @@
 
 </details>
 
-**Legacy companion:** 2.1.1 · **Published maps-only alpha snapshot:** v2.2.0-alpha.1 · **Updated:** October 20, 2026 · **GitHub Pages is not yet enabled. No formal GitHub Release yet.**
+**Legacy companion:** 2.1.1 · **Maps-only alpha:** v2.2.0-alpha.1 · **Vercel production deployment:** Ready (per Vercel dashboard) · **GitHub Pages:** disabled · **Formal GitHub Release:** pending.
 
 > Independent fan-made reference tool. Not affiliated with or endorsed by the Active Matter developers. It does not read, alter, inject into, or automate the game.
+
+**🌐 [Open Active Matter Field Operations — public website](https://activematterguide.vercel.app/)** · **[Launch Source Atlas directly](https://activematterguide.vercel.app/tools/all_maps_live_reference.html)**
+
+Vercel reports the production deployment as **Ready** for `main`. The live host could not be independently fetched from the assistant's restricted network at the time of this update; please report any 404, authentication page, or missing map tiles. The 13-area source viewer streams third-party tiles only after explicit opt-in. Gigastructure remains floor-only. GitHub's HTML file views remain code previews, not the hosted app.
 
 **[Download the Source Atlas v2.2.0-alpha.1 — maps-only ZIP](https://github.com/arch-drake/ActiveMatterGuide/blob/alpha/v2.2.0-alpha.1/downloads/ActiveMatter-SourceAtlas-v2.2.0-alpha.1-MAPS-ONLY.zip)** (GitHub file page: use the download icon). Extract and open its **index.html**. This preview contains the four map/evidence tools, not the older full PvE/PvP companion. The [entire alpha branch ZIP](https://github.com/arch-drake/ActiveMatterGuide/archive/refs/heads/alpha/v2.2.0-alpha.1.zip) includes the old companion and all repository source as well. **There is no formal GitHub Release yet:** the automated publication workflow failed before executing its first step (runner provisioning). Pages is also disabled.
 
@@ -21,9 +25,9 @@
 
 **Important GitHub link behavior:** GitHub's file-view pages for [Source Atlas HTML](./tools/all_maps_live_reference.html) and [field guide HTML](./active_matter_solo_pve_field_guide.html) show/download source files; they are **not a hosted, interactive launch page**. The GitHub Pages URL is **not active yet**, so use the ZIP method above. The [alpha candidate branch download](https://github.com/arch-drake/ActiveMatterGuide/archive/refs/heads/alpha/v2.2.0-alpha.1.zip) is published as source. The standalone maps-only alpha ZIP is present in that branch. A *formal* GitHub prerelease is still blocked by the Actions runner failure and must not be claimed as published.
 
-## Vercel hosting (deployment-ready; live URL not yet verified)
+## Vercel hosting (production deployment Ready; browser acceptance still pending)
 
-The repository now includes [static Vercel configuration](vercel.json) and [verified import settings](docs/DEPLOY_VERCEL.md) for the existing `arch-drake/ActiveMatterGuide` repo. Framework is **Other**, the website root is `.`, and no build is needed. **Do not claim a live Vercel URL until Vercel reports a successful deployment.** GitHub Pages is still a separate setting.
+The repository includes [static Vercel configuration](vercel.json) and [deployment guidance](docs/DEPLOY_VERCEL.md) for the existing repo. Vercel's project dashboard now shows production **Ready** and advertises [activematterguide.vercel.app](https://activematterguide.vercel.app/). Framework is **Other**, website root is `.`, and no build is needed. Full public browser-route checks and third-party tile delivery remain **unverified**. GitHub Pages is still a separate setting.
 
 ## Support the guide
 
