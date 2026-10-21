@@ -22,6 +22,10 @@ jobs:
         run: node tests/map_fidelity_workflow.test.cjs
       - name: Verify 14-map reference atlas geometry and screenshot evidence gates
         run: node tests/map_reference_atlas.test.cjs
+      - name: Verify public source-first atlas navigation and special floor mode
+        run: node tests/map_primary_experience.test.cjs
+      - name: Verify 13 live-raster manifests and no pre-consent map requests
+        run: node tests/map_hosted_tiles.test.cjs
       - name: Verify 30 variant source references and documentation
         run: node tests/map_online_correlation.test.cjs
       - name: Simulate Reference Atlas 14-map UI states
