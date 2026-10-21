@@ -47,3 +47,11 @@
 - Workbench now records `raidVariant` and screenshot `screenshotSha256` (SHA-256 when browser crypto permits). Import/export retains backward compatibility with older evidence; exact name+size without hash is not sufficient for automatic projection.
 - Old sample marker pins are hidden unless 4 FIT/2 independent CHECK, matching map, image, mode, patch and variant, and verified coordinate crop. The visitor must explicitly turn on provisional pins.
 - These tools do **not** replace 14 historic illustrative backgrounds with authenticated source geography. New viewer shows a real image only after the reader supplies one locally.
+
+## Source-coordinate correlation (20 October 2026)
+
+- Discovered that Portal Atlas / Active Matter Help's normalized legacy marker data has associated game-world `[X, Y, Z]` positions. Of the guide's 275 historical samples, 201 could be directly matched to those site-imported records.
+- Derived 12 per-map world X/Z conversions from source percentage x/y using deterministic 75% training / 25% withheld source samples. Per-map holdout error 0.02–0.067 m, **against that same source dataset only**.
+- Added [full provenance/limitations](GAME_WORLD_COORDINATE_CROSSWALK.md), [transform JSON](../map-evidence/world_coordinate_crosswalk_2026_10_20.json) and [deterministic round-trip tests](../tests/map_world_coordinates.test.cjs).
+- Reference Atlas now includes calculated game X/Z per source candidate and a coordinate lookup; with qualifying calibration it places only a provisional crosshair. Source game Y elevation is never asserted as building height.
+- Current-game verified maps and marker coordinates remain 0/14 and 0/275. Source-correlated ≠ independently game-verified.
