@@ -38,6 +38,10 @@ The project is free and always optional to support: [☕ Buy Me a Coffee](https:
 
 **[Open the 14-map visual QA board](tools/map_fidelity_dashboard.html)**. It displays the status of each illustrated map, legacy sample coverage, patch risks, a link into that map's local screenshot-alignment workspace, and your local per-marker review count when the browser shares storage. This board is an **evidence management interface**, not a new set of accurate geographical baselayers.
 
+## Authentic in-game-overhead source research
+
+[20 October source/rights discovery](docs/AUTHENTIC_MAP_TILE_SOURCE_DISCOVERY.md) documents a public, tile-based source basemap at Active Matter Help. It is a promising **reference** for tracing real roads, hangars and terrain in the Airport benchmark. Source-tile ownership, coordinates and current-build raid boundaries still need verification; the project does not bundle or mirror those third-party images yet.
+
 ## High-fidelity map rebuild — underway
 
 **[Full 14-map production register](docs/MAP_PRODUCTION_REGISTER.md)** · [Master roadmap](docs/MAP_FIDELITY_MASTER_ROADMAP.md) · [Airport benchmark](docs/AIRPORT_BENCHMARK.md) · [Machine-readable fidelity register](map-evidence/map_fidelity_register.v1.json)
