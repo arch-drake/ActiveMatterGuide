@@ -1,0 +1,247 @@
+{
+  "format": "active-matter-external-tile-reference-v1",
+  "date": "2026-10-20",
+  "sourceAttribution": "Active Matter Help - community-hosted game-derived raster tiles; underlying game imagery belongs to its respective rights holders",
+  "rightsPolicy": "URL references only, images requested live by browser on user activation; not bundled, cached intentionally or rehosted by Field Operations",
+  "tileSize": 512,
+  "displayGrid": {
+    "x": 4,
+    "y": 4
+  },
+  "tileUrlTemplate": "https://activematterhelp.ru/map-tiles/{tiles}/{zoom}/{x}/{y}.webp",
+  "alignmentStatus": "Tile-neighborhood preview only. No source tile-to-in-game-marker calibration. Do not display historic markers over raster.",
+  "maps": [
+    {
+      "id": "airport",
+      "displayName": "Airport",
+      "kind": "raid",
+      "sourcePage": "https://activematterhelp.ru/wiki/maps/africa_airport",
+      "sourceTile": {
+        "tiles": "forsaken_africa_tiles",
+        "z": 3,
+        "x": 4,
+        "y": 5,
+        "source": "Community atlas's actual overhead tile referenced on a raid wiki preview"
+      },
+      "mode": "live-regional-raster-preview",
+      "raidBoundaryCertified": false,
+      "markerGeoReferenced": false,
+      "verifiedFloorHeights": false
+    },
+    {
+      "id": "headquarters",
+      "displayName": "Headquarters",
+      "kind": "raid",
+      "sourcePage": "https://activematterhelp.ru/wiki/maps/africa_headquarters",
+      "sourceTile": {
+        "tiles": "forsaken_africa_tiles",
+        "z": 3,
+        "x": 4,
+        "y": 5,
+        "source": "Community atlas's actual overhead tile referenced on a raid wiki preview"
+      },
+      "mode": "live-regional-raster-preview",
+      "raidBoundaryCertified": false,
+      "markerGeoReferenced": false,
+      "verifiedFloorHeights": false
+    },
+    {
+      "id": "downtown",
+      "displayName": "Downtown",
+      "kind": "raid",
+      "sourcePage": "https://activematterhelp.ru/wiki/maps/america_abandoned_city",
+      "sourceTile": {
+        "tiles": "america_abandoned_tiles",
+        "z": 3,
+        "x": 4,
+        "y": 1,
+        "source": "Community atlas's actual overhead tile referenced on a raid wiki preview"
+      },
+      "mode": "live-regional-raster-preview",
+      "raidBoundaryCertified": false,
+      "markerGeoReferenced": false,
+      "verifiedFloorHeights": false
+    },
+    {
+      "id": "dam",
+      "displayName": "Dam",
+      "kind": "raid",
+      "sourcePage": "https://activematterhelp.ru/wiki/maps/dalniy_island_dam",
+      "sourceTile": {
+        "tiles": "dalniy_tiles",
+        "z": 3,
+        "x": 5,
+        "y": 2,
+        "source": "Community atlas's actual overhead tile referenced on a raid wiki preview"
+      },
+      "mode": "live-regional-raster-preview",
+      "raidBoundaryCertified": false,
+      "markerGeoReferenced": false,
+      "verifiedFloorHeights": false
+    },
+    {
+      "id": "cargo",
+      "displayName": "Cargo Port",
+      "kind": "raid",
+      "sourcePage": "https://activematterhelp.ru/wiki/maps/dalniy_island_cargoport",
+      "sourceTile": {
+        "tiles": "dalniy_tiles",
+        "z": 3,
+        "x": 5,
+        "y": 0,
+        "source": "Community atlas's actual overhead tile referenced on a raid wiki preview"
+      },
+      "mode": "live-regional-raster-preview",
+      "raidBoundaryCertified": false,
+      "markerGeoReferenced": false,
+      "verifiedFloorHeights": false
+    },
+    {
+      "id": "factory",
+      "displayName": "Factory",
+      "kind": "raid",
+      "sourcePage": "https://activematterhelp.ru/wiki/maps/dalniy_island_factory_adv",
+      "sourceTile": {
+        "tiles": "dalniy_tiles",
+        "z": 3,
+        "x": 6,
+        "y": 5,
+        "source": "Community atlas's actual overhead tile referenced on a raid wiki preview"
+      },
+      "mode": "live-regional-raster-preview",
+      "raidBoundaryCertified": false,
+      "markerGeoReferenced": false,
+      "verifiedFloorHeights": false
+    },
+    {
+      "id": "dogorsk",
+      "displayName": "Dogorsk",
+      "kind": "raid",
+      "sourcePage": "https://activematterhelp.ru/wiki/maps/dalniy_island_dogorsk",
+      "sourceTile": {
+        "tiles": "dalniy_tiles",
+        "z": 3,
+        "x": 2,
+        "y": 5,
+        "source": "Community atlas's actual overhead tile referenced on a raid wiki preview"
+      },
+      "mode": "live-regional-raster-preview",
+      "raidBoundaryCertified": false,
+      "markerGeoReferenced": false,
+      "verifiedFloorHeights": false
+    },
+    {
+      "id": "military",
+      "displayName": "Military Base",
+      "kind": "raid",
+      "sourcePage": "https://activematterhelp.ru/wiki/maps/dalniy_island_military_base_statues",
+      "sourceTile": {
+        "tiles": "dalniy_tiles",
+        "z": 3,
+        "x": 4,
+        "y": 3,
+        "source": "Community atlas's actual overhead tile referenced on a raid wiki preview"
+      },
+      "mode": "live-regional-raster-preview",
+      "raidBoundaryCertified": false,
+      "markerGeoReferenced": false,
+      "verifiedFloorHeights": false
+    },
+    {
+      "id": "ozernoe",
+      "displayName": "Ozernoe",
+      "kind": "raid",
+      "sourcePage": "https://activematterhelp.ru/wiki/maps/dalniy_island_ozernoe_adv",
+      "sourceTile": {
+        "tiles": "dalniy_tiles",
+        "z": 4,
+        "x": 7,
+        "y": 9,
+        "source": "Community atlas's actual overhead tile referenced on a raid wiki preview"
+      },
+      "mode": "live-regional-raster-preview",
+      "raidBoundaryCertified": false,
+      "markerGeoReferenced": false,
+      "verifiedFloorHeights": false
+    },
+    {
+      "id": "park",
+      "displayName": "Park",
+      "kind": "raid",
+      "sourcePage": "https://activematterhelp.ru/wiki/maps/dalniy_island_park",
+      "sourceTile": {
+        "tiles": "dalniy_tiles",
+        "z": 3,
+        "x": 3,
+        "y": 6,
+        "source": "Community atlas's actual overhead tile referenced on a raid wiki preview"
+      },
+      "mode": "live-regional-raster-preview",
+      "raidBoundaryCertified": false,
+      "markerGeoReferenced": false,
+      "verifiedFloorHeights": false
+    },
+    {
+      "id": "scrapyard",
+      "displayName": "Scrapyard",
+      "kind": "raid",
+      "sourcePage": "https://activematterhelp.ru/wiki/maps/dalniy_island_scrapyard",
+      "sourceTile": {
+        "tiles": "dalniy_tiles",
+        "z": 4,
+        "x": 10,
+        "y": 8,
+        "source": "Community atlas's actual overhead tile referenced on a raid wiki preview"
+      },
+      "mode": "live-regional-raster-preview",
+      "raidBoundaryCertified": false,
+      "markerGeoReferenced": false,
+      "verifiedFloorHeights": false
+    },
+    {
+      "id": "shegolskoe",
+      "displayName": "Shegolskoe",
+      "kind": "raid",
+      "sourcePage": "https://activematterhelp.ru/wiki/maps/dalniy_island_shegolskoe_adv",
+      "sourceTile": {
+        "tiles": "dalniy_tiles",
+        "z": 4,
+        "x": 9,
+        "y": 11,
+        "source": "Community atlas's actual overhead tile referenced on a raid wiki preview"
+      },
+      "mode": "live-regional-raster-preview",
+      "raidBoundaryCertified": false,
+      "markerGeoReferenced": false,
+      "verifiedFloorHeights": false
+    },
+    {
+      "id": "gigastructure",
+      "displayName": "Gigastructure",
+      "kind": "multilevel_raid",
+      "sourcePage": "https://activematterhelp.ru/wiki/maps/gigastructure",
+      "sourceTile": null,
+      "mode": "local-floor-reference-required",
+      "raidBoundaryCertified": false,
+      "markerGeoReferenced": false,
+      "verifiedFloorHeights": false
+    },
+    {
+      "id": "dalniy",
+      "displayName": "Dalniy Island",
+      "kind": "regional_overview",
+      "sourcePage": "https://activematterhelp.ru/maps?map=dalniy",
+      "sourceTile": {
+        "tiles": "dalniy_tiles",
+        "z": 3,
+        "x": 4,
+        "y": 4,
+        "source": "Community atlas's actual overhead tile referenced on a raid wiki preview"
+      },
+      "mode": "live-regional-raster-preview",
+      "raidBoundaryCertified": false,
+      "markerGeoReferenced": false,
+      "verifiedFloorHeights": false
+    }
+  ]
+}
