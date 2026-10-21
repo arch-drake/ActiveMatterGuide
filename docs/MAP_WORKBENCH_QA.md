@@ -40,3 +40,8 @@ Official patch source for extraction changes: https://activematter.game/en/news/
 - Added a self-contained map status board for all 14 entries, 275 historic samples total, concept vs source-sample distinction, search/priority/coverage filters and offline local per-map marker review counts.
 - Map links pass a validated `map` query parameter to the workbench; unknown values are ignored.
 - Dashboard JavaScript parsed successfully; its output and responsive layout have not been manually reviewed on Windows. No basemap geometry was imported.
+
+## GitHub Actions CI status (21 October UTC)
+- Added `.github/workflows/map-fidelity-ci.yml` to run dependency-free Node checks on map changes.
+- First job [run 39519786878](https://github.com/arch-drake/ActiveMatterGuide/actions/runs/39519786878) completed **failure** approximately two seconds after starting; GitHub API lists no individual steps, and the job-log endpoint returned a missing blob.
+- **Root cause not confirmed.** Do not claim CI passed or that this was a specific test failure. In-container and isolated-JavaScript deterministic checks passed separately. Confirm Actions is enabled/runners are usable, retry, then investigate logs.
