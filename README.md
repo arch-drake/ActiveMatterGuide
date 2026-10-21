@@ -1,6 +1,15 @@
 # ACTIVE MATTER // FIELD OPERATIONS — Community Edition
 
-![Field Operations map interface](previews/map_v21_smoke.png)
+![Active Matter Field Operations 2026 feature overview — 14 map views, 30 raid variant references, monster dossiers, investigation tools and illustrative map UI](previews/field_operations_2026_overview.svg)
+
+*Updated 2026 project feature overview (illustration, not a game screenshot). Live online map tiles and 2.1.2 editorial art are optional additions; the downloadable offline field guide is still version 2.1.1.*
+
+<details>
+<summary>See an actual guide screenshot: Monster &amp; Anomaly Compendium</summary>
+
+![Field Operations monster and anomaly compendium interface](previews/release_monsters_preview.png)
+
+</details>
 
 **Version:** 2.1.1 · **Updated:** October 20, 2026 · **Status:** free community download available; GitHub Pages setup pending
 
