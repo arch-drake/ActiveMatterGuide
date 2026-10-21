@@ -24,6 +24,8 @@ jobs:
         run: node tests/map_reference_atlas.test.cjs
       - name: Verify 30 variant source references and documentation
         run: node tests/map_online_correlation.test.cjs
+      - name: Simulate Reference Atlas 14-map UI states
+        run: node tests/map_reference_dom_smoke.test.cjs
       - name: Verify derived world coordinate crosswalk
         run: node tests/map_world_coordinates.test.cjs
       - name: Assert that the release status remains source-truthful
