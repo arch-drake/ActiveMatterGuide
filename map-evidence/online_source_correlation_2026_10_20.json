@@ -41,6 +41,13 @@
           "https://active-matter.wiki/maps/airport/"
         ],
         "quality": "official + independent guide descriptions agree on high-level identity; DOES NOT certify coordinates"
+      },
+      "reviewNotes_2026_10_23": {
+        "finding": "Large anomaly concentration zones restored in Isolated Airport raids; no locations supplied.",
+        "officialSource": "https://activematter.game/en/news/363",
+        "sourceDate": "2026-10-21",
+        "geometryChanged": false,
+        "verifiedCurrentPinCount": 0
       }
     },
     {
@@ -180,6 +187,13 @@
         "timedCandidates": 15,
         "finalCandidates": 1,
         "important": "These are source page evacuation-system totals for the displayed variant, not all simultaneously available exit markers nor all verified live positions. For group-specific HQ/Dogorsk, individual group access differs."
+      },
+      "reviewNotes_2026_10_23": {
+        "finding": "Abnormal Signal zone moved away from road in Cargo Port; earlier zone pin, if present, is patch-stale until independently verified.",
+        "officialSource": "https://activematter.game/en/news/363",
+        "sourceDate": "2026-10-21",
+        "geometryChanged": false,
+        "verifiedCurrentPinCount": 0
       }
     },
     {
@@ -213,6 +227,13 @@
         "timedCandidates": 12,
         "finalCandidates": 1,
         "important": "These are source page evacuation-system totals for the displayed variant, not all simultaneously available exit markers nor all verified live positions. For group-specific HQ/Dogorsk, individual group access differs."
+      },
+      "reviewNotes_2026_10_23": {
+        "finding": "Large anomaly concentration zones restored in Isolated Factory raids; no locations supplied.",
+        "officialSource": "https://activematter.game/en/news/363",
+        "sourceDate": "2026-10-21",
+        "geometryChanged": false,
+        "verifiedCurrentPinCount": 0
       }
     },
     {
@@ -301,7 +322,11 @@
         {
           "name": "Ozernoe: Fire Storm",
           "referenceUrl": "https://activematterhelp.ru/wiki/maps/dalniy_island_ozernoe_fire",
-          "verifiedLive": false
+          "verifiedLive": false,
+          "officialDisplayName": "Ozernoe: Firestorm",
+          "officialEventSource": "https://activematter.game/en/news/365",
+          "eventDate": "2026-10-23",
+          "eventConditions": "Temporary Overtime Open Raid; solo only; rival Operatives; not an Isolated Raid"
         }
       ],
       "normalizedGeoStatus": "UNALIGNED",
@@ -313,6 +338,13 @@
         "timedCandidates": 7,
         "finalCandidates": 1,
         "important": "These are source page evacuation-system totals for the displayed variant, not all simultaneously available exit markers nor all verified live positions. For group-specific HQ/Dogorsk, individual group access differs."
+      },
+      "reviewNotes_2026_10_23": {
+        "finding": "Large anomaly concentration zones restored in Isolated Ozernoe; separate temporary Ozernoe: Firestorm Overtime Open Raid (solo only) announced on Oct 23. Do not conflate Open Firestorm with Isolated.",
+        "officialSource": "https://activematter.game/en/news/365",
+        "sourceDate": "2026-10-23",
+        "geometryChanged": false,
+        "verifiedCurrentPinCount": 0
       }
     },
     {
@@ -390,6 +422,13 @@
         "timedCandidates": 12,
         "finalCandidates": 1,
         "important": "These are source page evacuation-system totals for the displayed variant, not all simultaneously available exit markers nor all verified live positions. For group-specific HQ/Dogorsk, individual group access differs."
+      },
+      "reviewNotes_2026_10_23": {
+        "finding": "Large anomaly concentration zones restored in Isolated Shegolskoe raids across all variations; no coordinates supplied.",
+        "officialSource": "https://activematter.game/en/news/363",
+        "sourceDate": "2026-10-21",
+        "geometryChanged": false,
+        "verifiedCurrentPinCount": 0
       }
     },
     {
@@ -441,5 +480,34 @@
     }
   ],
   "variantReferencesComplete": true,
-  "allVariantReferencesDate": "2026-10-20"
+  "allVariantReferencesDate": "2026-10-20",
+  "reviewFollowup_2026_10_23": {
+    "baselineAsOf": "2026-10-20",
+    "reviewedOn": "2026-10-23",
+    "sourceIndex": "https://activematterhelp.ru/wiki/maps",
+    "sourceIndexObserved": "13 playable map regions and 30 named raid variants still listed, including pre-existing Ozernoe: Fire Storm; Dalniy overview is a 14th guide visual entry, not an additional raid.",
+    "officialSources": {
+      "2026-10-21": "https://activematter.game/en/news/363",
+      "2026-10-22": "https://activematter.game/en/news/367",
+      "2026-10-23": "https://activematter.game/en/news/365"
+    },
+    "crossRegionMapUI": "0.4.0.205: lairs first appear within 30m and persist until raid end/neutralization; loot-zone border reflects rarest loot, labels/icons hidden until interactive map mode (loot list on hover); zone names only in interactive map mode; map/compass marker distances and vertical direction updated; minimum own/ally transparency hides marks; playable-boundary dimming consistent. These are live UI behaviors, not stable coordinates.",
+    "sourceIndependence": "Official developer notes independently establish patch behavior, not pin positions. Active Matter Help is a community index. The independent English active-matter.wiki maps hub dated 2026-09-05 groups HQ under Dalniy; individual Active Matter Help entries place HQ and Airport in Africa. Portal Atlas explicitly imports Active Matter Help data, so matching coordinates are not independent.",
+    "communitySources": [
+      "https://activematterhelp.ru/wiki/maps",
+      "https://active-matter.wiki/maps/",
+      "https://github.com/rileyedward/portal-atlas/blob/main/docs/data-import.md"
+    ],
+    "rights": "External source URLs only; no copied/rehosted tiles, screenshots or third-party marker datasets. Permission required for redistribution.",
+    "geometryStatus": "No authenticated current-build screenshot, tile projection/raid crop, or 4 FIT / 2 CHECK controls; original 275 historical samples unchanged, 0 independently verified live pins.",
+    "updatedOriginalMarkers": false,
+    "patchAffectedMapIds": [
+      "airport",
+      "factory",
+      "shegolskoe",
+      "ozernoe",
+      "cargo"
+    ],
+    "otherMapReview": "No additional Oct 21–23 official geometry or extraction coordinate changes documented for remaining map regions. No exit totals or source-relative positions modified."
+  }
 }
