@@ -57,3 +57,30 @@ Use [Airport benchmark](AIRPORT_BENCHMARK.md) first, then Headquarters and Downt
 - Measured heights, multi-level accessibility and indoor geometry separately from flat top-down positions.
 
 **Release truth:** technical source correlation complete for the 30 listed variant links; *geographic reconciliation and 275 legacy marker validation are not complete*.
+
+## Follow-up source review — 23 October 2026
+
+**Baseline retained:** the 20 October register remains a dated source snapshot. On 23 October the [Active Matter Help map index](https://activematterhelp.ru/wiki/maps) still listed **13 playable map regions and 30 named raid variants**, including the previously indexed Ozernoe Fire Storm entry. The 14th guide entry remains the **Dalniy Island regional overview**, not a separate raid. No new 31st raid variant was counted. The [JSON follow-up evidence](../map-evidence/online_source_correlation_2026_10_20.json) records these findings without changing the 275 historical marker samples, source-reported exit totals, source links, or the zero live-verified marker count.
+
+### First-party patch changes affecting map evidence
+
+| Official date / source | Region or scope | Evidence and safe guide treatment |
+|---|---|---|
+| **21 Oct — [0.4.0.201](https://activematter.game/en/news/363)** | **Cargo Port** | The **Abnormal Signal** zone was moved away from the road so it no longer blocks vehicle traffic. Any older zone coordinate should be treated as potentially patch-stale. The patch does **not** publish replacement X/Z, crop or image pixels; do not reposition a pin by guesswork. |
+| **21 Oct — [0.4.0.201](https://activematter.game/en/news/363)** | **Airport, Factory, Ozernoe, Shegolskoe (all variations)** | Large anomaly concentration zones were restored to **Isolated** raids. This changes event availability, not authenticated stable spawn coordinates. Preserve Isolated/Open and Shegolskoe modifier distinctions. |
+| **22 Oct — [0.4.0.205](https://activematter.game/en/news/367)** | **All locations: in-game map UI** | Monster lairs first show within **30 m**, then persist until raid end or neutralization. Loot-zone border color indicates the rarest loot; loot icons/labels are hidden until interactive map mode, while loot details remain available on hover. Zone names appear only in interactive map mode. Distances and above/below arrows on player markers, full hiding at minimum marker transparency, and consistent out-of-bounds dimming were updated. These are **game UI behavior changes**, not evidence that a static community map is missing a real-world landmark or that a pin moved. |
+| **23 Oct — [Ozernoe: Firestorm official event](https://activematter.game/en/news/365)** | **Ozernoe: Firestorm** | The developer calls this a **temporary Overtime Open Raid, solo only**, with burning Devourers, Scorches, fire anomalies and hostile rival Operatives. The [community variant page](https://activematterhelp.ru/wiki/maps/dalniy_island_ozernoe_fire) already existed in the 30-variant register and calls it `Озёрное: Огненный шторм`; the prior English registry alias was **"Ozernoe: Fire Storm"**. Preserve the old identifier/link for compatibility, but display the developer's **"Ozernoe: Firestorm"** when using an official name. The community page's possible-exit totals and spawn groups are **not** a live extraction verification. |
+
+### Source-independence and scope recheck
+
+- **Official patch notes** are first-party evidence of changed game mechanics and event rules, not exact 2D coordinates or raid map bounds.
+- **Active Matter Help** is a community map/variant catalogue, useful for checking the **13 / 30** index and variant-specific candidate extraction systems. It is **not** independent proof of its own marker coordinates. Its Ozernoe Firestorm page reports spawn-group-dependent permanent exits and a shrinking zone; do not treat listed exit totals as simultaneous usable pins.
+- The independent English [Active Matter Wiki maps hub](https://active-matter.wiki/maps/) is labelled **5 September 2026** and sometimes groups Headquarters with Dalniy; the individual Active Matter Help region index categorizes **Headquarters and Airport as Africa**. Retain the individual raid classification and mark the wiki's broad grouping as a semantic discrepancy, not evidence for moving either map.
+- [Portal Atlas import notes](https://github.com/rileyedward/portal-atlas/blob/main/docs/data-import.md) explicitly attribute imported marker data to Active Matter Help. Cross-site matching is **shared provenance**, not an independent location check.
+- **All other named map regions and Dalniy overview:** no further authenticated geometry or extraction-coordinate revisions were found in the **21–23 October** first-party notices reviewed. That is **not** proof that those regions or variants are unchanged in live gameplay.
+
+### Unresolved fidelity / rights gates (unchanged)
+
+**0/14 authenticated game-exact basemaps; 0/275 independently current-game-verified historical markers.** No source-backed projection, raid-specific crop/rotation, elevation survey, or four FIT plus two independent CHECK control points were obtained in this pass. Do not infer accurate geometry from marker agreement inside copied datasets. Gigastructure remains multi-level/floor-specific, Park requires separate underground evidence, and the Dalniy overview must not be conflated with a playable raid. Third-party tile and game screenshot redistribution rights remain **unverified**: link to external sources or use player-owned local captures, but **do not bundle/rehost** unlicensed tiles.
+
+**CI note:** historical GitHub Actions attempts were previously reported to return no executed steps/logs; this research-only update does not certify a green GitHub Actions run. Recheck current branch checks separately and do not confuse a successful hosting deployment with test execution.
