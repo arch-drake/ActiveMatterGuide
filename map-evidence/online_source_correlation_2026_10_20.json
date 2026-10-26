@@ -326,7 +326,23 @@
           "officialDisplayName": "Ozernoe: Firestorm",
           "officialEventSource": "https://activematter.game/en/news/365",
           "eventDate": "2026-10-23",
-          "eventConditions": "Temporary Overtime Open Raid; solo only; rival Operatives; not an Isolated Raid"
+          "eventConditions": "Temporary Overtime Open Raid; solo only; rival Operatives; not an Isolated Raid",
+          "officialOperationalDetails_2026_10_26": {
+            "verifiedAgainst": "https://activematter.game/en/news/365",
+            "announcementDate": "2026-10-23",
+            "reviewDate": "2026-10-26",
+            "objective": "Track anomalous signals, locate sources of ignition, extract alive.",
+            "equipment": "Fire extinguisher occupies a weapon slot; developer states it extinguishes flames and works against Scorches and burning Devourers.",
+            "threats": [
+              "burning Devourers",
+              "Scorches",
+              "fire anomalies",
+              "hostile rival Operatives"
+            ],
+            "availability": "Temporary Overtime Open Raid; solo only. End date not published in the checked announcement; do not assume it remains active indefinitely.",
+            "geometry": "Alternate burning Ozernoe; no independently verified map transform, exit positions or floor/elevation geometry.",
+            "sourceIndependence": "Official developer announcement is first-party for rules; community recap https://active-matter-guide.wiki/guides/active-matter-firestorm-raid-2026-10-23 cites the same official announcement and is not independent coordinate evidence."
+          }
         }
       ],
       "normalizedGeoStatus": "UNALIGNED",
@@ -509,5 +525,55 @@
       "cargo"
     ],
     "otherMapReview": "No additional Oct 21–23 official geometry or extraction coordinate changes documented for remaining map regions. No exit totals or source-relative positions modified."
+  },
+  "reviewFollowup_2026_10_26": {
+    "reviewedOn": "2026-10-26",
+    "baselineReview": "2026-10-23",
+    "checkedOfficialArchive": "https://activematter.game/en/news",
+    "latestOfficialNewsObserved": {
+      "date": "2026-10-25",
+      "url": "https://activematter.game/en/news/368",
+      "topic": "500,000 sales milestone; no announced map, extraction or geometry change"
+    },
+    "latestOfficialMapPatchObserved": {
+      "date": "2026-10-22",
+      "version": "0.4.0.205",
+      "url": "https://activematter.game/en/news/367"
+    },
+    "communityMapIndex": {
+      "url": "https://activematterhelp.ru/wiki/maps",
+      "reviewedOn": "2026-10-26",
+      "playableRegions": 13,
+      "namedRaidVariants": 30,
+      "dalniyRegionalOverviewIsSeparate": true,
+      "sourceIndependence": "Community catalogue, not live game proof."
+    },
+    "substantiveEvidenceAdditions": [
+      {
+        "mapId": "ozernoe",
+        "variant": "Ozernoe: Firestorm",
+        "sourceDate": "2026-10-23",
+        "source": "https://activematter.game/en/news/365",
+        "finding": "Official event objectives, fire-extinguisher weapon-slot requirement, threats, temporary Open solo mode and unannounced end date now recorded. No extraction geometry evidence."
+      },
+      {
+        "mapIds": "all",
+        "sourceDate": "2026-10-22",
+        "source": "https://activematter.game/en/news/367",
+        "finding": "Two-finger touchpad/touchscreen map zoom now centers between contact points; DualSense two-finger pan/zoom. Marker Nearby radius is displayed in meters but official note gives no universal radius value. These are UI behavior notes only."
+      }
+    ],
+    "crossRegionMapInteraction": "0.4.0.205 confirms two-finger map zoom centers on the contact midpoint on touchscreens and DualSense; a DualSense two-finger gesture also pans/zooms maps. The Nearby marker menu now shows a radius in meters without a published fixed numeric radius. None of these establish coordinate scale, map orientation, or pin alignment.",
+    "independentCommunityCrosscheck": {
+      "source": "https://www.reddit.com/r/ActiveMatter/comments/1xdpugq/new_maps_changes_are_great/",
+      "posted": "2026-10-23",
+      "scope": "Player reactions to 0.4.0.205 lair-marker visibility; qualitative gameplay reaction only, not proof of coordinates or independent validation of developer code behavior.",
+      "separateCommunitySummary": "https://active-matter-guide.wiki/guides/active-matter-firestorm-raid-2026-10-23",
+      "caveat": "The Firestorm summary cites the developer; do not count it as an independent first-hand map or extraction observation."
+    },
+    "rights": "No new image/tile or dataset redistribution permission identified. Preserve URL references only; do not rehost third-party game tiles.",
+    "markerIntegrity": "No historical marker records, coordinates, exit candidate counts, normalizedGeoStatus, or verified pin counts modified; 0 current-game-verified markers.",
+    "unresolved": "Current-build screenshot and matching crop/orientation, independent FIT/CHECK landmarks, active event end date, variant-specific extraction positions, verified building heights and multi-floor topology remain unavailable.",
+    "outcome": "No newly published Oct 24–26 map-geometry/extraction change found in official archive; evidence enriched for Firestorm and map interaction only."
   }
 }
