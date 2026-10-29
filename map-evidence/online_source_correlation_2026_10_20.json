@@ -575,5 +575,107 @@
     "markerIntegrity": "No historical marker records, coordinates, exit candidate counts, normalizedGeoStatus, or verified pin counts modified; 0 current-game-verified markers.",
     "unresolved": "Current-build screenshot and matching crop/orientation, independent FIT/CHECK landmarks, active event end date, variant-specific extraction positions, verified building heights and multi-floor topology remain unavailable.",
     "outcome": "No newly published Oct 24–26 map-geometry/extraction change found in official archive; evidence enriched for Firestorm and map interaction only."
+  },
+  "reviewFollowup_2026_10_29": {
+    "reviewedOn": "2026-10-29",
+    "priorReview": "2026-10-26",
+    "officialNewsArchive": "https://activematter.game/en/news",
+    "latestOfficialNewsObserved": {
+      "date": "2026-10-27",
+      "version": "0.4.0.208",
+      "url": "https://activematter.game/en/news/371",
+      "classification": "gameplay/interface/rendering patch; NO published new extraction coordinates, raid boundaries or basemap geometry"
+    },
+    "interveningNonMapNotices": [
+      {
+        "date": "2026-10-26",
+        "url": "https://activematter.game/en/news/369",
+        "topic": "Autumn sale; no map evidence"
+      },
+      {
+        "date": "2026-10-26",
+        "url": "https://activematter.game/en/news/370",
+        "topic": "Steam Deck compatibility; no map geometry evidence"
+      }
+    ],
+    "mapSpecificFindings": [
+      {
+        "mapIds": [
+          "headquarters",
+          "downtown",
+          "military"
+        ],
+        "variants": [
+          "HQ: Unstable Zone",
+          "Downtown: Unstable Zone",
+          "Military Base: Unstable Zone"
+        ],
+        "officialSource": "https://activematter.game/en/news/371",
+        "sourceDate": "2026-10-27",
+        "finding": "Unstable Zone visual noise reduced during zone shifts and erroneous image colors corrected. A screenshot's color/noise presentation can vary with patch; NO stated movement of zone boundaries or exits.",
+        "verifiedCurrentPinCount": 0
+      },
+      {
+        "mapIds": [
+          "gigastructure"
+        ],
+        "variants": [
+          "Gigastructure"
+        ],
+        "officialSource": "https://activematter.game/en/news/371",
+        "sourceDate": "2026-10-27",
+        "finding": "Camera jitter on gravity-direction change fixed. This improves visual recording stability but supplies no fixed floor plan, elevator coordinates, 3D elevations or reproducible projection.",
+        "verifiedCurrentPinCount": 0
+      },
+      {
+        "mapIds": [
+          "airport"
+        ],
+        "variants": [
+          "Airport"
+        ],
+        "officialSource": "https://activematter.game/en/news/371",
+        "sourceDate": "2026-10-27",
+        "finding": "Gravity-transition camera jitter fix is potentially relevant to evidence capture in gravity-anomaly areas; the patch does not identify an Airport-specific terrain change or validate suspended-plane coordinates.",
+        "verifiedCurrentPinCount": 0
+      },
+      {
+        "mapIds": "all",
+        "officialSource": "https://activematter.game/en/news/371",
+        "sourceDate": "2026-10-27",
+        "finding": "Missions Terminal remembers last selected Open/Isolated raid type; capture explicit mode/variant when accepting screenshot evidence, not presumed defaults. DX11/DX12/Vulkan display/texture fixes can affect screenshot comparability. Fall-damage examples describe gameplay lethality, NOT measured roof heights.",
+        "verifiedCurrentPinCount": 0
+      }
+    ],
+    "geographicNamingCrosscheck": {
+      "claim": "Official 0.4.0.93 calls the Africa theater Anguka Anga; separate quest references identify Anguka Anga Quarantine with Airport. Treat Anguka Anga as theater/region terminology, not a newly discovered fourteenth playable raid. Preserve Headquarters and Airport under Africa in the current source registry.",
+      "officialSource": "https://activematter.game/en/news/315",
+      "independentQuestExample": "https://activematter.wiki.gg/wiki/Point_of_Support",
+      "scope": "Naming corroboration only, not live game pin positions."
+    },
+    "catalogueScopeCrosscheck": {
+      "communitySource": "https://activematter.lol/en/guides/active-matter-interactive-map",
+      "sourceReviewedDate": "2026-10-03",
+      "finding": "Its 15-entry map database mixes playable raid names with Anguka Anga region, legacy America and Vanilla Mall; not equivalent to the Active Matter Help 13 playable raid-region / 30 variant index. The official 2026-04-01 update explicitly places Vanilla Mall in Nexus Battles, not Raids.",
+      "officialModeSource": "https://activematter.game/en/news/192",
+      "classification": "Different catalog taxonomies, not evidence that the 13/30 source index is missing two current raid variants."
+    },
+    "communityMapCrosscheck": {
+      "source": "https://activematter.guide/maps/",
+      "observed": "Public community explorer advertises 3,222 Dalniy, 1,669 Africa and 360 Abandoned America marker records; these are SOURCE-REPORTED catalogue totals only, not independently verified positions or a newly permitted dataset.",
+      "independence": "No demonstrated independent live-game survey or rights clearance; no coordinates imported, no tile or marker data rehosted."
+    },
+    "primarySourceIndexRecheck": {
+      "url": "https://activematterhelp.ru/wiki/maps",
+      "observedOn": "2026-10-29",
+      "playableRaidRegions": 13,
+      "namedRaidVariants": 30,
+      "dalniyOverviewExtra": true,
+      "sourceType": "community-maintained index, not live-client verification"
+    },
+    "unchangedDiscrepancies": "Cargo Port October 21 Abnormal Signal relocation remains coordinate-unknown; Airport/Factory/Ozernoe/Shegolskoe restored Isolated monster concentrations have no surveyed positions; Military Base Unstable Zone 40 potential exits are not 40 simultaneous exits; Gigastructure remains multi-floor; Dalniy overview is not a queued raid.",
+    "markerIntegrity": "Original 275 historic marker samples and their source-relative positions remain untouched. No candidate exit totals, map references, raid variant names, original sample flags, alignment statuses or independently verified counts changed; zero live-authenticated pins.",
+    "rights": "External links and editorial descriptions only. No third-party tile, screenshot, marker dataset or source image copied or rehosted. Permission still unverified.",
+    "geometry": "No authenticated current-build screenshots, matched map crop, landmark FIT/CHECK controls, survey of elevation, or new extraction coordinates; 0 certified basemaps."
   }
 }
